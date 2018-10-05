@@ -1,0 +1,228 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS573 U?
+U 1 1 5BB6B4F8
+P 17650 4250
+F 0 "U?" H 17650 5228 50  0000 C CNN
+F 1 "74LS573" H 17650 5137 50  0000 C CNN
+F 2 "" H 17650 4250 50  0001 C CNN
+F 3 "74xx/74hc573.pdf" H 17650 4250 50  0001 C CNN
+	1    17650 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS573 U?
+U 1 1 5BB6B678
+P 17650 6150
+F 0 "U?" H 17650 7128 50  0000 C CNN
+F 1 "74LS573" H 17650 7037 50  0000 C CNN
+F 2 "" H 17650 6150 50  0001 C CNN
+F 3 "74xx/74hc573.pdf" H 17650 6150 50  0001 C CNN
+	1    17650 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS573 U?
+U 1 1 5BB6B746
+P 17650 8000
+F 0 "U?" H 17650 8978 50  0000 C CNN
+F 1 "74LS573" H 17650 8887 50  0000 C CNN
+F 2 "" H 17650 8000 50  0001 C CNN
+F 3 "74xx/74hc573.pdf" H 17650 8000 50  0001 C CNN
+	1    17650 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog_DAC:AD558JN U?
+U 1 1 5BB6C2FC
+P 19250 4250
+F 0 "U?" H 19250 5228 50  0000 C CNN
+F 1 "AD558JN" H 19250 5137 50  0000 C CNN
+F 2 "" H 19250 4250 50  0001 C CIN
+F 3 "http://www.analog.com/static/imported-files/data_sheets/AD558.pdf" H 19250 4200 50  0001 C CNN
+	1    19250 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog_DAC:AD558JN U?
+U 1 1 5BB6C3FA
+P 19250 6150
+F 0 "U?" H 19250 7128 50  0000 C CNN
+F 1 "AD558JN" H 19250 7037 50  0000 C CNN
+F 2 "" H 19250 6150 50  0001 C CIN
+F 3 "http://www.analog.com/static/imported-files/data_sheets/AD558.pdf" H 19250 6100 50  0001 C CNN
+	1    19250 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog_DAC:AD558JN U?
+U 1 1 5BB6C4B2
+P 19250 8000
+F 0 "U?" H 19250 8978 50  0000 C CNN
+F 1 "AD558JN" H 19250 8887 50  0000 C CNN
+F 2 "" H 19250 8000 50  0001 C CIN
+F 3 "http://www.analog.com/static/imported-files/data_sheets/AD558.pdf" H 19250 7950 50  0001 C CNN
+	1    19250 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18150 3750 18750 3750
+Wire Wire Line
+	18150 3850 18750 3850
+Wire Wire Line
+	18150 3950 18750 3950
+Wire Wire Line
+	18150 4050 18750 4050
+Wire Wire Line
+	18150 4150 18750 4150
+Wire Wire Line
+	18150 4250 18750 4250
+Wire Wire Line
+	18750 4350 18700 4350
+Wire Wire Line
+	18200 4350 18200 5050
+Wire Wire Line
+	18200 5050 17650 5050
+Wire Wire Line
+	18750 4450 18700 4450
+Wire Wire Line
+	18700 4450 18700 4350
+Connection ~ 18700 4350
+Wire Wire Line
+	18700 4350 18200 4350
+Wire Wire Line
+	18150 5650 18750 5650
+Wire Wire Line
+	18150 5750 18750 5750
+Wire Wire Line
+	18150 5850 18750 5850
+Wire Wire Line
+	18150 5950 18750 5950
+Wire Wire Line
+	18150 6050 18750 6050
+Wire Wire Line
+	18150 6150 18750 6150
+Wire Wire Line
+	17650 6950 18250 6950
+Wire Wire Line
+	18250 6950 18250 6250
+Wire Wire Line
+	18250 6250 18700 6250
+Wire Wire Line
+	18700 6250 18700 6350
+Wire Wire Line
+	18700 6350 18750 6350
+Connection ~ 18700 6250
+Wire Wire Line
+	18700 6250 18750 6250
+Wire Wire Line
+	18150 7500 18750 7500
+Wire Wire Line
+	18150 7600 18750 7600
+Wire Wire Line
+	18150 7700 18750 7700
+Wire Wire Line
+	18150 7800 18750 7800
+Wire Wire Line
+	18150 7900 18750 7900
+Wire Wire Line
+	18150 8000 18750 8000
+Wire Wire Line
+	17650 8800 18250 8800
+Wire Wire Line
+	18250 8800 18250 8100
+Wire Wire Line
+	18250 8100 18700 8100
+Wire Wire Line
+	18750 8200 18700 8200
+Wire Wire Line
+	18700 8200 18700 8100
+Connection ~ 18700 8100
+Wire Wire Line
+	18700 8100 18750 8100
+Text Label 19750 3800 0    50   ~ 0
+Red
+Text Label 19650 5750 0    50   ~ 0
+Green
+Text Label 19800 7600 0    50   ~ 0
+Blue
+$Comp
+L Connector:DB15_Female_HighDensity J?
+U 1 1 5BB7315E
+P 21450 6550
+F 0 "J?" H 21450 7417 50  0000 C CNN
+F 1 "DB15_Female_HighDensity" H 21450 7326 50  0000 C CNN
+F 2 "" H 20500 6950 50  0001 C CNN
+F 3 " ~" H 20500 6950 50  0001 C CNN
+	1    21450 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19750 3950 20950 3950
+Wire Wire Line
+	20950 3950 20950 6150
+Wire Wire Line
+	20950 6150 21150 6150
+Wire Wire Line
+	19750 5850 20750 5850
+Wire Wire Line
+	20750 5850 20750 6350
+Wire Wire Line
+	20750 6350 21150 6350
+Wire Wire Line
+	19750 7700 20000 7700
+Wire Wire Line
+	20000 7700 20000 6550
+Wire Wire Line
+	20000 6550 21150 6550
+Wire Wire Line
+	21150 6650 20450 6650
+Wire Wire Line
+	20450 6650 20450 6850
+Text Label 20100 6800 0    50   ~ 0
+PWR-5V
+Text Label 21800 6700 0    50   ~ 0
+H-SYNC
+Text Label 21800 6500 0    50   ~ 0
+V-SYNC
+Wire Wire Line
+	21750 6550 22200 6550
+Wire Wire Line
+	21750 6750 22200 6750
+$Comp
+L Graphic:Logo_Open_Hardware_Large #LOGO?
+U 1 1 5BB7E327
+P 19700 2050
+F 0 "#LOGO?" H 19700 2550 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 19700 1650 50  0001 C CNN
+F 2 "" H 19700 2050 50  0001 C CNN
+F 3 "~" H 19700 2050 50  0001 C CNN
+	1    19700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Oscillator:DGOF5S3 X?
+U 1 1 5BB7E889
+P 14700 1950
+F 0 "X?" H 14359 1996 50  0000 R CNN
+F 1 "DGOF5S3" H 14359 1905 50  0000 R CNN
+F 2 "Oscillator:Oscillator_DIP-14" H 15150 1600 50  0001 C CNN
+F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 14600 1950 50  0001 C CNN
+	1    14700 1950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
