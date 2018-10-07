@@ -225,4 +225,93 @@ F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 14600 1950 50  0001 C CNN
 	1    14700 1950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Memory_RAM:628128 U?
+U 1 1 5BB7F65C
+P 13450 6650
+F 0 "U?" H 13450 7966 50  0000 C CNN
+F 1 "628128" H 13450 7875 50  0000 C CNN
+F 2 "" H 13450 6650 50  0001 C CNN
+F 3 "" H 13450 6650 50  0001 C CNN
+	1    13450 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS154 U?
+U 1 1 5BB812D7
+P 15350 7950
+F 0 "U?" H 15350 9128 50  0000 C CNN
+F 1 "74LS154" H 15350 9037 50  0000 C CNN
+F 2 "" H 15350 7950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS154" H 15350 7950 50  0001 C CNN
+	1    15350 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS154 U?
+U 1 1 5BB814D7
+P 15350 5700
+F 0 "U?" H 15350 6878 50  0000 C CNN
+F 1 "74LS154" H 15350 6787 50  0000 C CNN
+F 2 "" H 15350 5700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS154" H 15350 5700 50  0001 C CNN
+	1    15350 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC590 U?
+U 1 1 5BB84844
+P 11900 4350
+F 0 "U?" V 11854 5091 50  0000 L CNN
+F 1 "74HC590" V 11945 5091 50  0000 L CNN
+F 2 "" H 11900 4400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC590.pdf" H 11900 4400 50  0001 C CNN
+	1    11900 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12400 4750 12400 4950
+Wire Wire Line
+	12400 5600 12750 5600
+Wire Wire Line
+	12300 5700 12750 5700
+Wire Wire Line
+	12300 4750 12300 5050
+Wire Wire Line
+	12200 5800 12750 5800
+Wire Wire Line
+	12200 4750 12200 5150
+Wire Wire Line
+	12100 4750 12100 5250
+Wire Wire Line
+	12100 5900 12750 5900
+Wire Wire Line
+	12000 4750 12000 5350
+Wire Wire Line
+	12000 6000 12750 6000
+Wire Wire Line
+	11900 4750 11900 5450
+Wire Wire Line
+	11900 6100 12750 6100
+Wire Wire Line
+	11800 4750 11800 5550
+Wire Wire Line
+	11800 6200 12750 6200
+Wire Wire Line
+	11700 4750 11700 5650
+Wire Wire Line
+	11700 6300 12750 6300
+Text Notes 11800 5800 0    50   ~ 0
+MUX\n
+$Comp
+L MCU_Microchip_PIC16:PIC16F716-IP U?
+U 1 1 5BB94BE8
+P 9800 6400
+F 0 "U?" H 9800 7478 50  0000 C CNN
+F 1 "PIC16F716-IP" H 9800 7387 50  0000 C CNN
+F 2 "" H 9800 6400 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41206B.pdf" H 9800 6400 50  0001 C CNN
+	1    9800 6400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
