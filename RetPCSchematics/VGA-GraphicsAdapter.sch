@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:RetPCSchematics-cache
+LIBS:VGA-GraphicsAdapter-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
@@ -118,8 +118,6 @@ Wire Wire Line
 Wire Wire Line
 	10300 4100 10900 4100
 Wire Wire Line
-	9800 4900 10400 4900
-Wire Wire Line
 	10400 4900 10400 4200
 Wire Wire Line
 	10400 4200 10850 4200
@@ -155,12 +153,6 @@ Wire Wire Line
 Connection ~ 10850 6050
 Wire Wire Line
 	10850 6050 10900 6050
-Text Label 11900 1750 0    50   ~ 0
-Red
-Text Label 11800 3700 0    50   ~ 0
-Green
-Text Label 11950 5550 0    50   ~ 0
-Blue
 $Comp
 L Connector:DB15_Female_HighDensity J?
 U 1 1 5BB7315E
@@ -207,23 +199,23 @@ Wire Wire Line
 $Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO?
 U 1 1 5BB7E327
-P 9450 8300
-F 0 "#LOGO?" H 9450 8800 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Large" H 9450 7900 50  0001 C CNN
-F 2 "" H 9450 8300 50  0001 C CNN
-F 3 "~" H 9450 8300 50  0001 C CNN
-	1    9450 8300
+P 8000 2950
+F 0 "#LOGO?" H 8000 3450 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 8000 2550 50  0001 C CNN
+F 2 "" H 8000 2950 50  0001 C CNN
+F 3 "~" H 8000 2950 50  0001 C CNN
+	1    8000 2950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Oscillator:DGOF5S3 X?
 U 1 1 5BB7E889
-P 6850 -100
-F 0 "X?" H 6509 -54 50  0000 R CNN
-F 1 "DGOF5S3" H 6509 -145 50  0000 R CNN
-F 2 "Oscillator:Oscillator_DIP-14" H 7300 -450 50  0001 C CNN
-F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 6750 -100 50  0001 C CNN
-	1    6850 -100
+P 3350 1700
+F 0 "X?" H 3009 1746 50  0000 R CNN
+F 1 "DGOF5S3" H 3009 1655 50  0000 R CNN
+F 2 "Oscillator:Oscillator_DIP-14" H 3800 1350 50  0001 C CNN
+F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 3250 1700 50  0001 C CNN
+	1    3350 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -606,20 +598,17 @@ Wire Wire Line
 $Comp
 L Connector:Bus_ISA_8bit J?
 U 1 1 5BD7DCB9
-P 5750 10150
-F 0 "J?" V 5796 11780 50  0000 L CNN
-F 1 "Bus_ISA_8bit" V 5705 11780 50  0000 L CNN
-F 2 "" H 5750 10150 50  0001 C CNN
-F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 5750 10150 50  0001 C CNN
-	1    5750 10150
+P 7200 10050
+F 0 "J?" V 7246 11680 50  0000 L CNN
+F 1 "Bus_ISA_8bit" V 7155 11680 50  0000 L CNN
+F 2 "" H 7200 10050 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 7200 10050 50  0001 C CNN
+	1    7200 10050
 	0    1    -1   0   
 $EndComp
 Connection ~ 5950 1700
 Wire Wire Line
 	5950 1700 9300 1700
-Connection ~ 7250 3250
-Wire Wire Line
-	7250 3250 7300 3250
 Connection ~ 5450 3750
 Wire Wire Line
 	5450 2300 5450 3350
@@ -700,8 +689,6 @@ F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4100 6050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3500 6050 3900 6050
-Wire Wire Line
 	4250 6050 4650 6050
 Wire Wire Line
 	3900 6050 4250 6050
@@ -768,4 +755,138 @@ F 3 "" H 2450 6500 50  0001 C CNN
 	1    2450 6500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1900 9150 1900 9350
+Wire Wire Line
+	1900 9350 1750 9350
+Wire Wire Line
+	1750 9350 1750 6050
+Wire Wire Line
+	1750 6050 3500 6050
+Connection ~ 3500 6050
+Wire Wire Line
+	3500 6050 3900 6050
+Text Label 1550 4200 0    67   ~ 0
+BinaryCounter
+Text Label 4400 4700 0    67   ~ 0
+VRAM
+Text Label 9150 3000 0    67   ~ 0
+RedLatch
+Text Label 9150 4900 0    67   ~ 0
+GreenLatch
+Text Label 9150 6700 0    67   ~ 0
+BlueLatch
+Text Label 11950 1800 0    67   ~ 0
+RedSignal
+Text Label 11950 3650 0    67   ~ 0
+GreenSignal
+Text Label 12050 5850 0    67   ~ 0
+BlueSignal
+Text Label 2750 1450 0    67   ~ 0
+Clock
+Text Label 9000 9150 0    67   ~ 0
+ISA8BitBus
+Text Label 2550 5900 0    67   ~ 0
+VideoTransferControl
+Text Label 6650 6500 0    67   ~ 0
+VideoDataPlexingUnit
+$Comp
+L power:GND #PWR?
+U 1 1 5BD056E0
+P 2600 4300
+F 0 "#PWR?" H 2600 4050 50  0001 C CNN
+F 1 "GND" H 2605 4127 50  0000 C CNN
+F 2 "" H 2600 4300 50  0001 C CNN
+F 3 "" H 2600 4300 50  0001 C CNN
+	1    2600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BD05A0E
+P 10350 3050
+F 0 "#PWR?" H 10350 2800 50  0001 C CNN
+F 1 "GND" H 10355 2877 50  0000 C CNN
+F 2 "" H 10350 3050 50  0001 C CNN
+F 3 "" H 10350 3050 50  0001 C CNN
+	1    10350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 3000 10350 3050
+Connection ~ 10350 3000
+Wire Wire Line
+	10350 3000 11400 3000
+Wire Wire Line
+	9800 3000 9050 3000
+Wire Wire Line
+	9050 3000 9050 2300
+Wire Wire Line
+	9050 2300 9200 2300
+Connection ~ 9800 3000
+Wire Wire Line
+	9200 2300 9200 2400
+Wire Wire Line
+	9200 2400 9300 2400
+Connection ~ 9200 2300
+Wire Wire Line
+	9200 2300 9300 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5BD3750D
+P 10400 4950
+F 0 "#PWR?" H 10400 4700 50  0001 C CNN
+F 1 "GND" H 10405 4777 50  0000 C CNN
+F 2 "" H 10400 4950 50  0001 C CNN
+F 3 "" H 10400 4950 50  0001 C CNN
+	1    10400 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 4900 10400 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5BD5124D
+P 10400 6800
+F 0 "#PWR?" H 10400 6550 50  0001 C CNN
+F 1 "GND" H 10405 6627 50  0000 C CNN
+F 2 "" H 10400 6800 50  0001 C CNN
+F 3 "" H 10400 6800 50  0001 C CNN
+	1    10400 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 6750 10400 6800
+Wire Wire Line
+	10450 6750 11400 6750
+Wire Wire Line
+	9800 6750 9000 6750
+Wire Wire Line
+	9000 6750 9000 6050
+Wire Wire Line
+	9000 6050 9200 6050
+Connection ~ 9800 6750
+Wire Wire Line
+	9200 6050 9200 6150
+Wire Wire Line
+	9200 6150 9300 6150
+Connection ~ 9200 6050
+Wire Wire Line
+	9200 6050 9300 6050
+Wire Wire Line
+	9150 4900 9150 4300
+Wire Wire Line
+	9150 4200 9300 4200
+Wire Wire Line
+	9150 4900 9800 4900
+Connection ~ 9800 4900
+Wire Wire Line
+	9800 4900 10400 4900
+Wire Wire Line
+	9150 4300 9300 4300
+Connection ~ 9150 4300
+Wire Wire Line
+	9150 4300 9150 4200
+Text Label 3800 8700 0    67   ~ 0
+VGAChipProcessor
 $EndSCHEMATC
