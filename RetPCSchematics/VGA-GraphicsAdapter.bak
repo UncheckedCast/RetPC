@@ -887,4 +887,6 @@ Wire Wire Line
 Connection ~ 9150 4300
 Wire Wire Line
 	9150 4300 9150 4200
+Text Label 3800 8700 0    67   ~ 0
+VGAChipProcessor
 $EndSCHEMATC
