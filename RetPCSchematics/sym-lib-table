@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name VGA-GraphicsAdapter-rescue)(type Legacy)(uri ${KIPRJMOD}/VGA-GraphicsAdapter-rescue.lib)(options "")(descr ""))
+)
