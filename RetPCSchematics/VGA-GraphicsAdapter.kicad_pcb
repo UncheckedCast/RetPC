@@ -1,8 +1,8 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.0.1+dfsg1-3~bpo9+1)
+(kicad_pcb (version 20171130) (host pcbnew 5.0.1)
 
   (general
     (thickness 1.6)
-    (drawings 11)
+    (drawings 14)
     (tracks 407)
     (zones 0)
     (modules 29)
@@ -1469,6 +1469,9 @@
     )
   )
 
+  (gr_line (start 236.22 33.02) (end 205.74 33.02) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 236.22 165.1) (end 236.22 33.02) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 205.74 165.1) (end 236.22 165.1) (layer Edge.Cuts) (width 0.1))
   (gr_text PROG_PIN (at 91.948 148.082) (layer Eco1.User)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
