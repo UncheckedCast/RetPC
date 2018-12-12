@@ -1,0 +1,383 @@
+EESchema Schematic File Version 4
+LIBS:Motherboard-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title "XT Clone Motherboard"
+Date ""
+Rev "1.0"
+Comp "UncheckedCast"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 7900 4925 1100 625 
+U 5C0ABBCC
+F0 "HDD Controller" 50
+F1 "HDD.sch" 50
+F2 "RESET" I L 7900 5200 50 
+F3 "~IOR" I L 7900 5300 50 
+F4 "~IOW" I L 7900 5400 50 
+F5 "AEN" I L 7900 5500 50 
+F6 "IRQ5" O R 9000 5000 50 
+F7 "DRQ3" O R 9000 5100 50 
+F8 "~DACK3" I R 9000 5200 50 
+F9 "A[0...19]" B L 7900 5100 50 
+$EndSheet
+$Sheet
+S 3475 2400 1150 700 
+U 5C104845
+F0 "Divisible Clock" 50
+F1 "DivClock.sch" 50
+F2 "OSC" O R 4625 3025 50 
+F3 "SYS_CLK" O R 4625 2500 50 
+F4 "~SYS_CLK" O R 4625 2800 50 
+F5 "~RES" I L 3475 2725 50 
+F6 "RDY1" I L 3475 2475 50 
+F7 "~AEN1" I L 3475 2600 50 
+F8 "~AEN2" I L 3475 3025 50 
+F9 "RDY2" I L 3475 2925 50 
+F10 "~ASYNC" I L 3475 2825 50 
+F11 "RESET" O R 4625 2700 50 
+F12 "READY" O R 4625 2600 50 
+$EndSheet
+$Comp
+L MCU_Intel:8088_Max_Mode U2
+U 1 1 5C0BB17D
+P 5750 4000
+F 0 "U2" H 5750 5200 50  0000 C CNN
+F 1 "8088_Max_Mode" H 5525 3525 50  0000 C CNN
+F 2 "Housings_DIP:DIP-40_W15.24mm_Socket" H 5800 4100 50  0001 C CIN
+F 3 "http://datasheets.chipdb.org/Intel/x86/808x/datashts/8088/231456-006.pdf" H 5750 4050 50  0001 C CNN
+	1    5750 4000
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	6850 2800 6950 2900
+Wire Wire Line
+	6450 3100 6850 3100
+Wire Wire Line
+	6450 3200 6850 3200
+Wire Wire Line
+	6450 3300 6850 3300
+Wire Wire Line
+	6450 3400 6850 3400
+Wire Wire Line
+	6450 3500 6850 3500
+Entry Wire Line
+	6850 2900 6950 3000
+Entry Wire Line
+	6850 3000 6950 3100
+Entry Wire Line
+	6850 3100 6950 3200
+Entry Wire Line
+	6850 3200 6950 3300
+Entry Wire Line
+	6850 3300 6950 3400
+Entry Wire Line
+	6850 3400 6950 3500
+Entry Wire Line
+	6850 3500 6950 3600
+Wire Wire Line
+	6450 3700 6850 3700
+Wire Wire Line
+	6450 3800 6850 3800
+Wire Wire Line
+	6450 3900 6850 3900
+Wire Wire Line
+	6450 4000 6850 4000
+Wire Wire Line
+	6450 4100 6850 4100
+Wire Wire Line
+	6450 4200 6850 4200
+Wire Wire Line
+	6450 4300 6850 4300
+Wire Wire Line
+	6450 4400 6850 4400
+Wire Wire Line
+	6450 4600 6850 4600
+Wire Wire Line
+	6450 4700 6850 4700
+Wire Wire Line
+	6450 4800 6850 4800
+Wire Wire Line
+	6450 4900 6850 4900
+Entry Wire Line
+	6850 3700 6950 3800
+Entry Wire Line
+	6850 3800 6950 3900
+Entry Wire Line
+	6850 3900 6950 4000
+Entry Wire Line
+	6850 4000 6950 4100
+Entry Wire Line
+	6850 4100 6950 4200
+Entry Wire Line
+	6850 4200 6950 4300
+Entry Wire Line
+	6850 4300 6950 4400
+Entry Wire Line
+	6850 4400 6950 4500
+Entry Wire Line
+	6850 4600 6950 4700
+Entry Wire Line
+	6850 4700 6950 4800
+Entry Wire Line
+	6850 4800 6950 4900
+Entry Wire Line
+	6850 4900 6950 5000
+$Comp
+L power:GND #PWR01
+U 1 1 5C0BD738
+P 5050 5500
+F 0 "#PWR01" H 5050 5250 50  0001 C CNN
+F 1 "GND" V 5055 5372 50  0000 R CNN
+F 2 "" H 5050 5500 50  0001 C CNN
+F 3 "" H 5050 5500 50  0001 C CNN
+	1    5050 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5C0BD75E
+P 5650 5800
+F 0 "#PWR02" H 5650 5550 50  0001 C CNN
+F 1 "GND" H 5655 5627 50  0000 C CNN
+F 2 "" H 5650 5800 50  0001 C CNN
+F 3 "" H 5650 5800 50  0001 C CNN
+	1    5650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5C0BD783
+P 5850 5800
+F 0 "#PWR04" H 5850 5550 50  0001 C CNN
+F 1 "GND" H 5855 5627 50  0000 C CNN
+F 2 "" H 5850 5800 50  0001 C CNN
+F 3 "" H 5850 5800 50  0001 C CNN
+	1    5850 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 5C0BD8FF
+P 5750 2200
+F 0 "#PWR03" H 5750 2050 50  0001 C CNN
+F 1 "+5V" H 5765 2373 50  0000 C CNN
+F 2 "" H 5750 2200 50  0001 C CNN
+F 3 "" H 5750 2200 50  0001 C CNN
+	1    5750 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 2500 4900 2500
+Wire Wire Line
+	4625 2600 4900 2600
+Wire Wire Line
+	4900 2600 4900 2700
+Wire Wire Line
+	4900 2700 5000 2700
+Wire Wire Line
+	4625 2700 4825 2700
+Wire Wire Line
+	4825 2700 4825 2900
+Wire Wire Line
+	4825 2900 5050 2900
+Wire Wire Line
+	6450 2800 6850 2800
+Wire Wire Line
+	6450 2900 6850 2900
+Wire Wire Line
+	6450 3000 6850 3000
+Entry Bus Bus
+	6950 3675 7050 3775
+Text Label 7050 3775 0    50   ~ 0
+A[0...7]
+$Comp
+L Interface:8259 U3
+U 1 1 5C0C4B18
+P 9025 3475
+F 0 "U3" H 9025 4753 50  0000 C CNN
+F 1 "8259" H 9025 4662 50  0000 C CNN
+F 2 "Housings_DIP:DIP-28_W7.62mm_Socket" H 9025 3475 50  0001 C CIN
+F 3 "http://pdos.csail.mit.edu/6.828/2005/readings/hardware/8259A.pdf" H 9025 3475 50  0001 C CNN
+	1    9025 3475
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	7050 3775 8025 3775
+Entry Wire Line
+	8025 2575 8125 2675
+Wire Wire Line
+	8125 2675 8425 2675
+Entry Wire Line
+	8025 2675 8125 2775
+Entry Wire Line
+	8025 2775 8125 2875
+Entry Wire Line
+	8025 2875 8125 2975
+Entry Wire Line
+	8025 2975 8125 3075
+Entry Wire Line
+	8025 3075 8125 3175
+Entry Wire Line
+	8025 3175 8125 3275
+Entry Wire Line
+	8025 3275 8125 3375
+Wire Wire Line
+	8125 2775 8425 2775
+Wire Wire Line
+	8125 2875 8425 2875
+Wire Wire Line
+	8125 2975 8425 2975
+Wire Wire Line
+	8125 3075 8425 3075
+Wire Wire Line
+	8125 3175 8425 3175
+Wire Wire Line
+	8125 3275 8425 3275
+Wire Wire Line
+	8125 3375 8425 3375
+$Comp
+L Timer:82C54_PLCC U1
+U 1 1 5C0CA7CD
+P 2625 1875
+F 0 "U1" H 2625 3053 50  0000 C CNN
+F 1 "82C54_PLCC" H 2625 2962 50  0000 C CNN
+F 2 "Housings_DIP:DIP-28_W15.24mm_Socket" H 2675 2125 50  0001 C CNN
+F 3 "http://download.intel.com/design/archives/periphrl/docs/23124406.pdf" H 2175 2775 50  0001 C CNN
+	1    2625 1875
+	1    0    0    -1  
+$EndComp
+Text Notes 8700 1100 0    50   ~ 0
+D765BC
+Text Notes 8700 1200 0    50   ~ 0
+PS/2 Controller (Home made)
+Text Label 9250 5100 2    50   ~ 0
+DREQ3
+Wire Wire Line
+	9000 5100 9250 5100
+Wire Wire Line
+	4900 2500 4900 2375
+Connection ~ 4900 2500
+Wire Wire Line
+	4900 2500 5050 2500
+Text Label 4900 2375 1    50   ~ 0
+SYS_CLK
+Wire Wire Line
+	9000 5200 9250 5200
+Text Label 9250 5200 2    50   ~ 0
+DACK3
+Text Label 4825 2900 0    50   ~ 0
+RESET
+Wire Wire Line
+	5000 2700 5000 2375
+Connection ~ 5000 2700
+Wire Wire Line
+	5000 2700 5050 2700
+Text Label 5000 2375 1    50   ~ 0
+READY
+Wire Wire Line
+	5050 4000 4825 4000
+Text Label 4825 4000 0    50   ~ 0
+HLDA
+Wire Wire Line
+	5050 4200 4825 4200
+Text Label 4825 4200 0    50   ~ 0
+HRQ
+$Sheet
+S 2200 3950 875  1675
+U 5C10D01E
+F0 "DMA" 50
+F1 "DMA.sch" 50
+F2 "ADDR" B L 2200 4075 50 
+F3 "DATA" B L 2200 4200 50 
+F4 "BUSEN" I L 2200 4350 50 
+F5 "CLK" I L 2200 4475 50 
+F6 "DREQ0" I L 2200 4600 50 
+F7 "DREQ1" I L 2200 4700 50 
+F8 "DREQ2" I L 2200 4800 50 
+F9 "DREQ3" I L 2200 4900 50 
+F10 "DACK0" O L 2200 5000 50 
+F11 "DACK1" O L 2200 5100 50 
+F12 "DACK2" O L 2200 5200 50 
+F13 "DACK3" O L 2200 5300 50 
+F14 "RESET" I L 2200 5400 50 
+F15 "~IOR" I L 2200 5500 50 
+F16 "~IOW" I R 3075 4075 50 
+F17 "HLDA" I R 3075 4175 50 
+F18 "READY" I R 3075 4275 50 
+F19 "HRQ" O R 3075 4375 50 
+F20 "TC" O R 3075 4475 50 
+F21 "~WRTDMAPGRES" I R 3075 5575 50 
+$EndSheet
+Text Label 6450 2800 0    50   ~ 0
+A0
+Text Label 6450 2900 0    50   ~ 0
+A1
+Text Label 6450 3000 0    50   ~ 0
+A2
+Text Label 6450 3100 0    50   ~ 0
+A3
+Text Label 6450 3200 0    50   ~ 0
+A4
+Text Label 6450 3300 0    50   ~ 0
+A5
+Text Label 6450 3400 0    50   ~ 0
+A6
+Text Label 6450 3500 0    50   ~ 0
+A7
+Text Label 6450 3700 0    50   ~ 0
+A8
+Text Label 6450 3800 0    50   ~ 0
+A9
+Text Label 6450 3900 0    50   ~ 0
+A10
+Text Label 6450 4000 0    50   ~ 0
+A11
+Text Label 6450 4100 0    50   ~ 0
+A12
+Text Label 6450 4200 0    50   ~ 0
+A13
+Text Label 6450 4300 0    50   ~ 0
+A14
+Text Label 6450 4400 0    50   ~ 0
+A15
+Text Label 6450 4600 0    50   ~ 0
+A16
+Text Label 6450 4700 0    50   ~ 0
+A17
+Text Label 6450 4800 0    50   ~ 0
+A18
+Text Label 6450 4900 0    50   ~ 0
+A19
+Text Label 8125 2675 0    50   ~ 0
+A0
+Text Label 8125 2775 0    50   ~ 0
+A1
+Text Label 8125 2875 0    50   ~ 0
+A2
+Text Label 8125 2975 0    50   ~ 0
+A3
+Text Label 8125 3075 0    50   ~ 0
+A4
+Text Label 8125 3175 0    50   ~ 0
+A5
+Text Label 8125 3275 0    50   ~ 0
+A6
+Text Label 8125 3375 0    50   ~ 0
+A7
+Wire Bus Line
+	6950 5100 7900 5100
+Wire Bus Line
+	8025 2575 8025 3775
+Wire Bus Line
+	6950 2900 6950 5100
+Text Label 7475 5100 0    50   ~ 0
+A[0...19]
+$EndSCHEMATC
