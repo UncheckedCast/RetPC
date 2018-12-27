@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -181,125 +181,34 @@ Wire Wire Line
 	9100 2575 9050 2575
 Text Label 9050 2575 2    50   ~ 0
 ~RESET
-$Comp
-L Connector:SD_Card J1
-U 1 1 5C0B390D
-P 6750 5100
-F 0 "J1" H 6750 4435 50  0000 C CNN
-F 1 "SD_Card" H 6750 4526 50  0000 C CNN
-F 2 "Connectors:SD_Card_Receptacle" H 6750 5100 50  0001 C CNN
-F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10067847.pdf" H 6750 5100 50  0001 C CNN
-	1    6750 5100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7650 5400 8850 5400
-Wire Wire Line
-	8850 5400 8850 4400
 Wire Wire Line
 	8850 3875 9100 3875
-Wire Wire Line
-	7650 5300 8750 5300
-Wire Wire Line
-	8750 5300 8750 3775
 Wire Wire Line
 	8750 3775 9100 3775
 Wire Wire Line
 	9100 3675 8650 3675
 Wire Wire Line
-	8650 4800 7650 4800
-Wire Wire Line
-	8650 3675 8650 4350
-Wire Wire Line
-	7650 5000 8550 5000
-Wire Wire Line
-	8550 5000 8550 4300
-Wire Wire Line
 	8550 3575 9100 3575
-$Comp
-L power:GND #PWR09
-U 1 1 5C0B5F56
-P 7650 5200
-F 0 "#PWR09" H 7650 4950 50  0001 C CNN
-F 1 "GND" V 7655 5072 50  0000 R CNN
-F 2 "" H 7650 5200 50  0001 C CNN
-F 3 "" H 7650 5200 50  0001 C CNN
-	1    7650 5200
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR07
 U 1 1 5C0B5FAE
-P 7650 4900
-F 0 "#PWR07" H 7650 4650 50  0001 C CNN
-F 1 "GND" V 7655 4772 50  0000 R CNN
-F 2 "" H 7650 4900 50  0001 C CNN
-F 3 "" H 7650 4900 50  0001 C CNN
-	1    7650 4900
-	0    -1   -1   0   
+P 7050 5425
+F 0 "#PWR07" H 7050 5175 50  0001 C CNN
+F 1 "GND" V 7055 5297 50  0000 R CNN
+F 2 "" H 7050 5425 50  0001 C CNN
+F 3 "" H 7050 5425 50  0001 C CNN
+	1    7050 5425
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR08
 U 1 1 5C0B60D5
-P 7650 5100
-F 0 "#PWR08" H 7650 4950 50  0001 C CNN
-F 1 "+5V" V 7665 5228 50  0000 L CNN
-F 2 "" H 7650 5100 50  0001 C CNN
-F 3 "" H 7650 5100 50  0001 C CNN
-	1    7650 5100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Network05 RN1
-U 1 1 5C0B624F
-P 7950 4100
-F 0 "RN1" H 8230 4146 50  0000 L CNN
-F 1 "50k" H 8225 4075 50  0000 L CNN
-F 2 "Resistors_THT:R_Array_SIP6" V 8325 4100 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7950 4100 50  0001 C CNN
-	1    7950 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8150 4300 8550 4300
-Connection ~ 8550 4300
-Wire Wire Line
-	8550 4300 8550 3575
-Wire Wire Line
-	8050 4300 8050 4350
-Wire Wire Line
-	8050 4350 8650 4350
-Connection ~ 8650 4350
-Wire Wire Line
-	8650 4350 8650 4800
-Wire Wire Line
-	7950 4300 7950 4400
-Wire Wire Line
-	7950 4400 8850 4400
-Connection ~ 8850 4400
-Wire Wire Line
-	8850 4400 8850 3875
-Wire Wire Line
-	7975 5500 7975 4450
-Wire Wire Line
-	7975 4450 7850 4450
-Wire Wire Line
-	7850 4450 7850 4300
-Wire Wire Line
-	7650 5500 7975 5500
-Wire Wire Line
-	7650 4700 7750 4700
-Wire Wire Line
-	7750 4700 7750 4300
-$Comp
-L power:+5V #PWR010
-U 1 1 5C0B9DA2
-P 7750 3900
-F 0 "#PWR010" H 7750 3750 50  0001 C CNN
-F 1 "+5V" H 7765 4073 50  0000 C CNN
-F 2 "" H 7750 3900 50  0001 C CNN
-F 3 "" H 7750 3900 50  0001 C CNN
-	1    7750 3900
+P 7050 4925
+F 0 "#PWR08" H 7050 4775 50  0001 C CNN
+F 1 "+5V" V 7065 5053 50  0000 L CNN
+F 2 "" H 7050 4925 50  0001 C CNN
+F 3 "" H 7050 4925 50  0001 C CNN
+	1    7050 4925
 	1    0    0    -1  
 $EndComp
 Text Label 1400 1950 0    50   ~ 0
@@ -375,7 +284,7 @@ U 1 1 5C0C233E
 P 2100 3950
 F 0 "U6" H 2100 4275 50  0000 C CNN
 F 1 "4081" H 2100 4184 50  0000 C CNN
-F 2 "Housings_DIP:DIP-40_W15.24mm_Socket" H 2100 3950 50  0001 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 2100 3950 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 2100 3950 50  0001 C CNN
 	1    2100 3950
 	1    0    0    -1  
@@ -568,10 +477,6 @@ $EndComp
 Wire Wire Line
 	2550 5975 3250 5975
 Connection ~ 2550 5975
-NoConn ~ 5850 4900
-NoConn ~ 5850 5000
-NoConn ~ 5850 5200
-NoConn ~ 5850 5300
 Wire Bus Line
 	1300 1675 1300 1850
 Connection ~ 1300 1850
@@ -603,10 +508,6 @@ Wire Wire Line
 	8950 2275 9100 2275
 Wire Wire Line
 	8950 2375 9100 2375
-Wire Bus Line
-	8850 1675 8850 2275
-Wire Bus Line
-	1300 1850 1300 4650
 Text Label 8950 1775 0    50   ~ 0
 A6
 Text Label 8950 1875 0    50   ~ 0
@@ -623,4 +524,47 @@ Text Label 8950 2375 0    50   ~ 0
 A0
 Text HLabel 1075 1850 0    50   BiDi ~ 0
 A[0...19]
+$Comp
+L Connector_Generic:Conn_02x03_Counter_Clockwise J1
+U 1 1 5C17F343
+P 7150 5125
+F 0 "J1" V 7154 5305 50  0000 L CNN
+F 1 "SD_Connector" V 7225 4425 50  0000 L CNN
+F 2 "Connectors_Molex:Molex_KK-6410-06_06x2.54mm_Straight" H 7150 5125 50  0001 C CNN
+F 3 "~" H 7150 5125 50  0001 C CNN
+	1    7150 5125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 5550 7150 5550
+Wire Wire Line
+	7150 5550 7150 5425
+Wire Wire Line
+	8850 3875 8850 5550
+Text Label 7150 5550 0    50   ~ 0
+SS-CS
+Wire Wire Line
+	7250 5425 8750 5425
+Wire Wire Line
+	8750 3775 8750 5425
+Text Label 7250 5425 0    50   ~ 0
+MOSI
+Wire Wire Line
+	7250 4925 8650 4925
+Wire Wire Line
+	8650 3675 8650 4925
+Wire Wire Line
+	8550 3575 8550 4825
+Wire Wire Line
+	8550 4825 7150 4825
+Wire Wire Line
+	7150 4825 7150 4925
+Wire Bus Line
+	8850 1675 8850 2275
+Wire Bus Line
+	1300 1850 1300 4650
+Text Label 7250 4925 0    50   ~ 0
+MISO
+Text Label 7150 4825 0    50   ~ 0
+SCK
 $EndSCHEMATC

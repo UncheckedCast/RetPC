@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "XT Clone Motherboard"
 Date ""
 Rev "1.0"
@@ -374,10 +374,16 @@ Text Label 8125 3375 0    50   ~ 0
 A7
 Wire Bus Line
 	6950 5100 7900 5100
+Text Label 7475 5100 0    50   ~ 0
+A[0...19]
+$Sheet
+S 3750 4475 650  3200
+U 5C18FA46
+F0 "ISA" 50
+F1 "ISA.sch" 50
+$EndSheet
 Wire Bus Line
 	8025 2575 8025 3775
 Wire Bus Line
 	6950 2900 6950 5100
-Text Label 7475 5100 0    50   ~ 0
-A[0...19]
 $EndSCHEMATC
