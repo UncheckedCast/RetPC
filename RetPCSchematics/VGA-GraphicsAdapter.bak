@@ -15,39 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 74xx:74LS573 U22
-U 1 1 5BB6B4F8
-P 9800 2200
-F 0 "U22" H 9800 3178 50  0000 C CNN
-F 1 "74LS573" H 9800 3087 50  0000 C CNN
-F 2 "" H 9800 2200 50  0001 C CNN
-F 3 "74xx/74hc573.pdf" H 9800 2200 50  0001 C CNN
-	1    9800 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS573 U23
-U 1 1 5BB6B678
-P 9800 4100
-F 0 "U23" H 9800 5078 50  0000 C CNN
-F 1 "74LS573" H 9800 4987 50  0000 C CNN
-F 2 "" H 9800 4100 50  0001 C CNN
-F 3 "74xx/74hc573.pdf" H 9800 4100 50  0001 C CNN
-	1    9800 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS573 U24
-U 1 1 5BB6B746
-P 9800 5950
-F 0 "U24" H 9800 6928 50  0000 C CNN
-F 1 "74LS573" H 9800 6837 50  0000 C CNN
-F 2 "" H 9800 5950 50  0001 C CNN
-F 3 "74xx/74hc573.pdf" H 9800 5950 50  0001 C CNN
-	1    9800 5950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Analog_DAC:AD558JN U25
 U 1 1 5BB6C2FC
 P 11400 2200
@@ -139,8 +106,6 @@ Wire Wire Line
 Wire Wire Line
 	10300 5950 10900 5950
 Wire Wire Line
-	9800 6750 10400 6750
-Wire Wire Line
 	10400 6750 10400 6050
 Wire Wire Line
 	10400 6050 10850 6050
@@ -227,8 +192,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC590.pdf" H 2600 3750 5
 	1    2600 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9300 2700 9500 2700
 Wire Wire Line
 	3000 3200 3200 3200
 Wire Wire Line
@@ -463,16 +426,6 @@ Wire Wire Line
 Wire Wire Line
 	6850 4350 6850 5400
 Wire Wire Line
-	6100 1800 9300 1800
-Wire Wire Line
-	6200 1900 9300 1900
-Wire Wire Line
-	6300 2000 9300 2000
-Wire Wire Line
-	6400 2100 9300 2100
-Wire Wire Line
-	6500 2200 9300 2200
-Wire Wire Line
 	5900 3250 7250 3250
 Wire Wire Line
 	5900 3650 7050 3650
@@ -524,69 +477,45 @@ Wire Wire Line
 Wire Wire Line
 	7650 4250 7650 3600
 Wire Wire Line
-	7650 3600 9300 3600
-Wire Wire Line
 	7650 4650 7900 4650
 Wire Wire Line
 	7900 4650 7900 3700
-Wire Wire Line
-	7900 3700 9300 3700
 Wire Wire Line
 	7650 5000 8050 5000
 Wire Wire Line
 	8050 5000 8050 3800
 Wire Wire Line
-	8050 3800 9300 3800
-Wire Wire Line
 	7650 5350 8200 5350
 Wire Wire Line
 	8200 5350 8200 3900
-Wire Wire Line
-	8200 3900 9300 3900
 Wire Wire Line
 	7650 5750 8350 5750
 Wire Wire Line
 	8350 5750 8350 4000
 Wire Wire Line
-	8350 4000 9300 4000
-Wire Wire Line
 	7650 6100 8500 6100
 Wire Wire Line
 	8500 6100 8500 4100
-Wire Wire Line
-	8500 4100 9300 4100
 Wire Wire Line
 	7650 4350 8900 4350
 Wire Wire Line
 	9100 4650 9100 5450
 Wire Wire Line
-	9100 5450 9300 5450
-Wire Wire Line
 	7650 4750 9000 4750
 Wire Wire Line
 	9000 4750 9000 5550
-Wire Wire Line
-	9000 5550 9300 5550
 Wire Wire Line
 	7650 5100 8900 5100
 Wire Wire Line
 	8900 5100 8900 5650
 Wire Wire Line
-	8900 5650 9300 5650
-Wire Wire Line
 	7650 5450 8800 5450
 Wire Wire Line
 	8800 5450 8800 5750
 Wire Wire Line
-	8800 5750 9300 5750
-Wire Wire Line
-	7650 5850 9300 5850
-Wire Wire Line
 	7650 6200 8700 6200
 Wire Wire Line
 	8700 6200 8700 5950
-Wire Wire Line
-	8700 5950 9300 5950
 $Comp
 L Connector:Bus_ISA_8bit J1
 U 1 1 5BD7DCB9
@@ -757,12 +686,6 @@ Text Label 1550 4200 0    67   ~ 0
 BinaryCounter
 Text Label 4400 4700 0    67   ~ 0
 VRAM
-Text Label 9150 3000 0    67   ~ 0
-RedLatch
-Text Label 9150 4900 0    67   ~ 0
-GreenLatch
-Text Label 9150 6700 0    67   ~ 0
-BlueLatch
 Text Label 11950 1800 0    67   ~ 0
 RedSignal
 Text Label 11950 3650 0    67   ~ 0
@@ -804,12 +727,6 @@ Wire Wire Line
 Connection ~ 10350 3000
 Wire Wire Line
 	10350 3000 10900 3000
-Wire Wire Line
-	9200 2300 9200 2400
-Wire Wire Line
-	9200 2400 9300 2400
-Wire Wire Line
-	9200 2300 9300 2300
 $Comp
 L power:GND #PWR0103
 U 1 1 5BD3750D
@@ -837,37 +754,13 @@ $EndComp
 Wire Wire Line
 	10400 6750 10400 6800
 Wire Wire Line
-	9800 6750 9000 6750
-Wire Wire Line
 	9000 6750 9000 6050
 Wire Wire Line
 	9000 6050 9200 6050
-Connection ~ 9800 6750
 Wire Wire Line
 	9200 6050 9200 6150
-Wire Wire Line
-	9200 6150 9300 6150
-Connection ~ 9200 6050
-Wire Wire Line
-	9200 6050 9300 6050
-Wire Wire Line
-	9150 4900 9150 4300
-Wire Wire Line
-	9150 4200 9300 4200
-Wire Wire Line
-	9150 4900 9800 4900
-Connection ~ 9800 4900
-Wire Wire Line
-	9800 4900 10400 4900
-Wire Wire Line
-	9150 4300 9300 4300
-Connection ~ 9150 4300
-Wire Wire Line
-	9150 4300 9150 4200
 Text Label 3800 8700 0    67   ~ 0
 VGAChipProcessor
-Wire Wire Line
-	5900 1700 9300 1700
 Wire Wire Line
 	5900 3150 5900 1700
 $Comp
@@ -924,26 +817,11 @@ Wire Wire Line
 Wire Wire Line
 	8900 4650 9100 4650
 Wire Wire Line
-	9050 4600 9300 4600
-Wire Wire Line
-	9300 6450 8850 6450
-Wire Wire Line
 	8850 6450 8850 1400
-Wire Wire Line
-	9300 2700 9150 2700
 Wire Wire Line
 	9150 2700 9150 1000
 Wire Wire Line
 	5450 1000 9150 1000
-Connection ~ 9300 2700
-Wire Wire Line
-	9200 3000 9200 2400
-Wire Wire Line
-	9200 3000 9800 3000
-Connection ~ 9800 3000
-Wire Wire Line
-	9800 3000 10350 3000
-Connection ~ 9200 2400
 Wire Wire Line
 	9050 1150 9050 4600
 $Comp
@@ -1153,4 +1031,8 @@ Wire Wire Line
 Wire Wire Line
 	11400 4900 12000 4900
 Connection ~ 11400 4900
+Wire Wire Line
+	9200 2300 9200 3000
+Wire Wire Line
+	9150 4200 9150 4900
 $EndSCHEMATC
