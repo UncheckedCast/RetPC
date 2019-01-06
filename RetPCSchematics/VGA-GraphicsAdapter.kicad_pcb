@@ -1,8 +1,8 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.0.1+dfsg1-3~bpo9+1)
+(kicad_pcb (version 20171130) (host pcbnew "(5.0.0)")
 
   (general
     (thickness 1.6)
-    (drawings 11)
+    (drawings 15)
     (tracks 407)
     (zones 0)
     (modules 29)
@@ -60,7 +60,7 @@
     (pad_to_mask_clearance 0)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -1469,6 +1469,10 @@
     )
   )
 
+  (gr_line (start 205.74 33.02) (end 245.11 33.02) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 245.11 34.29) (end 245.11 33.02) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 243.84 165.1) (end 245.11 34.29) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 205.74 165.1) (end 243.84 165.1) (layer Edge.Cuts) (width 0.1))
   (gr_text PROG_PIN (at 91.948 148.082) (layer Eco1.User)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
