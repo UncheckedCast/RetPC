@@ -15,25 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:DB15_Female_HighDensity J2
-U 1 1 5BB7315E
-P 14100 4500
-F 0 "J2" H 14100 5367 50  0000 C CNN
-F 1 "DB15_Female_HighDensity" H 14100 5276 50  0000 C CNN
-F 2 "" H 13150 4900 50  0001 C CNN
-F 3 " ~" H 13150 4900 50  0001 C CNN
-	1    14100 4500
-	1    0    0    -1  
-$EndComp
-Text Label 14450 4650 0    50   ~ 0
-H-SYNC
-Text Label 14450 4450 0    50   ~ 0
-V-SYNC
-Wire Wire Line
-	14400 4500 14850 4500
-Wire Wire Line
-	14400 4700 14850 4700
-$Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 5BB7E327
 P 8000 2950
@@ -862,22 +843,4 @@ Wire Wire Line
 	12950 5200 12950 1400
 Wire Wire Line
 	6450 1400 12950 1400
-Wire Wire Line
-	12700 3300 13550 3300
-Wire Wire Line
-	13550 3300 13550 4100
-Wire Wire Line
-	13550 4100 13800 4100
-Wire Wire Line
-	12700 3500 13450 3500
-Wire Wire Line
-	13450 3500 13450 4300
-Wire Wire Line
-	13450 4300 13800 4300
-Wire Wire Line
-	12700 3700 13350 3700
-Wire Wire Line
-	13350 3700 13350 4500
-Wire Wire Line
-	13350 4500 13800 4500
 $EndSCHEMATC
