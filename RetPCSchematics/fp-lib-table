@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name RetPC)(type KiCad)(uri ${KIPRJMOD}/RetPC.pretty)(options "")(descr ""))
   (lib (name SMD_Packages)(type KiCad)(uri ${KIPRJMOD}/SMD_Packages.pretty-master)(options "")(descr ""))
+  (lib (name digikey-footprints)(type KiCad)(uri ${KIPRJMOD}/digikey-footprints.pretty)(options "")(descr ""))
 )
