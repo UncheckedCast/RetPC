@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -736,8 +736,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 6375 3300 6375
 Wire Wire Line
-	4425 5175 4425 5325
-Wire Wire Line
 	4425 5925 4425 6475
 Wire Wire Line
 	3900 6275 4200 6275
@@ -824,17 +822,6 @@ Text HLabel 5950 6725 3    50   Output ~ 0
 RESET
 Text HLabel 6075 6725 3    50   Output ~ 0
 READY
-$Comp
-L 74xx:74LS14 U13
-U 1 1 5C0D1503
-P 4425 5625
-F 0 "U13" V 4379 5805 50  0000 L CNN
-F 1 "74LS14" V 4470 5805 50  0000 L CNN
-F 2 "" H 4425 5625 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 4425 5625 50  0001 C CNN
-	1    4425 5625
-	0    1    1    0   
-$EndComp
 $Comp
 L 74xx:74LS14 U13
 U 7 1 5C0D98DC
@@ -962,4 +949,17 @@ Wire Wire Line
 	5225 3725 5225 4200
 Wire Wire Line
 	4900 3625 4900 4200
+Wire Wire Line
+	4425 5175 4425 5325
+$Comp
+L 74xx:74LS14 U13
+U 1 1 5C0D1503
+P 4425 5625
+F 0 "U13" V 4379 5805 50  0000 L CNN
+F 1 "74LS14" V 4470 5805 50  0000 L CNN
+F 2 "" H 4425 5625 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 4425 5625 50  0001 C CNN
+	1    4425 5625
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

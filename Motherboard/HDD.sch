@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 8
 Title ""
 Date ""
 Rev ""
@@ -559,12 +559,12 @@ Wire Wire Line
 	8550 4825 7150 4825
 Wire Wire Line
 	7150 4825 7150 4925
-Wire Bus Line
-	8850 1675 8850 2275
-Wire Bus Line
-	1300 1850 1300 4650
 Text Label 7250 4925 0    50   ~ 0
 MISO
 Text Label 7150 4825 0    50   ~ 0
 SCK
+Wire Bus Line
+	8850 1675 8850 2275
+Wire Bus Line
+	1300 1850 1300 4650
 $EndSCHEMATC

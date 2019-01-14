@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -118,13 +118,7 @@ Wire Bus Line
 Text HLabel 1375 1075 0    50   BiDi ~ 0
 ADDR
 Text Label 2150 1075 2    50   ~ 0
-ADDR[A0...19]
-Text HLabel 1375 1200 0    50   BiDi ~ 0
-DATA
-Wire Bus Line
-	1375 1200 2150 1200
-Text Label 2150 1200 2    50   ~ 0
-DATA[D0...7]
+A[0...19]
 Entry Wire Line
 	2525 3775 2625 3875
 Wire Bus Line
@@ -320,7 +314,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 2275 2675 2275
 Text Label 2500 1625 0    50   ~ 0
-ADDR[A0...3]
+A[0...3]
 Entry Wire Line
 	4125 1975 4225 2075
 Entry Wire Line
@@ -338,7 +332,7 @@ Wire Wire Line
 Wire Wire Line
 	4075 2275 4125 2275
 Text Label 4225 1650 2    50   ~ 0
-ADDR[A4...7]
+A[4...7]
 Wire Wire Line
 	3375 1675 3425 1675
 Wire Wire Line
