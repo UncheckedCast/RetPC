@@ -144,4 +144,5 @@
   (lib (name dk_TVS-Mixed-Technology)(type Legacy)(uri ${KIPRJMOD}/digikey-symbols/dk_TVS-Mixed-Technology.lib)(options "")(descr ""))
   (lib (name dk_USB-DVI-HDMI-Connectors)(type Legacy)(uri ${KIPRJMOD}/digikey-symbols/dk_USB-DVI-HDMI-Connectors.lib)(options "")(descr ""))
   (lib (name ti)(type Legacy)(uri ${KIPRJMOD}/ti.lib)(options "")(descr ""))
+  (lib (name ATF22V10D)(type Legacy)(uri C:/Users/Mattis/Documents/GitHub/RetPC/ATF22V10D.lib)(options "")(descr ""))
 )
