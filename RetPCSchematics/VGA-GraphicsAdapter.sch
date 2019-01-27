@@ -2536,7 +2536,7 @@ Wire Wire Line
 	2450 5900 2450 6600
 Wire Wire Line
 	1900 6600 2450 6600
-Text GLabel 1350 6200 0    50   BiDi ~ 0
+Text GLabel 2350 5900 3    50   BiDi ~ 0
 GEnd
 $Comp
 L 74xGxx:74LVC2G240 U16
@@ -2560,10 +2560,6 @@ F 3 "" H 8750 1200 50  0001 C CNN
 	1    8750 1200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2350 5900 2350 6200
-Wire Wire Line
-	2350 6200 1900 6200
 Text GLabel 6800 3600 3    50   BiDi ~ 0
 GEnd
 $Comp
@@ -2842,28 +2838,6 @@ Text GLabel 8200 8550 0    50   BiDi ~ 0
 Sel
 Text GLabel 6050 8150 1    50   BiDi ~ 0
 Sel
-$Comp
-L power:GND #PWR01
-U 1 1 603E6A1B
-P 1600 6000
-F 0 "#PWR01" H 1600 5750 50  0001 C CNN
-F 1 "GND" H 1605 5827 50  0000 C CNN
-F 2 "" H 1600 6000 50  0001 C CNN
-F 3 "" H 1600 6000 50  0001 C CNN
-	1    1600 6000
-	-1   0    0    1   
-$EndComp
-$Comp
-L 74xGxx:74LVC2G240 U2
-U 1 1 603E6A21
-P 1600 6200
-F 0 "U2" V 1529 6070 50  0000 R CNN
-F 1 "74LVC2G240" V 1620 6070 50  0000 R CNN
-F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 1600 6200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1600 6200 50  0001 C CNN
-	1    1600 6200
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	7200 3900 6700 3900
 Wire Wire Line

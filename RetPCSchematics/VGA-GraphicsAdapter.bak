@@ -244,36 +244,36 @@ D6
 Text Label 6500 3150 0    50   ~ 0
 D7
 Entry Wire Line
-	6650 2600 6750 2700
+	6650 3500 6750 3400
 Entry Wire Line
-	6650 2700 6750 2800
+	6650 3400 6750 3300
 Entry Wire Line
-	6650 2800 6750 2900
+	6650 3300 6750 3200
 Entry Wire Line
-	6650 2900 6750 3000
+	6650 3200 6750 3100
 Entry Wire Line
-	6650 3000 6750 3100
+	6650 3100 6750 3000
 Entry Wire Line
-	6650 3100 6750 3200
+	6650 3000 6750 2900
 Entry Wire Line
-	6650 3200 6750 3300
+	6650 2900 6750 2800
 Entry Wire Line
-	6650 3300 6750 3400
-Text Label 6750 2700 0    50   ~ 0
-D0
-Text Label 6750 2800 0    50   ~ 0
-D1
-Text Label 6750 2900 0    50   ~ 0
-D2
-Text Label 6750 3000 0    50   ~ 0
-D3
-Text Label 6750 3100 0    50   ~ 0
-D4
-Text Label 6750 3200 0    50   ~ 0
-D5
-Text Label 6750 3300 0    50   ~ 0
-D6
+	6650 2800 6750 2700
 Text Label 6750 3400 0    50   ~ 0
+D0
+Text Label 6750 3300 0    50   ~ 0
+D1
+Text Label 6750 3200 0    50   ~ 0
+D2
+Text Label 6750 3100 0    50   ~ 0
+D3
+Text Label 6750 3000 0    50   ~ 0
+D4
+Text Label 6750 2900 0    50   ~ 0
+D5
+Text Label 6750 2800 0    50   ~ 0
+D6
+Text Label 6750 2700 0    50   ~ 0
 D7
 Text GLabel 6450 8150 1    50   BiDi ~ 0
 LoadEnable
@@ -1588,21 +1588,21 @@ Wire Wire Line
 Wire Wire Line
 	7650 6850 7650 6700
 Wire Wire Line
-	6750 2700 6800 2700
-Wire Wire Line
-	6750 2800 6800 2800
-Wire Wire Line
-	6750 2900 6800 2900
-Wire Wire Line
-	6750 3000 6800 3000
-Wire Wire Line
-	6750 3100 6800 3100
-Wire Wire Line
-	6750 3200 6800 3200
+	6750 3400 6800 3400
 Wire Wire Line
 	6750 3300 6800 3300
 Wire Wire Line
-	6750 3400 6800 3400
+	6750 3200 6800 3200
+Wire Wire Line
+	6750 3100 6800 3100
+Wire Wire Line
+	6750 3000 6800 3000
+Wire Wire Line
+	6750 2900 6800 2900
+Wire Wire Line
+	6750 2800 6800 2800
+Wire Wire Line
+	6750 2700 6800 2700
 Wire Wire Line
 	6500 3150 6550 3150
 Wire Wire Line
@@ -3369,8 +3369,6 @@ Wire Wire Line
 	9900 8650 9700 8650
 Wire Wire Line
 	9900 8200 9900 8650
-Wire Bus Line
-	4050 4850 4050 6700
 Text Label 4650 8150 1    50   ~ 0
 A16
 Text Label 7450 5700 0    50   ~ 0
@@ -3389,38 +3387,40 @@ Text Label 6750 5700 0    50   ~ 0
 D0
 Text Label 6850 5700 0    50   ~ 0
 D1
+Wire Bus Line
+	4050 4850 4050 6700
+Wire Bus Line
+	1650 8050 2150 8050
 Wire Wire Line
-	3500 5650 4400 5650
-Wire Wire Line
-	2750 6150 4650 6150
-Wire Wire Line
-	3450 6050 4600 6050
-Wire Wire Line
-	3400 5950 4550 5950
-Wire Wire Line
-	3350 5850 4500 5850
-Wire Wire Line
-	3300 5750 4450 5750
-Wire Wire Line
-	3550 5550 4350 5550
-Wire Wire Line
-	3600 5450 4300 5450
-Wire Wire Line
-	3650 5350 4250 5350
-Wire Wire Line
-	3700 5250 4200 5250
-Wire Wire Line
-	3750 5150 4150 5150
-Wire Wire Line
-	3800 5050 4150 5050
-Wire Wire Line
-	3850 4950 4150 4950
+	2550 6350 4750 6350
 Wire Wire Line
 	2650 6250 4700 6250
 Wire Wire Line
-	2550 6350 4750 6350
-Wire Bus Line
-	1650 8050 2150 8050
+	3850 4950 4150 4950
+Wire Wire Line
+	3800 5050 4150 5050
+Wire Wire Line
+	3750 5150 4150 5150
+Wire Wire Line
+	3700 5250 4200 5250
+Wire Wire Line
+	3650 5350 4250 5350
+Wire Wire Line
+	3600 5450 4300 5450
+Wire Wire Line
+	3550 5550 4350 5550
+Wire Wire Line
+	3300 5750 4450 5750
+Wire Wire Line
+	3350 5850 4500 5850
+Wire Wire Line
+	3400 5950 4550 5950
+Wire Wire Line
+	3450 6050 4600 6050
+Wire Wire Line
+	2750 6150 4650 6150
+Wire Wire Line
+	3500 5650 4400 5650
 Wire Bus Line
 	10350 9800 10350 11000
 Wire Wire Line
