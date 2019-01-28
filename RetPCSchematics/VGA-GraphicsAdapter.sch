@@ -2514,9 +2514,9 @@ F 3 "DOCUMENTATION" H 13350 7200 50  0001 C CNN
 	1    13350 7200
 	1    0    0    1   
 $EndComp
-Text GLabel 14100 6750 2    50   BiDi ~ 0
-Hsync
 Text GLabel 14100 6850 2    50   BiDi ~ 0
+Hsync
+Text GLabel 14100 6750 2    50   BiDi ~ 0
 Vsync
 Text GLabel 11850 4550 0    50   BiDi ~ 0
 Hsync
@@ -3362,9 +3362,11 @@ D0
 Text Label 6850 5700 0    50   ~ 0
 D1
 Wire Bus Line
-	4050 4850 4050 6700
-Wire Bus Line
 	1650 8050 2150 8050
+Wire Bus Line
+	10350 9800 10350 11000
+Wire Wire Line
+	3900 4850 4150 4850
 Wire Wire Line
 	2550 6350 4750 6350
 Wire Wire Line
@@ -3396,10 +3398,6 @@ Wire Wire Line
 Wire Wire Line
 	3500 5650 4400 5650
 Wire Bus Line
-	10350 9800 10350 11000
-Wire Wire Line
-	3900 4850 4150 4850
-Wire Bus Line
 	6650 5550 7350 5550
 Wire Bus Line
 	4050 6700 4700 6700
@@ -3414,9 +3412,44 @@ Wire Bus Line
 Wire Bus Line
 	2150 9700 5950 9700
 Wire Bus Line
+	4050 4850 4050 6700
+Wire Bus Line
 	3400 11000 10350 11000
 Wire Bus Line
 	6650 2550 6650 5550
 Wire Bus Line
 	2150 8000 5850 8000
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5C554E39
+P 10200 850
+F 0 "J3" V 10260 890 50  0000 L CNN
+F 1 "Conn_01x02_Male" V 10351 890 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 10200 850 50  0001 C CNN
+F 3 "~" H 10200 850 50  0001 C CNN
+	1    10200 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5C554FE5
+P 10100 1050
+F 0 "#PWR0102" H 10100 900 50  0001 C CNN
+F 1 "+3.3V" H 10115 1223 50  0000 C CNN
+F 2 "" H 10100 1050 50  0001 C CNN
+F 3 "" H 10100 1050 50  0001 C CNN
+	1    10100 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5C5550EF
+P 10200 1050
+F 0 "#PWR0103" H 10200 800 50  0001 C CNN
+F 1 "GND" H 10205 877 50  0000 C CNN
+F 2 "" H 10200 1050 50  0001 C CNN
+F 3 "" H 10200 1050 50  0001 C CNN
+	1    10200 1050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
