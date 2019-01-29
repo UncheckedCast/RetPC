@@ -26,7 +26,7 @@ F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 2400 2825 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L fdc:uPD765BC U6
+L FDC-rescue:uPD765BC-fdc U6
 U 1 1 5C3633C4
 P 5225 1925
 F 0 "U6" H 5225 3192 50  0000 C CNN
@@ -2246,6 +2246,8 @@ F 3 "" H 5975 10025 50  0001 C CNN
 	1    5975 10025
 	0    1    1    0   
 $EndComp
+Text Label 6175 1525 2    50   ~ 0
+WPT
 Wire Bus Line
 	4375 1325 4375 2025
 Wire Bus Line
@@ -2256,6 +2258,26 @@ Wire Bus Line
 	3925 4525 3925 5450
 Wire Bus Line
 	3350 1275 3350 2225
-Text Label 6175 1525 2    50   ~ 0
-WPT
+$Comp
+L power:+5V #PWR?
+U 1 1 5C52E833
+P 12100 4225
+F 0 "#PWR?" H 12100 4075 50  0001 C CNN
+F 1 "+5V" V 12115 4353 50  0000 L CNN
+F 2 "" H 12100 4225 50  0001 C CNN
+F 3 "" H 12100 4225 50  0001 C CNN
+	1    12100 4225
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C52E945
+P 13825 4450
+F 0 "#PWR?" H 13825 4300 50  0001 C CNN
+F 1 "+5V" V 13840 4578 50  0000 L CNN
+F 2 "" H 13825 4450 50  0001 C CNN
+F 3 "" H 13825 4450 50  0001 C CNN
+	1    13825 4450
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
