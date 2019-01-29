@@ -306,7 +306,7 @@ U 2 1 5C0C26D6
 P 2700 4225
 F 0 "U6" H 2700 4550 50  0000 C CNN
 F 1 "4081" H 2700 4459 50  0000 C CNN
-F 2 "Housings_DIP:DIP-40_W15.24mm_Socket" H 2700 4225 50  0001 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 2700 4225 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 2700 4225 50  0001 C CNN
 	2    2700 4225
 	1    0    0    -1  
@@ -321,7 +321,7 @@ U 3 1 5C0C4948
 P 3300 4600
 F 0 "U6" H 3300 4925 50  0000 C CNN
 F 1 "4081" H 3300 4834 50  0000 C CNN
-F 2 "Housings_DIP:DIP-40_W15.24mm_Socket" H 3300 4600 50  0001 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 3300 4600 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 3300 4600 50  0001 C CNN
 	3    3300 4600
 	1    0    0    -1  
@@ -366,7 +366,7 @@ U 5 1 5C0CE74F
 P 2550 6475
 F 0 "U6" H 2780 6521 50  0000 L CNN
 F 1 "4081" H 2780 6430 50  0000 L CNN
-F 2 "Housings_DIP:DIP-40_W15.24mm_Socket" H 2550 6475 50  0001 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 2550 6475 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 2550 6475 50  0001 C CNN
 	5    2550 6475
 	1    0    0    -1  
@@ -434,9 +434,7 @@ Wire Wire Line
 Text Label 9050 2775 2    50   ~ 0
 A1
 Text Label 9050 2875 2    50   ~ 0
-ADDR_LO
-Text Label 9050 2975 2    50   ~ 0
-ADDR_HI
+ADDR
 Wire Wire Line
 	9100 3075 9050 3075
 Wire Wire Line
@@ -477,21 +475,13 @@ $EndComp
 Wire Wire Line
 	2550 5975 3250 5975
 Connection ~ 2550 5975
-Wire Bus Line
-	1300 1675 1300 1850
-Connection ~ 1300 1850
-Wire Bus Line
-	8850 1575 8850 1675
-Connection ~ 8850 1675
 Wire Wire Line
 	2125 6975 2550 6975
 Connection ~ 2550 6975
 Wire Wire Line
 	2550 6975 3250 6975
 Text Label 8950 1675 0    50   ~ 0
-A7
-Wire Bus Line
-	1300 1675 8850 1675
+D7
 Wire Wire Line
 	8950 1675 9100 1675
 Wire Wire Line
@@ -509,19 +499,19 @@ Wire Wire Line
 Wire Wire Line
 	8950 2375 9100 2375
 Text Label 8950 1775 0    50   ~ 0
-A6
+D6
 Text Label 8950 1875 0    50   ~ 0
-A5
+D5
 Text Label 8950 1975 0    50   ~ 0
-A4
+D4
 Text Label 8950 2075 0    50   ~ 0
-A3
+D3
 Text Label 8950 2175 0    50   ~ 0
-A2
+D2
 Text Label 8950 2275 0    50   ~ 0
-A1
+D1
 Text Label 8950 2375 0    50   ~ 0
-A0
+D0
 Text HLabel 1075 1850 0    50   BiDi ~ 0
 A[0...19]
 $Comp
@@ -563,8 +553,119 @@ Text Label 7250 4925 0    50   ~ 0
 MISO
 Text Label 7150 4825 0    50   ~ 0
 SCK
+$Comp
+L fdc:ATF750LVC U39
+U 1 1 5C45A3F7
+P 5900 3450
+F 0 "U39" H 5900 4317 50  0000 C CNN
+F 1 "ATF750LVC" H 5900 4226 50  0000 C CNN
+F 2 "Housings_DIP:DIP-28_W7.62mm_Socket" H 5900 3450 50  0001 L CNN
+F 3 "" H 5900 3450 50  0001 L CNN
+	1    5900 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2850 5175 2850
+Wire Wire Line
+	5400 2950 5175 2950
+Wire Wire Line
+	5175 3050 5400 3050
+Wire Wire Line
+	5400 3150 5175 3150
+Wire Wire Line
+	5400 3250 5175 3250
+Wire Wire Line
+	5175 3350 5400 3350
+Wire Wire Line
+	5400 3450 5175 3450
+Wire Wire Line
+	5400 3550 5175 3550
+Wire Wire Line
+	5175 3650 5400 3650
+Wire Wire Line
+	5400 3750 5175 3750
+Wire Wire Line
+	5400 3850 5175 3850
+Wire Wire Line
+	5175 3950 5400 3950
+Wire Wire Line
+	6625 2850 6400 2850
+Wire Wire Line
+	6625 2950 6400 2950
+Wire Wire Line
+	6400 3050 6625 3050
+Wire Wire Line
+	6625 3150 6400 3150
+Wire Wire Line
+	6625 3250 6400 3250
+Wire Wire Line
+	6400 3350 6625 3350
+Wire Wire Line
+	6625 3450 6400 3450
+Wire Wire Line
+	6625 3550 6400 3550
+Wire Wire Line
+	6400 3650 6625 3650
+Wire Wire Line
+	6625 3750 6400 3750
+Wire Wire Line
+	6625 3850 6400 3850
+Wire Wire Line
+	6400 3950 6625 3950
+Text Label 5175 2850 0    50   ~ 0
+A19
+Text Label 5175 2950 0    50   ~ 0
+A18
+Text Label 5175 3050 0    50   ~ 0
+A17
+Text Label 5175 3150 0    50   ~ 0
+A16
+Text Label 5175 3250 0    50   ~ 0
+A15
+Text Label 5175 3350 0    50   ~ 0
+A14
+Text Label 5175 3450 0    50   ~ 0
+A13
+Text Label 5175 3550 0    50   ~ 0
+A9
+Text Label 5175 3650 0    50   ~ 0
+A8
+Text Label 5175 3750 0    50   ~ 0
+A7
+Text Label 5175 3850 0    50   ~ 0
+A6
+Text Label 6625 3950 2    50   ~ 0
+A5
+$Comp
+L power:GND #PWR09
+U 1 1 5C46903C
+P 5175 3950
+F 0 "#PWR09" H 5175 3700 50  0001 C CNN
+F 1 "GND" H 5180 3777 50  0000 C CNN
+F 2 "" H 5175 3950 50  0001 C CNN
+F 3 "" H 5175 3950 50  0001 C CNN
+	1    5175 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR010
+U 1 1 5C469186
+P 6625 2850
+F 0 "#PWR010" H 6625 2700 50  0001 C CNN
+F 1 "+5V" H 6640 3023 50  0000 C CNN
+F 2 "" H 6625 2850 50  0001 C CNN
+F 3 "" H 6625 2850 50  0001 C CNN
+	1    6625 2850
+	1    0    0    -1  
+$EndComp
+Text Label 6625 2950 2    50   ~ 0
+ADDR
 Wire Bus Line
-	8850 1675 8850 2275
+	8850 1350 8850 2275
 Wire Bus Line
 	1300 1850 1300 4650
+Text HLabel 8850 1350 1    50   BiDi ~ 0
+D[0...7]
+Text Notes 4700 2500 0    50   ~ 0
+ADDR=A19*A18*~(A17+A16)~*~(A15+A14)~*A13*A9*A8*~(A7+A6)~*A5
 $EndSCHEMATC
