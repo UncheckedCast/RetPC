@@ -516,4 +516,158 @@ Wire Wire Line
 	4900 6475 4650 6475
 Text Label 4650 6475 0    50   ~ 0
 RESET
+$Comp
+L Connector:Bus_ISA_8bit J7
+U 1 1 5C5AC837
+P 8000 7875
+F 0 "J7" H 8000 9642 50  0000 C CNN
+F 1 "Bus_ISA_8bit" H 8000 9551 50  0000 C CNN
+F 2 "RetPC:ISA-8-bit" H 8000 7875 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 8000 7875 50  0001 C CNN
+	1    8000 7875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0148
+U 1 1 5C5AC83D
+P 7225 6275
+F 0 "#PWR0148" H 7225 6025 50  0001 C CNN
+F 1 "GND" H 7230 6102 50  0000 C CNN
+F 2 "" H 7225 6275 50  0001 C CNN
+F 3 "" H 7225 6275 50  0001 C CNN
+	1    7225 6275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7225 6275 7225 6375
+Wire Wire Line
+	7225 6375 7300 6375
+$Comp
+L power:+5V #PWR0149
+U 1 1 5C5AC845
+P 7000 6275
+F 0 "#PWR0149" H 7000 6125 50  0001 C CNN
+F 1 "+5V" H 7015 6448 50  0000 C CNN
+F 2 "" H 7000 6275 50  0001 C CNN
+F 3 "" H 7000 6275 50  0001 C CNN
+	1    7000 6275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 6275 7000 6575
+Wire Wire Line
+	7000 6575 7300 6575
+$Comp
+L power:-5V #PWR0150
+U 1 1 5C5AC84D
+P 7000 6775
+F 0 "#PWR0150" H 7000 6875 50  0001 C CNN
+F 1 "-5V" V 7015 6903 50  0000 L CNN
+F 2 "" H 7000 6775 50  0001 C CNN
+F 3 "" H 7000 6775 50  0001 C CNN
+	1    7000 6775
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 6775 7300 6775
+Wire Wire Line
+	7300 6975 7000 6975
+Wire Wire Line
+	7300 7175 7000 7175
+Wire Wire Line
+	7300 7275 7000 7275
+$Comp
+L power:-12V #PWR0151
+U 1 1 5C5AC857
+P 7000 6975
+F 0 "#PWR0151" H 7000 7075 50  0001 C CNN
+F 1 "-12V" V 7015 7103 50  0000 L CNN
+F 2 "" H 7000 6975 50  0001 C CNN
+F 3 "" H 7000 6975 50  0001 C CNN
+	1    7000 6975
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12V #PWR0152
+U 1 1 5C5AC85D
+P 7000 7175
+F 0 "#PWR0152" H 7000 7025 50  0001 C CNN
+F 1 "+12V" V 7015 7303 50  0000 L CNN
+F 2 "" H 7000 7175 50  0001 C CNN
+F 3 "" H 7000 7175 50  0001 C CNN
+	1    7000 7175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 5C5AC863
+P 7000 7275
+F 0 "#PWR0153" H 7000 7025 50  0001 C CNN
+F 1 "GND" V 7005 7147 50  0000 R CNN
+F 2 "" H 7000 7275 50  0001 C CNN
+F 3 "" H 7000 7275 50  0001 C CNN
+	1    7000 7275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 9175 7050 9175
+$Comp
+L power:+5V #PWR0154
+U 1 1 5C5AC86A
+P 7050 9175
+F 0 "#PWR0154" H 7050 9025 50  0001 C CNN
+F 1 "+5V" V 7065 9303 50  0000 L CNN
+F 2 "" H 7050 9175 50  0001 C CNN
+F 3 "" H 7050 9175 50  0001 C CNN
+	1    7050 9175
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7300 9375 7050 9375
+$Comp
+L power:GND #PWR0155
+U 1 1 5C5AC871
+P 7050 9375
+F 0 "#PWR0155" H 7050 9125 50  0001 C CNN
+F 1 "GND" V 7055 9247 50  0000 R CNN
+F 2 "" H 7050 9375 50  0001 C CNN
+F 3 "" H 7050 9375 50  0001 C CNN
+	1    7050 9375
+	0    1    1    0   
+$EndComp
+NoConn ~ 7300 7075
+Wire Wire Line
+	7300 6475 7050 6475
+Text Label 7050 6475 0    50   ~ 0
+RESET
+Text HLabel 1200 850  0    50   Input ~ 0
+OSC
+Text HLabel 1200 925  0    50   Input ~ 0
+DRQ[0...3]
+Text HLabel 1200 1000 0    50   Input ~ 0
+~DACK~[0...3]
+Text HLabel 1200 1075 0    50   Input ~ 0
+CLK
+Text HLabel 1200 1150 0    50   Input ~ 0
+~IOW
+Text HLabel 1200 1225 0    50   Input ~ 0
+IRQ[3...7]
+Text HLabel 1200 1300 0    50   Input ~ 0
+TC
+Text HLabel 1200 1375 0    50   Input ~ 0
+ALE
+Text HLabel 1200 1450 0    50   Input ~ 0
+IO
+Text HLabel 1200 1525 0    50   Input ~ 0
+D[0...7]
+Text HLabel 1200 1600 0    50   Input ~ 0
+A[0...19]
+Text HLabel 1200 1675 0    50   Input ~ 0
+IO_READY
+Text HLabel 1200 1750 0    50   Input ~ 0
+AEN
+Text HLabel 1200 1825 0    50   Input ~ 0
+~SMEMW
+Text HLabel 1200 1900 0    50   Input ~ 0
+~SMEMR
 $EndSCHEMATC

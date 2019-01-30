@@ -228,8 +228,6 @@ Text Label 1350 5425 2    50   ~ 0
 ~DEN
 Wire Wire Line
 	1350 5425 1475 5425
-Entry Bus Bus
-	725  4200 825  4300
 Entry Wire Line
 	825  4325 925  4425
 Wire Wire Line
@@ -1620,7 +1618,11 @@ XA[0...19]
 Text Label 2625 9625 2    50   ~ 0
 A[0...19]
 Wire Bus Line
-	725  3700 725  6850
+	725  3700 725  4300
+Text Label 725  4125 1    50   ~ 0
+AD[0...19]
+Wire Bus Line
+	825  4300 725  4300
 Wire Bus Line
 	11175 4050 11175 5750
 Wire Bus Line
@@ -1643,4 +1645,7 @@ Wire Bus Line
 	6400 1350 6400 6950
 Wire Bus Line
 	4175 1175 4175 6850
+Connection ~ 725  4300
+Wire Bus Line
+	725  4300 725  6850
 $EndSCHEMATC
