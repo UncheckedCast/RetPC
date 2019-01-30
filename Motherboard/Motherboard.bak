@@ -477,14 +477,14 @@ Text Notes 975  4450 0    50   ~ 0
 DCLK From IO Decode
 Wire Wire Line
 	7875 5900 8275 5900
+Text Label 8275 5900 2    50   ~ 0
+DCLK
+Text Label 1950 4475 0    50   ~ 0
+DCLK
 Wire Bus Line
 	1050 4075 2200 4075
 Wire Bus Line
 	9450 1850 9450 3050
 Wire Bus Line
 	6950 2900 6950 5100
-Text Label 8275 5900 2    50   ~ 0
-DCLK
-Text Label 1950 4475 0    50   ~ 0
-DCLK
 $EndSCHEMATC

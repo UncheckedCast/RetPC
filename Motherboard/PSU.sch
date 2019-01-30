@@ -15,9 +15,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L atx24:ATX24 J4
+L Motherboard-rescue:ATX24-atx24 J4
 U 1 1 5C30AAEE
 P 2275 2225
+AR Path="/5C30AAEE" Ref="J4"  Part="1" 
+AR Path="/5C30A374/5C30AAEE" Ref="J4"  Part="1" 
 F 0 "J4" H 2275 3062 60  0000 C CNN
 F 1 "ATX24" H 2275 2956 60  0000 C CNN
 F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-24B_2x12x4.20mm_Straight" H 2275 2956 60  0001 C CNN
@@ -319,4 +321,43 @@ $EndComp
 Connection ~ 1850 2625
 Wire Wire Line
 	1850 2625 1850 2675
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J8
+U 1 1 5C5AECD2
+P 1350 1050
+F 0 "J8" H 1400 1367 50  0000 C CNN
+F 1 "3.3V_HEADER" H 1400 1276 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 1350 1050 50  0001 C CNN
+F 3 "~" H 1350 1050 50  0001 C CNN
+	1    1350 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1925 1200 1650 1200
+Wire Wire Line
+	1650 1200 1650 1150
+Connection ~ 1925 1200
+Connection ~ 1650 1050
+Wire Wire Line
+	1650 1050 1650 950 
+Connection ~ 1650 1150
+Wire Wire Line
+	1650 1150 1650 1050
+Wire Wire Line
+	1150 950  1150 1050
+Connection ~ 1150 1050
+Wire Wire Line
+	1150 1050 1150 1150
+$Comp
+L power:GND #PWR05
+U 1 1 5C5B02E8
+P 1150 1150
+F 0 "#PWR05" H 1150 900 50  0001 C CNN
+F 1 "GND" H 1155 977 50  0000 C CNN
+F 2 "" H 1150 1150 50  0001 C CNN
+F 3 "" H 1150 1150 50  0001 C CNN
+	1    1150 1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 1150 1150
 $EndSCHEMATC

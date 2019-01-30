@@ -22,7 +22,7 @@ U 1 1 5C32B2F4
 P 1925 1900
 F 0 "U28" H 2300 2800 50  0000 C CNN
 F 1 "8288" H 2300 2725 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm" H 1925 1900 50  0001 C CIN
+F 2 "Housings_DIP:DIP-20_W7.62mm_Socket" H 1925 1900 50  0001 C CIN
 F 3 "http://www.datasheets360.com/pdf/7208679415653955300" H 1375 2700 50  0001 C CNN
 	1    1925 1900
 	1    0    0    -1  
@@ -120,7 +120,7 @@ U 1 1 5C32EDA5
 P 3000 975
 F 0 "RN1" H 3280 1021 50  0000 L CNN
 F 1 "4.7k" H 3280 930 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 3375 975 50  0001 C CNN
+F 2 "Resistors_THT:R_Array_SIP6" V 3375 975 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 3000 975 50  0001 C CNN
 	1    3000 975 
 	1    0    0    -1  
@@ -953,7 +953,7 @@ U 1 1 5C59AF38
 P 13775 1950
 F 0 "U49" H 13775 2728 50  0000 C CNN
 F 1 "74LS243" H 13775 2637 50  0000 C CNN
-F 2 "Housings_DIP:DIP-12_W7.62mm_Socket" H 13775 1950 50  0001 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 13775 1950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS243" H 13775 1950 50  0001 C CNN
 	1    13775 1950
 	1    0    0    -1  
@@ -963,8 +963,8 @@ L Device:R_Network04 RN2
 U 1 1 5C59B3EE
 P 14825 1300
 F 0 "RN2" H 15005 1346 50  0000 L CNN
-F 1 "R_Network04" H 15005 1255 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP5" V 15100 1300 50  0001 C CNN
+F 1 "4.7k" H 15005 1255 50  0000 L CNN
+F 2 "Resistors_THT:R_Array_SIP5" V 15100 1300 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 14825 1300 50  0001 C CNN
 	1    14825 1300
 	1    0    0    -1  
@@ -1615,6 +1615,10 @@ Wire Bus Line
 	2225 9625 2625 9625
 Wire Bus Line
 	2225 9525 2625 9525
+Text Label 2625 9525 2    50   ~ 0
+XA[0...19]
+Text Label 2625 9625 2    50   ~ 0
+A[0...19]
 Wire Bus Line
 	725  3700 725  6850
 Wire Bus Line
@@ -1639,8 +1643,4 @@ Wire Bus Line
 	6400 1350 6400 6950
 Wire Bus Line
 	4175 1175 4175 6850
-Text Label 2625 9525 2    50   ~ 0
-XA[0...19]
-Text Label 2625 9625 2    50   ~ 0
-A[0...19]
 $EndSCHEMATC
