@@ -3405,8 +3405,6 @@ F 3 "" H 14100 7750 50  0001 C CNN
 	1    14100 7750
 	0    1    1    0   
 $EndComp
-Wire Bus Line
-	4050 4850 4050 6700
 Wire Wire Line
 	4150 4750 4150 5150
 Wire Wire Line
@@ -4004,6 +4002,10 @@ F 3 "" H 11900 7100 50  0001 C CNN
 $EndComp
 Wire Bus Line
 	1650 8050 2150 8050
+Wire Bus Line
+	10350 9800 10350 11000
+Wire Wire Line
+	3900 4850 4150 4850
 Wire Wire Line
 	2550 6350 4750 6350
 Wire Wire Line
@@ -4035,10 +4037,6 @@ Wire Wire Line
 Wire Wire Line
 	3500 5650 4400 5650
 Wire Bus Line
-	10350 9800 10350 11000
-Wire Wire Line
-	3900 4850 4150 4850
-Wire Bus Line
 	6650 5550 7350 5550
 Wire Bus Line
 	4050 6700 4700 6700
@@ -4052,6 +4050,8 @@ Wire Bus Line
 	10350 8500 10350 9800
 Wire Bus Line
 	2150 9700 5950 9700
+Wire Bus Line
+	4050 4850 4050 6700
 Wire Bus Line
 	3400 11000 10350 11000
 Wire Bus Line
