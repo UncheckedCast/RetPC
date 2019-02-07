@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Bus_ISA_8bit J2
+L Motherboard-rescue:Bus_ISA_8bit-Connector J2
 U 1 1 5C18FAE4
 P 3050 3400
 F 0 "J2" H 3050 5167 50  0000 C CNN
@@ -26,7 +26,7 @@ F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 3050 3400 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Bus_ISA_8bit J3
+L Motherboard-rescue:Bus_ISA_8bit-Connector J3
 U 1 1 5C18FB45
 P 5625 3400
 F 0 "J3" H 5625 5167 50  0000 C CNN
@@ -269,7 +269,7 @@ Wire Wire Line
 Text Label 4675 2000 0    50   ~ 0
 RESET
 $Comp
-L Connector:Bus_ISA_8bit J5
+L Motherboard-rescue:Bus_ISA_8bit-Connector J5
 U 1 1 5C4AF46C
 P 3025 7875
 F 0 "J5" H 3025 9642 50  0000 C CNN
@@ -280,7 +280,7 @@ F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 3025 7875 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Bus_ISA_8bit J6
+L Motherboard-rescue:Bus_ISA_8bit-Connector J6
 U 1 1 5C4AF472
 P 5600 7875
 F 0 "J6" H 5600 9642 50  0000 C CNN
@@ -517,7 +517,7 @@ Wire Wire Line
 Text Label 4650 6475 0    50   ~ 0
 RESET
 $Comp
-L Connector:Bus_ISA_8bit J7
+L Motherboard-rescue:Bus_ISA_8bit-Connector J7
 U 1 1 5C5AC837
 P 8000 7875
 F 0 "J7" H 8000 9642 50  0000 C CNN

@@ -451,7 +451,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 3625 4900 4200
 $Comp
-L fdc:ATF750LVC U5
+L Motherboard-rescue:ATF750LVC-fdc U5
 U 1 1 5C531418
 P 8700 3025
 F 0 "U5" H 8700 3892 50  0000 C CNN

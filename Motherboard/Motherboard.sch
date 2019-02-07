@@ -497,12 +497,12 @@ Text Label 8275 5900 2    50   ~ 0
 DCLK
 Text Label 1950 4475 0    50   ~ 0
 DCLK
+Text Label 6950 5075 2    50   ~ 0
+AD[0...19]
 Wire Bus Line
 	1050 4075 2200 4075
 Wire Bus Line
 	9450 1850 9450 3050
 Wire Bus Line
 	6950 2900 6950 5100
-Text Label 6950 5075 2    50   ~ 0
-AD[0...19]
 $EndSCHEMATC
