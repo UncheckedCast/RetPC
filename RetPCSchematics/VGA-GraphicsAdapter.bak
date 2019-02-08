@@ -2126,7 +2126,7 @@ Text GLabel 11850 4650 0    50   BiDi ~ 0
 Vsync
 Wire Wire Line
 	4300 1200 4050 1200
-Text GLabel 4050 1100 2    50   BiDi ~ 0
+Text GLabel 14100 6950 2    50   BiDi ~ 0
 DE
 Text GLabel 11850 4450 0    50   BiDi ~ 0
 DE
@@ -3448,7 +3448,7 @@ F 3 "" H 11900 7100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L IS61LV5128AL-10TLI:IS61LV5128AL-10TLI U11
+L VGA-GraphicsAdapter-rescue:IS61LV5128AL-10TLI-IS61LV5128AL-10TLI U11
 U 1 1 5C745693
 P 5300 3500
 F 0 "U11" H 5300 4915 50  0000 C CNN
@@ -3947,10 +3947,19 @@ Wire Bus Line
 Connection ~ 2150 8000
 Wire Bus Line
 	2150 8000 2150 9700
-Wire Wire Line
-	3550 5550 4250 5550
-Wire Wire Line
-	3600 5450 4200 5450
+Text GLabel 6050 3150 2    50   BiDi ~ 0
+LoadEnable
+$Comp
+L power:GND #PWR0142
+U 1 1 5ED95BF7
+P 4550 3150
+F 0 "#PWR0142" H 4550 2900 50  0001 C CNN
+F 1 "GND" H 4555 2977 50  0000 C CNN
+F 2 "" H 4550 3150 50  0001 C CNN
+F 3 "" H 4550 3150 50  0001 C CNN
+	1    4550 3150
+	0    1    1    0   
+$EndComp
 Wire Wire Line
 	3450 6050 4050 6050
 Wire Wire Line
@@ -3960,15 +3969,17 @@ Wire Wire Line
 Wire Bus Line
 	1650 8000 2150 8000
 Wire Wire Line
-	3650 5350 4150 5350
-Wire Wire Line
 	3500 5650 4050 5650
 Wire Bus Line
 	10350 9800 10350 11000
 Wire Wire Line
 	3700 5250 4100 5250
-Wire Bus Line
-	4050 4850 4050 5650
+Wire Wire Line
+	3650 5350 4150 5350
+Wire Wire Line
+	3600 5450 4200 5450
+Wire Wire Line
+	3550 5550 4250 5550
 Wire Bus Line
 	4400 3350 4400 4800
 Wire Bus Line
@@ -3977,6 +3988,8 @@ Wire Bus Line
 	4050 6700 4700 6700
 Wire Bus Line
 	9850 8950 9850 9800
+Wire Bus Line
+	4050 4850 4050 5650
 Wire Bus Line
 	4050 5650 4050 6700
 Wire Bus Line
@@ -3995,6 +4008,26 @@ Wire Bus Line
 	3400 11000 10350 11000
 Wire Bus Line
 	2150 8000 5950 8000
-Text GLabel 6050 3150 2    50   BiDi ~ 0
-LoadEnable
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5C63632C
+P 15550 1450
+F 0 "H1" H 15650 1496 50  0000 L CNN
+F 1 "MountingHole" H 15650 1405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 15550 1450 50  0001 C CNN
+F 3 "~" H 15550 1450 50  0001 C CNN
+	1    15550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5C6363FC
+P 15550 6150
+F 0 "H2" H 15650 6196 50  0000 L CNN
+F 1 "MountingHole" H 15650 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 15550 6150 50  0001 C CNN
+F 3 "~" H 15550 6150 50  0001 C CNN
+	1    15550 6150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
