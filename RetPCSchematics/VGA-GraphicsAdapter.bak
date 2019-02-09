@@ -595,7 +595,7 @@ Text Label 4200 9850 1    50   ~ 0
 XA15
 Entry Wire Line
 	5850 8000 5950 8100
-Text GLabel 11850 4250 0    50   BiDi ~ 0
+Text GLabel 11850 4350 0    50   BiDi ~ 0
 GClock
 $Comp
 L power:GND #PWR053

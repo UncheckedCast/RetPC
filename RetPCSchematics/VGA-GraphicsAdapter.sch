@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "Digital CGA to DVI-D adapter ISA Card"
 Date ""
-Rev "3.0"
+Rev "4.0"
 Comp "Unchecked Cast"
 Comment1 ""
 Comment2 ""
@@ -3960,6 +3960,28 @@ F 3 "" H 4550 3150 50  0001 C CNN
 	1    4550 3150
 	0    1    1    0   
 $EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5C63632C
+P 15550 1450
+F 0 "H1" H 15650 1496 50  0000 L CNN
+F 1 "MountingHole" H 15650 1405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 15550 1450 50  0001 C CNN
+F 3 "~" H 15550 1450 50  0001 C CNN
+	1    15550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5C6363FC
+P 15550 6150
+F 0 "H2" H 15650 6196 50  0000 L CNN
+F 1 "MountingHole" H 15650 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 15550 6150 50  0001 C CNN
+F 3 "~" H 15550 6150 50  0001 C CNN
+	1    15550 6150
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	3450 6050 4050 6050
 Wire Wire Line
@@ -4008,26 +4030,4 @@ Wire Bus Line
 	3400 11000 10350 11000
 Wire Bus Line
 	2150 8000 5950 8000
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5C63632C
-P 15550 1450
-F 0 "H1" H 15650 1496 50  0000 L CNN
-F 1 "MountingHole" H 15650 1405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 15550 1450 50  0001 C CNN
-F 3 "~" H 15550 1450 50  0001 C CNN
-	1    15550 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5C6363FC
-P 15550 6150
-F 0 "H2" H 15650 6196 50  0000 L CNN
-F 1 "MountingHole" H 15650 6105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 15550 6150 50  0001 C CNN
-F 3 "~" H 15550 6150 50  0001 C CNN
-	1    15550 6150
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
