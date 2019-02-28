@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 8
+Sheet 6 10
 Title ""
 Date ""
 Rev ""
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Motherboard-rescue:ATX24-atx24 J4
+L Motherboard-rescue:ATX24-atx24-Motherboard-rescue J4
 U 1 1 5C30AAEE
 P 2275 2225
 AR Path="/5C30AAEE" Ref="J4"  Part="1" 

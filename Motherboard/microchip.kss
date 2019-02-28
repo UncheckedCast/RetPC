@@ -1,0 +1,67 @@
+
+/* pins */
+(A?)(VCC|VDD) {
+    class: "\1power+";
+    elecType: pin;
+}
+(A?)(VSS|GND) {
+    class: "\1power-";
+    elecType: pin;
+}
+EP {
+    class: "pad";
+    elecType: pin;
+}
+
+(D[0-9]?\+|D[0-9]?\-|VUSB.*|VBUS) {
+    class: "USB";
+}
+
+(^|[^A-Z])R([A-L])[0-9]+ {
+    class: "gpio\2";
+    elecType: bidir;
+}
+(MCLR|VCAP|OSC[1-2]|VBAT) {
+    class: "special";
+}
+MCLR {
+    priority: 1;
+}
+
+/* classes */
+.special {
+    position: left;
+    priority: 10;
+    length: 200;
+}
+.power\+ {
+    sort: asc;
+    position: top;
+    length: 200;
+}
+.power\- {
+    sort: asc;
+    position: bottom;
+    length: 200;
+}
+.pad {
+    sort: asc;
+    position: bottom;
+    length: 200;
+    priority: -10;
+}
+
+.gpio([A-L]) {
+    sort: asc;
+    sortpattern: "(?:^|\/)(R\1[0-9]+)";
+    label: "PORT \1";
+    rect: 10;
+    length: 200;
+}
+
+.USB {
+    position: left;
+    sort: asc;
+    length: 200;
+}
+

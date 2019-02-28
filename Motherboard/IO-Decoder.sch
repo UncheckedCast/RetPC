@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 7 8
+Sheet 7 10
 Title ""
 Date ""
 Rev ""
@@ -1529,14 +1529,6 @@ Wire Wire Line
 	13150 6400 13150 6300
 Wire Wire Line
 	12700 6300 13150 6300
-Wire Wire Line
-	12100 6200 11925 6200
-Wire Wire Line
-	12100 6400 11925 6400
-Text Label 11925 6200 0    50   ~ 0
-~CS7
-Text Label 11925 6400 0    50   ~ 0
-~CS6
 Text Label 12950 5600 0    50   ~ 0
 ~CS6
 Wire Wire Line
@@ -1562,17 +1554,6 @@ F 2 "" H 13150 6100 50  0001 C CNN
 F 3 "" H 13150 6100 50  0001 C CNN
 	1    13150 6100
 	0    1    1    0   
-$EndComp
-$Comp
-L 4xxx:4077 U47
-U 1 1 5C9967BE
-P 12400 6300
-F 0 "U47" H 12400 6625 50  0000 C CNN
-F 1 "4077" H 12400 6534 50  0000 C CNN
-F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 12400 6300 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4076bms.pdf" H 12400 6300 50  0001 C CNN
-	1    12400 6300
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR061
@@ -1623,6 +1604,13 @@ Text Label 725  4125 1    50   ~ 0
 AD[0...19]
 Wire Bus Line
 	825  4300 725  4300
+Connection ~ 725  4300
+Wire Bus Line
+	725  4300 725  6850
+Text HLabel 1300 10225 0    50   Output ~ 0
+N.P.NPI
+Wire Wire Line
+	1300 10225 1500 10225
 Wire Bus Line
 	11175 4050 11175 5750
 Wire Bus Line
@@ -1645,7 +1633,6 @@ Wire Bus Line
 	6400 1350 6400 6950
 Wire Bus Line
 	4175 1175 4175 6850
-Connection ~ 725  4300
-Wire Bus Line
-	725  4300 725  6850
+Text Label 12700 6300 0    50   ~ 0
+ROMADDR
 $EndSCHEMATC

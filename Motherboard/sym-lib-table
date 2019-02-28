@@ -1,3 +1,6 @@
 (sym_lib_table
   (lib (name Motherboard-rescue)(type Legacy)(uri ${KIPRJMOD}/Motherboard-rescue.lib)(options "")(descr ""))
+  (lib (name kipart)(type Legacy)(uri ${KIPRJMOD}/kipart.lib)(options "")(descr ""))
+  (lib (name fdc37b78x)(type Legacy)(uri ${KIPRJMOD}/fdc37b78x.lib)(options "")(descr ""))
+  (lib (name max638bepa+)(type Legacy)(uri ${KIPRJMOD}/max638bepa+.lib)(options "")(descr ""))
 )
