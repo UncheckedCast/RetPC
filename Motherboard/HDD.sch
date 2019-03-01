@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega328-PU U7
+L Motherboard-rescue:ATmega328-PU-MCU_Microchip_ATmega U7
 U 1 1 5C0AE12C
 P 9700 2875
 F 0 "U7" H 9059 2829 50  0000 R CNN

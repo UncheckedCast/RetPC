@@ -506,50 +506,6 @@ Text Label 1950 4475 0    50   ~ 0
 DCLK
 Text Label 6950 5075 2    50   ~ 0
 AD[0...19]
-Text Label 3500 4600 0    50   ~ 0
-RESET
-Wire Wire Line
-	3500 4600 3750 4600
-Wire Wire Line
-	3750 4675 3500 4675
-Text Label 3500 4675 0    50   ~ 0
-OSC
-Wire Wire Line
-	3750 4900 3500 4900
-Text Label 3500 4900 0    50   ~ 0
-CLK
-Wire Wire Line
-	3750 4975 3500 4975
-Text Label 3500 4975 0    50   ~ 0
-~IOW
-Wire Wire Line
-	3750 5125 3275 5125
-Wire Wire Line
-	3275 5125 3275 4475
-Wire Wire Line
-	3275 4475 3075 4475
-Wire Wire Line
-	3750 5200 3500 5200
-Text Label 3500 5200 0    50   ~ 0
-ALE
-Wire Wire Line
-	3750 5275 3500 5275
-Wire Wire Line
-	3750 5575 3500 5575
-Text Label 3500 5575 0    50   ~ 0
-AEN
-Wire Wire Line
-	7975 5100 8225 5100
-Wire Wire Line
-	7975 5200 8225 5200
-Wire Wire Line
-	7975 5300 8225 5300
-Text Label 8225 5100 2    50   ~ 0
-ALE
-Text Label 8225 5200 2    50   ~ 0
-~IOW
-Text Label 8225 5300 2    50   ~ 0
-~MEMW
 Wire Bus Line
 	3750 5350 3275 5350
 Wire Bus Line
@@ -1005,15 +961,5 @@ Wire Bus Line
 Wire Bus Line
 	9450 1850 9450 3050
 Wire Bus Line
-	6950 2900 6950 3675
-Wire Bus Line
-	6950 3675 6950 5100
-Wire Bus Line
-	7400 1350 7400 3675
-$Sheet
-S 12975 4750 750  1575
-U 5D031E3A
-F0 "Sound" 50
-F1 "Sound.sch" 50
-$EndSheet
+	6950 2900 6950 5100
 $EndSCHEMATC

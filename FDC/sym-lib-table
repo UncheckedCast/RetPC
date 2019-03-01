@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name FDC-rescue)(type Legacy)(uri ${KIPRJMOD}/FDC-rescue.lib)(options "")(descr ""))
+)

@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Bus_ISA_8bit J2
+L Motherboard-rescue:Bus_ISA_8bit-Connector J2
 U 1 1 5C18FAE4
 P 3050 3400
 F 0 "J2" H 3050 5167 50  0000 C CNN
@@ -26,7 +26,7 @@ F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 3050 3400 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Bus_ISA_8bit J3
+L Motherboard-rescue:Bus_ISA_8bit-Connector J3
 U 1 1 5C18FB45
 P 5625 3400
 F 0 "J3" H 5625 5167 50  0000 C CNN
@@ -1416,6 +1416,36 @@ F 1 "GND" H 7230 6102 50  0000 C CNN
 F 2 "" H 7225 6275 50  0001 C CNN
 F 3 "" H 7225 6275 50  0001 C CNN
 	1    7225 6275
+L Motherboard-rescue:Bus_ISA_8bit-Connector J5
+U 1 1 5C4AF46C
+P 3025 7875
+F 0 "J5" H 3025 9642 50  0000 C CNN
+F 1 "Bus_ISA_8bit" H 3025 9551 50  0000 C CNN
+F 2 "RetPC:ISA-8-bit" H 3025 7875 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 3025 7875 50  0001 C CNN
+	1    3025 7875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motherboard-rescue:Bus_ISA_8bit-Connector J6
+U 1 1 5C4AF472
+P 5600 7875
+F 0 "J6" H 5600 9642 50  0000 C CNN
+F 1 "Bus_ISA_8bit" H 5600 9551 50  0000 C CNN
+F 2 "RetPC:ISA-8-bit" H 5600 7875 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 5600 7875 50  0001 C CNN
+	1    5600 7875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR047
+U 1 1 5C4AF478
+P 2250 6275
+F 0 "#PWR047" H 2250 6025 50  0001 C CNN
+F 1 "GND" H 2255 6102 50  0000 C CNN
+F 2 "" H 2250 6275 50  0001 C CNN
+F 3 "" H 2250 6275 50  0001 C CNN
+	1    2250 6275
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1680,6 +1710,25 @@ F 1 "GND" H 2255 6102 50  0000 C CNN
 F 2 "" H 2250 6275 50  0001 C CNN
 F 3 "" H 2250 6275 50  0001 C CNN
 	1    2250 6275
+L Motherboard-rescue:Bus_ISA_8bit-Connector J7
+U 1 1 5C5AC837
+P 8000 7875
+F 0 "J7" H 8000 9642 50  0000 C CNN
+F 1 "Bus_ISA_8bit" H 8000 9551 50  0000 C CNN
+F 2 "RetPC:ISA-8-bit" H 8000 7875 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 8000 7875 50  0001 C CNN
+	1    8000 7875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0148
+U 1 1 5C5AC83D
+P 7225 6275
+F 0 "#PWR0148" H 7225 6025 50  0001 C CNN
+F 1 "GND" H 7230 6102 50  0000 C CNN
+F 2 "" H 7225 6275 50  0001 C CNN
+F 3 "" H 7225 6275 50  0001 C CNN
+	1    7225 6275
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
