@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Motherboard-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -146,41 +146,19 @@ F 3 "" H 2100 4900 50  0001 C CNN
 $EndComp
 NoConn ~ 4925 2600
 NoConn ~ 2350 2600
-Text HLabel 11475 1225 0    50   Input ~ 0
+Text HLabel 11555 1260 0    50   Input ~ 0
 RESET
-Text Label 11725 1225 2    50   ~ 0
+Text Label 11805 1260 2    50   ~ 0
 RESET
 Wire Wire Line
-	11475 1225 11725 1225
+	11555 1260 11805 1260
 Wire Wire Line
 	2350 2000 2100 2000
 Text Label 2100 2000 0    50   ~ 0
 RESET
 $Comp
-L Connector:Bus_ISA_8bit J5
-U 1 1 5C4AF46C
-P 3025 7875
-F 0 "J5" H 3025 9642 50  0000 C CNN
-F 1 "Bus_ISA_8bit" H 3025 9551 50  0000 C CNN
-F 2 "RetPC:ISA-8-bit" H 3025 7875 50  0001 C CNN
-F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 3025 7875 50  0001 C CNN
-	1    3025 7875
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Bus_ISA_8bit J6
-U 1 1 5C4AF472
-P 5600 7875
-F 0 "J6" H 5600 9642 50  0000 C CNN
-F 1 "Bus_ISA_8bit" H 5600 9551 50  0000 C CNN
-F 2 "RetPC:ISA-8-bit" H 5600 7875 50  0001 C CNN
-F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 5600 7875 50  0001 C CNN
-	1    5600 7875
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Bus_ISA_8bit J7
-U 1 1 5C5AC837
+U 1 1 5C82E422
 P 8000 7875
 F 0 "J7" H 8000 9642 50  0000 C CNN
 F 1 "Bus_ISA_8bit" H 8000 9551 50  0000 C CNN
@@ -190,36 +168,36 @@ F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 8000 7875 5
 	1    0    0    -1  
 $EndComp
 NoConn ~ 7300 7075
-Text HLabel 11475 1300 0    50   Input ~ 0
+Text HLabel 11555 1335 0    50   Input ~ 0
 OSC
-Text HLabel 11475 1375 0    50   Input ~ 0
+Text HLabel 11555 1410 0    50   Input ~ 0
 DRQ[0...3]
-Text HLabel 11475 1450 0    50   Input ~ 0
+Text HLabel 11555 1485 0    50   Input ~ 0
 ~DACK~[0...3]
-Text HLabel 11475 1525 0    50   Input ~ 0
+Text HLabel 11555 1560 0    50   Input ~ 0
 CLK
-Text HLabel 11475 1600 0    50   Input ~ 0
+Text HLabel 11555 1635 0    50   Input ~ 0
 ~IOW
-Text HLabel 11475 1675 0    50   Input ~ 0
-IRQ[3...7]
-Text HLabel 11475 1750 0    50   Input ~ 0
+Text HLabel 11555 1710 0    50   Input ~ 0
+IRQ[2...7]
+Text HLabel 11555 1785 0    50   Input ~ 0
 TC
-Text HLabel 11475 1825 0    50   Input ~ 0
+Text HLabel 11555 1860 0    50   Input ~ 0
 ALE
-Text HLabel 11475 1900 0    50   Input ~ 0
-IO
-Text HLabel 11475 1975 0    50   Input ~ 0
+Text HLabel 11555 1935 0    50   Input ~ 0
+IOCHCK
+Text HLabel 11555 2010 0    50   Input ~ 0
 D[0...7]
-Text HLabel 11475 2050 0    50   Input ~ 0
+Text HLabel 11555 2085 0    50   Input ~ 0
 A[0...19]
-Text HLabel 11475 2125 0    50   Input ~ 0
+Text HLabel 11555 2160 0    50   Input ~ 0
 IO_READY
-Text HLabel 11475 2200 0    50   Input ~ 0
+Text HLabel 11555 2235 0    50   Input ~ 0
 AEN
-Text HLabel 11475 2275 0    50   Input ~ 0
-~SMEMW
-Text HLabel 11475 2350 0    50   Input ~ 0
-~SMEMR
+Text HLabel 11555 2310 0    50   Input ~ 0
+~MEMW
+Text HLabel 11555 2385 0    50   Input ~ 0
+~MEMR
 $Comp
 L Device:CP C5
 U 1 1 5C5B5BAC
@@ -324,36 +302,36 @@ F 3 "" H 14750 1125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11475 1300 11725 1300
+	11555 1335 11805 1335
 Wire Wire Line
-	11475 1525 11725 1525
+	11555 1560 11805 1560
 Wire Wire Line
-	11475 1600 11725 1600
+	11555 1635 11805 1635
 Wire Wire Line
-	11475 1750 11725 1750
+	11555 1785 11805 1785
 Wire Wire Line
-	11475 1825 11725 1825
-Text Label 11725 1300 2    50   ~ 0
+	11555 1860 11805 1860
+Text Label 11805 1335 2    50   ~ 0
 OSC
-Text Label 11725 1525 2    50   ~ 0
+Text Label 11805 1560 2    50   ~ 0
 CLK
-Text Label 11725 1600 2    50   ~ 0
+Text Label 11805 1635 2    50   ~ 0
 ~IOW
-Text Label 11725 1750 2    50   ~ 0
+Text Label 11805 1785 2    50   ~ 0
 TC
-Text Label 11725 1825 2    50   ~ 0
+Text Label 11805 1860 2    50   ~ 0
 ALE
-Text Label 11850 1975 2    50   ~ 0
+Text Label 11930 2010 2    50   ~ 0
 D[0...7]
 Wire Bus Line
-	11475 1975 11850 1975
+	11555 2010 11930 2010
 Wire Bus Line
-	11475 2050 11850 2050
-Text Label 11850 2050 2    50   ~ 0
+	11555 2085 11930 2085
+Text Label 11930 2085 2    50   ~ 0
 A[0...19]
 Wire Wire Line
-	11475 2200 11725 2200
-Text Label 11725 2200 2    50   ~ 0
+	11555 2235 11805 2235
+Text Label 11805 2235 2    50   ~ 0
 AEN
 Wire Wire Line
 	2350 3100 2125 3100
@@ -667,14 +645,6 @@ Wire Wire Line
 	4925 2000 4675 2000
 Text Label 4675 2000 0    50   ~ 0
 RESET
-Wire Wire Line
-	4925 3100 4700 3100
-Text Label 4700 3100 0    50   ~ 0
-~IOW
-Wire Wire Line
-	4925 3800 4700 3800
-Text Label 4700 3800 0    50   ~ 0
-CLK
 Wire Wire Line
 	4925 4500 4700 4500
 Wire Wire Line
@@ -1408,27 +1378,8 @@ A18
 Text Label 3725 7475 0    50   ~ 0
 A19
 $Comp
-L power:GND #PWR0148
-U 1 1 5C6DDBA9
-P 7225 6275
-F 0 "#PWR0148" H 7225 6025 50  0001 C CNN
-F 1 "GND" H 7230 6102 50  0000 C CNN
-F 2 "" H 7225 6275 50  0001 C CNN
-F 3 "" H 7225 6275 50  0001 C CNN
-	1    7225 6275
-L Motherboard-rescue:Bus_ISA_8bit-Connector J5
-U 1 1 5C4AF46C
-P 3025 7875
-F 0 "J5" H 3025 9642 50  0000 C CNN
-F 1 "Bus_ISA_8bit" H 3025 9551 50  0000 C CNN
-F 2 "RetPC:ISA-8-bit" H 3025 7875 50  0001 C CNN
-F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 3025 7875 50  0001 C CNN
-	1    3025 7875
-	1    0    0    -1  
-$EndComp
-$Comp
 L Motherboard-rescue:Bus_ISA_8bit-Connector J6
-U 1 1 5C4AF472
+U 1 1 5C82E421
 P 5600 7875
 F 0 "J6" H 5600 9642 50  0000 C CNN
 F 1 "Bus_ISA_8bit" H 5600 9551 50  0000 C CNN
@@ -1549,14 +1500,6 @@ Wire Wire Line
 	7300 6475 7050 6475
 Text Label 7050 6475 0    50   ~ 0
 RESET
-Wire Wire Line
-	7300 7575 7075 7575
-Text Label 7075 7575 0    50   ~ 0
-~IOW
-Wire Wire Line
-	7300 8275 7075 8275
-Text Label 7075 8275 0    50   ~ 0
-CLK
 Wire Wire Line
 	7300 8975 7075 8975
 Wire Wire Line
@@ -1682,14 +1625,6 @@ Wire Wire Line
 Text Label 4650 6475 0    50   ~ 0
 RESET
 Wire Wire Line
-	4900 7575 4675 7575
-Text Label 4675 7575 0    50   ~ 0
-~IOW
-Wire Wire Line
-	4900 8275 4675 8275
-Text Label 4675 8275 0    50   ~ 0
-CLK
-Wire Wire Line
 	4900 8975 4675 8975
 Wire Wire Line
 	4900 9075 4675 9075
@@ -1701,25 +1636,6 @@ Text Label 4675 9075 0    50   ~ 0
 ALE
 Text Label 4675 8975 0    50   ~ 0
 TC
-$Comp
-L power:GND #PWR0164
-U 1 1 5C74D50E
-P 2250 6275
-F 0 "#PWR0164" H 2250 6025 50  0001 C CNN
-F 1 "GND" H 2255 6102 50  0000 C CNN
-F 2 "" H 2250 6275 50  0001 C CNN
-F 3 "" H 2250 6275 50  0001 C CNN
-	1    2250 6275
-L Motherboard-rescue:Bus_ISA_8bit-Connector J7
-U 1 1 5C5AC837
-P 8000 7875
-F 0 "J7" H 8000 9642 50  0000 C CNN
-F 1 "Bus_ISA_8bit" H 8000 9551 50  0000 C CNN
-F 2 "RetPC:ISA-8-bit" H 8000 7875 50  0001 C CNN
-F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 8000 7875 50  0001 C CNN
-	1    8000 7875
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0148
 U 1 1 5C5AC83D
@@ -1833,14 +1749,6 @@ Wire Wire Line
 Text Label 2075 6475 0    50   ~ 0
 RESET
 Wire Wire Line
-	2325 7575 2100 7575
-Text Label 2100 7575 0    50   ~ 0
-~IOW
-Wire Wire Line
-	2325 8275 2100 8275
-Text Label 2100 8275 0    50   ~ 0
-CLK
-Wire Wire Line
 	2325 8975 2100 8975
 Wire Wire Line
 	2325 9075 2100 9075
@@ -1852,6 +1760,401 @@ Text Label 2100 9075 0    50   ~ 0
 ALE
 Text Label 2100 8975 0    50   ~ 0
 TC
+$Comp
+L Connector:Bus_ISA_8bit J5
+U 1 1 5C4AF46C
+P 3025 7875
+F 0 "J5" H 3025 9642 50  0000 C CNN
+F 1 "Bus_ISA_8bit" H 3025 9551 50  0000 C CNN
+F 2 "RetPC:ISA-8-bit" H 3025 7875 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 3025 7875 50  0001 C CNN
+	1    3025 7875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11555 2160 12205 2160
+$Comp
+L Device:R_Small R20
+U 1 1 5D15F27E
+P 12205 2060
+F 0 "R20" H 12264 2106 50  0000 L CNN
+F 1 "R_Small" H 12264 2015 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 12205 2060 50  0001 C CNN
+F 3 "~" H 12205 2060 50  0001 C CNN
+	1    12205 2060
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0215
+U 1 1 5D15FC4A
+P 12205 1960
+F 0 "#PWR0215" H 12205 1810 50  0001 C CNN
+F 1 "+5V" H 12220 2133 50  0000 C CNN
+F 2 "" H 12205 1960 50  0001 C CNN
+F 3 "" H 12205 1960 50  0001 C CNN
+	1    12205 1960
+	1    0    0    -1  
+$EndComp
+Text Label 11815 2160 0    50   ~ 0
+IO_RDY
+Wire Wire Line
+	3750 2800 4000 2800
+Text Label 4000 2800 2    50   ~ 0
+IO_RDY
+Text Label 6575 2800 2    50   ~ 0
+IO_RDY
+Wire Wire Line
+	6325 2800 6575 2800
+Text Label 3970 7275 2    50   ~ 0
+IO_RDY
+Wire Wire Line
+	3725 7275 3970 7275
+Wire Wire Line
+	6300 7275 6550 7275
+Text Label 6550 7275 2    50   ~ 0
+IO_RDY
+Wire Wire Line
+	8700 7275 8950 7275
+Text Label 8950 7275 2    50   ~ 0
+IO_RDY
+Wire Wire Line
+	2350 2200 2100 2200
+Text Label 2100 2200 0    50   ~ 0
+IRQ2
+Wire Wire Line
+	2350 3900 2125 3900
+Text Label 2125 3900 0    50   ~ 0
+IRQ7
+Wire Wire Line
+	2350 4000 2125 4000
+Text Label 2125 4000 0    50   ~ 0
+IRQ6
+Wire Wire Line
+	2350 4100 2125 4100
+Text Label 2125 4100 0    50   ~ 0
+IRQ5
+Wire Wire Line
+	2350 4200 2125 4200
+Text Label 2125 4200 0    50   ~ 0
+IRQ4
+Wire Wire Line
+	2350 4300 2125 4300
+Text Label 2125 4300 0    50   ~ 0
+IRQ3
+Wire Wire Line
+	2350 4400 2125 4400
+Text Label 2125 4400 0    50   ~ 0
+~DACK2
+Wire Wire Line
+	2350 3200 2125 3200
+Text Label 2125 3200 0    50   ~ 0
+~IOR
+Wire Wire Line
+	2350 3300 2125 3300
+Text Label 2125 3300 0    50   ~ 0
+~DACK3
+Wire Wire Line
+	2350 3400 2125 3400
+Text Label 2125 3400 0    50   ~ 0
+DRQ3
+Wire Wire Line
+	2350 3500 2125 3500
+Text Label 2125 3500 0    50   ~ 0
+~DACK1
+Wire Wire Line
+	2350 3600 2125 3600
+Text Label 2125 3600 0    50   ~ 0
+DRQ1
+Wire Wire Line
+	2350 3700 2125 3700
+Text Label 2125 3700 0    50   ~ 0
+~DACK0
+Wire Wire Line
+	2350 2900 2125 2900
+Text Label 2125 2900 0    50   ~ 0
+~MEMW
+Wire Wire Line
+	2350 3000 2125 3000
+Text Label 2125 3000 0    50   ~ 0
+~MEMR
+Wire Wire Line
+	2350 2400 2100 2400
+Text Label 2100 2400 0    50   ~ 0
+DRQ2
+Text Label 4025 1900 2    50   ~ 0
+IOCHCK
+Wire Wire Line
+	3750 1900 4025 1900
+Wire Wire Line
+	4925 3100 4700 3100
+Text Label 4700 3100 0    50   ~ 0
+~IOW
+Wire Wire Line
+	4925 3800 4700 3800
+Text Label 4700 3800 0    50   ~ 0
+CLK
+Wire Wire Line
+	4925 3900 4700 3900
+Text Label 4700 3900 0    50   ~ 0
+IRQ7
+Wire Wire Line
+	4925 4000 4700 4000
+Text Label 4700 4000 0    50   ~ 0
+IRQ6
+Wire Wire Line
+	4925 4100 4700 4100
+Text Label 4700 4100 0    50   ~ 0
+IRQ5
+Wire Wire Line
+	4925 4200 4700 4200
+Text Label 4700 4200 0    50   ~ 0
+IRQ4
+Wire Wire Line
+	4925 4300 4700 4300
+Text Label 4700 4300 0    50   ~ 0
+IRQ3
+Wire Wire Line
+	4925 4400 4700 4400
+Text Label 4700 4400 0    50   ~ 0
+~DACK2
+Wire Wire Line
+	4925 3200 4700 3200
+Text Label 4700 3200 0    50   ~ 0
+~IOR
+Wire Wire Line
+	4925 3300 4700 3300
+Text Label 4700 3300 0    50   ~ 0
+~DACK3
+Wire Wire Line
+	4925 3400 4700 3400
+Text Label 4700 3400 0    50   ~ 0
+DRQ3
+Wire Wire Line
+	4925 3500 4700 3500
+Text Label 4700 3500 0    50   ~ 0
+~DACK1
+Wire Wire Line
+	4925 3600 4700 3600
+Text Label 4700 3600 0    50   ~ 0
+DRQ1
+Wire Wire Line
+	4925 3700 4700 3700
+Text Label 4700 3700 0    50   ~ 0
+~DACK0
+Wire Wire Line
+	4925 2900 4700 2900
+Text Label 4700 2900 0    50   ~ 0
+~MEMW
+Wire Wire Line
+	4925 3000 4700 3000
+Text Label 4700 3000 0    50   ~ 0
+~MEMR
+Wire Wire Line
+	2325 7575 2100 7575
+Text Label 2100 7575 0    50   ~ 0
+~IOW
+Wire Wire Line
+	2325 8275 2100 8275
+Text Label 2100 8275 0    50   ~ 0
+CLK
+Wire Wire Line
+	2325 8375 2100 8375
+Text Label 2100 8375 0    50   ~ 0
+IRQ7
+Wire Wire Line
+	2325 8475 2100 8475
+Text Label 2100 8475 0    50   ~ 0
+IRQ6
+Wire Wire Line
+	2325 8575 2100 8575
+Text Label 2100 8575 0    50   ~ 0
+IRQ5
+Wire Wire Line
+	2325 8675 2100 8675
+Text Label 2100 8675 0    50   ~ 0
+IRQ4
+Wire Wire Line
+	2325 8775 2100 8775
+Text Label 2100 8775 0    50   ~ 0
+IRQ3
+Wire Wire Line
+	2325 8875 2100 8875
+Text Label 2100 8875 0    50   ~ 0
+~DACK2
+Wire Wire Line
+	2325 7675 2100 7675
+Text Label 2100 7675 0    50   ~ 0
+~IOR
+Wire Wire Line
+	2325 7775 2100 7775
+Text Label 2100 7775 0    50   ~ 0
+~DACK3
+Wire Wire Line
+	2325 7875 2100 7875
+Text Label 2100 7875 0    50   ~ 0
+DRQ3
+Wire Wire Line
+	2325 7975 2100 7975
+Text Label 2100 7975 0    50   ~ 0
+~DACK1
+Wire Wire Line
+	2325 8075 2100 8075
+Text Label 2100 8075 0    50   ~ 0
+DRQ1
+Wire Wire Line
+	2325 8175 2100 8175
+Text Label 2100 8175 0    50   ~ 0
+~DACK0
+Wire Wire Line
+	2325 7375 2100 7375
+Text Label 2100 7375 0    50   ~ 0
+~MEMW
+Wire Wire Line
+	2325 7475 2100 7475
+Text Label 2100 7475 0    50   ~ 0
+~MEMR
+Wire Wire Line
+	4900 7575 4675 7575
+Text Label 4675 7575 0    50   ~ 0
+~IOW
+Wire Wire Line
+	4900 8275 4675 8275
+Text Label 4675 8275 0    50   ~ 0
+CLK
+Wire Wire Line
+	4900 8375 4675 8375
+Text Label 4675 8375 0    50   ~ 0
+IRQ7
+Wire Wire Line
+	4900 8475 4675 8475
+Text Label 4675 8475 0    50   ~ 0
+IRQ6
+Wire Wire Line
+	4900 8575 4675 8575
+Text Label 4675 8575 0    50   ~ 0
+IRQ5
+Wire Wire Line
+	4900 8675 4675 8675
+Text Label 4675 8675 0    50   ~ 0
+IRQ4
+Wire Wire Line
+	4900 8775 4675 8775
+Text Label 4675 8775 0    50   ~ 0
+IRQ3
+Wire Wire Line
+	4900 8875 4675 8875
+Text Label 4675 8875 0    50   ~ 0
+~DACK2
+Wire Wire Line
+	4900 7675 4675 7675
+Text Label 4675 7675 0    50   ~ 0
+~IOR
+Wire Wire Line
+	4900 7775 4675 7775
+Text Label 4675 7775 0    50   ~ 0
+~DACK3
+Wire Wire Line
+	4900 7875 4675 7875
+Text Label 4675 7875 0    50   ~ 0
+DRQ3
+Wire Wire Line
+	4900 7975 4675 7975
+Text Label 4675 7975 0    50   ~ 0
+~DACK1
+Wire Wire Line
+	4900 8075 4675 8075
+Text Label 4675 8075 0    50   ~ 0
+DRQ1
+Wire Wire Line
+	4900 8175 4675 8175
+Text Label 4675 8175 0    50   ~ 0
+~DACK0
+Wire Wire Line
+	4900 7375 4675 7375
+Text Label 4675 7375 0    50   ~ 0
+~MEMW
+Wire Wire Line
+	4900 7475 4675 7475
+Text Label 4675 7475 0    50   ~ 0
+~MEMR
+Text Label 7075 7475 0    50   ~ 0
+~MEMR
+Wire Wire Line
+	7300 7475 7075 7475
+Text Label 7075 7375 0    50   ~ 0
+~MEMW
+Wire Wire Line
+	7300 7375 7075 7375
+Text Label 7075 8175 0    50   ~ 0
+~DACK0
+Wire Wire Line
+	7300 8175 7075 8175
+Text Label 7075 8075 0    50   ~ 0
+DRQ1
+Wire Wire Line
+	7300 8075 7075 8075
+Text Label 7075 7975 0    50   ~ 0
+~DACK1
+Wire Wire Line
+	7300 7975 7075 7975
+Text Label 7075 7875 0    50   ~ 0
+DRQ3
+Wire Wire Line
+	7300 7875 7075 7875
+Text Label 7075 7775 0    50   ~ 0
+~DACK3
+Wire Wire Line
+	7300 7775 7075 7775
+Text Label 7075 7675 0    50   ~ 0
+~IOR
+Wire Wire Line
+	7300 7675 7075 7675
+Text Label 7075 8875 0    50   ~ 0
+~DACK2
+Wire Wire Line
+	7300 8875 7075 8875
+Text Label 7075 8775 0    50   ~ 0
+IRQ3
+Wire Wire Line
+	7300 8775 7075 8775
+Text Label 7075 8675 0    50   ~ 0
+IRQ4
+Wire Wire Line
+	7300 8675 7075 8675
+Text Label 7075 8575 0    50   ~ 0
+IRQ5
+Wire Wire Line
+	7300 8575 7075 8575
+Text Label 7075 8475 0    50   ~ 0
+IRQ6
+Wire Wire Line
+	7300 8475 7075 8475
+Text Label 7075 8375 0    50   ~ 0
+IRQ7
+Wire Wire Line
+	7300 8375 7075 8375
+Text Label 7075 8275 0    50   ~ 0
+CLK
+Wire Wire Line
+	7300 8275 7075 8275
+Text Label 7075 7575 0    50   ~ 0
+~IOW
+Wire Wire Line
+	7300 7575 7075 7575
+Wire Wire Line
+	4925 2200 4670 2200
+Text Label 4670 2200 0    50   ~ 0
+IRQ2
+Wire Wire Line
+	4925 2400 4670 2400
+Text Label 4670 2400 0    50   ~ 0
+DRQ2
+Wire Wire Line
+	2325 6675 2075 6675
+Wire Wire Line
+	2325 6875 2075 6875
+NoConn ~ 2325 7075
+NoConn ~ 4900 7075
 Wire Bus Line
 	4050 6375 4050 7275
 Wire Bus Line

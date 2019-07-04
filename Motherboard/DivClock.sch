@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Motherboard-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -586,4 +586,8 @@ Text Label 7825 3125 0    50   ~ 0
 OSC_INT
 Wire Wire Line
 	3975 1450 4275 1450
+Text HLabel 9200 3125 2    50   Output ~ 0
+PCLK
+Text HLabel 9200 3025 2    50   Output ~ 0
+~RESET
 $EndSCHEMATC

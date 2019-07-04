@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Motherboard-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -384,6 +384,8 @@ Wire Wire Line
 	8775 2675 9100 2675
 Wire Wire Line
 	8775 2775 9100 2775
+Text Notes 5725 2375 0    50   ~ 0
+Port 32xh
 Wire Bus Line
 	8675 2525 8675 2675
 Wire Bus Line

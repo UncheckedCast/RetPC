@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Motherboard-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Interface_USB:FT231XS U8
+L Motherboard-rescue:FT231XS-Interface_USB U8
 U 1 1 5C634F5B
 P 10125 2425
 F 0 "U8" H 10125 2500 50  0000 C CNN
@@ -1239,25 +1239,25 @@ Entry Wire Line
 Wire Bus Line
 	5750 7650 5450 7650
 Text Label 5450 7650 0    50   ~ 0
-XD[0...7]
+D[0...7]
 Text HLabel 5450 7650 0    50   Input ~ 0
-XD[0...7]
+D[0...7]
 Text Label 5850 7825 0    50   ~ 0
-XD0
+D0
 Text Label 5850 7925 0    50   ~ 0
-XD1
+D1
 Text Label 5850 8025 0    50   ~ 0
-XD2
+D2
 Text Label 5850 8125 0    50   ~ 0
-XD3
+D3
 Text Label 5850 8325 0    50   ~ 0
-XD4
+D4
 Text Label 5850 8425 0    50   ~ 0
-XD5
+D5
 Text Label 5850 8525 0    50   ~ 0
-XD6
+D6
 Text Label 5850 8625 0    50   ~ 0
-XD7
+D7
 NoConn ~ 8925 8825
 Text HLabel 6050 7625 0    50   Input ~ 0
 ~IOW
@@ -1337,6 +1337,12 @@ Wire Wire Line
 	8925 7725 9025 7725
 Wire Wire Line
 	9025 7625 8925 7625
+Text HLabel 6125 8725 0    50   Input ~ 0
+RESET_DRV
+NoConn ~ 8925 7525
+NoConn ~ 8925 7425
+NoConn ~ 8925 7325
+NoConn ~ 8925 7225
 Wire Bus Line
 	5750 7650 5750 8525
 Wire Bus Line
