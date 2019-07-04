@@ -1,0 +1,23 @@
+Name     AddrDecode ;
+PartNo   01A ;
+Date     2019-03-10 ;
+Revision 01 ;
+Designer MLind ;
+Company  uncheckedcast ;
+Assembly None ;
+Location None;
+Device   g22v10;
+
+/* *************** INPUT PINS *********************/
+PIN [1..11] = [a19..9];
+PIN [13..21] = [a8..0];
+
+/* *************** OUTPUT PINS *********************/
+PIN 23   = SEL                        ; /*                                 */ 
+
+/*        EQUATIONS                       */
+
+
+field addr = [a19..0];
+
+SEL = addr:[3D0..3DF] # addr:[B8000..BBFFF];
