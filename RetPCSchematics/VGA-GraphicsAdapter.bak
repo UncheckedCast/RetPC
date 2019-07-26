@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "Digital CGA to DVI-D adapter ISA Card"
 Date ""
-Rev "4.0"
+Rev "4.0C"
 Comp "Unchecked Cast"
 Comment1 "Made by Mattias Lind and Rickard Doverfelt"
 Comment2 ""
@@ -3164,54 +3164,6 @@ Wire Wire Line
 	2200 1500 2150 1500
 Wire Wire Line
 	3700 1500 3750 1500
-Wire Wire Line
-	3150 5650 3700 5650
-Wire Bus Line
-	1650 8000 2150 8000
-Wire Wire Line
-	2200 6350 3700 6350
-Wire Wire Line
-	3000 5850 3700 5850
-Wire Wire Line
-	3100 6050 3700 6050
-Wire Wire Line
-	3300 5350 3800 5350
-Wire Wire Line
-	3250 5450 3850 5450
-Wire Wire Line
-	3200 5550 3900 5550
-Wire Bus Line
-	10350 9800 10350 11000
-Wire Wire Line
-	3350 5250 3750 5250
-Wire Bus Line
-	4050 3350 4050 4800
-Wire Bus Line
-	3700 4850 3700 5650
-Wire Bus Line
-	6300 5950 7450 5950
-Wire Bus Line
-	9850 8950 9850 9800
-Wire Bus Line
-	3700 5650 3700 6700
-Wire Bus Line
-	5950 2850 5950 5650
-Wire Bus Line
-	6300 2800 6300 4800
-Wire Bus Line
-	3700 6700 4700 6700
-Wire Bus Line
-	1850 6700 3700 6700
-Wire Bus Line
-	8050 8850 8050 9800
-Wire Bus Line
-	10350 8500 10350 9800
-Wire Bus Line
-	2150 9700 5950 9700
-Wire Bus Line
-	3400 11000 10350 11000
-Wire Bus Line
-	2150 8000 5950 8000
 Text Label 3750 1500 0    50   ~ 0
 VA18
 Text GLabel 1550 1700 1    50   BiDi ~ 0
@@ -3282,4 +3234,52 @@ F 3 "" H 9550 8000 50  0001 C CNN
 	1    9550 8000
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	3150 5650 3700 5650
+Wire Bus Line
+	1650 8000 2150 8000
+Wire Wire Line
+	2200 6350 3700 6350
+Wire Wire Line
+	3000 5850 3700 5850
+Wire Wire Line
+	3100 6050 3700 6050
+Wire Bus Line
+	10350 9800 10350 11000
+Wire Wire Line
+	3350 5250 3750 5250
+Wire Wire Line
+	3300 5350 3800 5350
+Wire Wire Line
+	3250 5450 3850 5450
+Wire Wire Line
+	3200 5550 3900 5550
+Wire Bus Line
+	4050 3350 4050 4800
+Wire Bus Line
+	6300 5950 7450 5950
+Wire Bus Line
+	9850 8950 9850 9800
+Wire Bus Line
+	3700 4850 3700 5650
+Wire Bus Line
+	3700 5650 3700 6700
+Wire Bus Line
+	5950 2850 5950 5650
+Wire Bus Line
+	6300 2800 6300 4800
+Wire Bus Line
+	3700 6700 4700 6700
+Wire Bus Line
+	1850 6700 3700 6700
+Wire Bus Line
+	8050 8850 8050 9800
+Wire Bus Line
+	10350 8500 10350 9800
+Wire Bus Line
+	2150 9700 5950 9700
+Wire Bus Line
+	3400 11000 10350 11000
+Wire Bus Line
+	2150 8000 5950 8000
 $EndSCHEMATC
