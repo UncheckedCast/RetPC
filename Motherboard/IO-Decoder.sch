@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Motherboard-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -1645,9 +1645,11 @@ F 3 "" H 10350 2800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L RAM:AS6C8008 U42
+L Motherboard-rescue:AS6C8008-RAM U42
 U 1 1 5CA57105
 P 5155 9710
+AR Path="/5CA57105" Ref="U42"  Part="1" 
+AR Path="/5C32B2C3/5CA57105" Ref="U42"  Part="1" 
 F 0 "U42" H 5155 11038 50  0000 C CNN
 F 1 "AS6C8008" H 5155 10947 50  0000 C CNN
 F 2 "Package_SO:TSSOP-44_4.4x11.2mm_P0.5mm" H 5155 9710 50  0001 C CNN

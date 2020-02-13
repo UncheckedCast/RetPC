@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Motherboard-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -273,7 +273,7 @@ F 3 "" H 4925 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TI_Sound:SN76489A-ALT U14
+L Motherboard-rescue:SN76489A-ALT-TI_Sound U14
 U 1 1 5C81A05B
 P 4925 1450
 F 0 "U14" H 4625 1950 50  0000 C CNN

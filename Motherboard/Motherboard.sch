@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Motherboard-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -2027,6 +2027,8 @@ Text Label 3250 9355 0    50   ~ 0
 ~INTR2CS
 Wire Wire Line
 	11960 9155 12220 9155
+Text Notes 3470 8860 0    50   ~ 0
+Lista ut NMI Addr...\nAT använder PROM för avkodning
 Wire Bus Line
 	2005 9450 2005 9650
 Wire Bus Line
@@ -2045,6 +2047,4 @@ Wire Bus Line
 	6950 3675 6950 5100
 Wire Bus Line
 	7400 1350 7400 3675
-Text Notes 3470 8860 0    50   ~ 0
-Lista ut NMI Addr...\nAT använder PROM för avkodning
 $EndSCHEMATC

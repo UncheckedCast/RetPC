@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Motherboard-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -2149,30 +2149,53 @@ Wire Wire Line
 	4925 2400 4670 2400
 Text Label 4670 2400 0    50   ~ 0
 DRQ2
-Wire Wire Line
-	2325 6675 2075 6675
-Wire Wire Line
-	2325 6875 2075 6875
 NoConn ~ 2325 7075
 NoConn ~ 4900 7075
-Wire Bus Line
-	4050 6375 4050 7275
-Wire Bus Line
-	6625 6375 6625 7275
-Wire Bus Line
-	9025 6375 9025 7275
-Wire Bus Line
-	6650 1900 6650 2800
+Text Label 4620 6675 0    50   ~ 0
+IRQ2
+Wire Wire Line
+	4620 6675 4900 6675
+Text Label 1820 6675 0    50   ~ 0
+IRQ2
+Wire Wire Line
+	1820 6675 2325 6675
+Wire Wire Line
+	4900 6675 4900 6700
+Connection ~ 4900 6675
+Wire Wire Line
+	7300 6675 7045 6675
+Text Label 7045 6675 0    50   ~ 0
+IRQ2
+Wire Wire Line
+	7300 6875 7045 6875
+Text Label 7045 6875 0    50   ~ 0
+DRQ2
+Wire Wire Line
+	4900 6875 4645 6875
+Text Label 4645 6875 0    50   ~ 0
+DRQ2
+Text Label 1820 6875 0    50   ~ 0
+DRQ2
+Wire Wire Line
+	1820 6875 2325 6875
 Wire Bus Line
 	4075 1900 4075 2800
 Wire Bus Line
-	4050 7575 4050 9750
+	6650 1900 6650 2800
 Wire Bus Line
-	6625 7575 6625 9750
+	9025 6375 9025 7275
 Wire Bus Line
-	9025 7575 9025 9750
+	6625 6375 6625 7275
+Wire Bus Line
+	4050 6375 4050 7275
+Wire Bus Line
+	4075 3100 4075 5275
 Wire Bus Line
 	6650 3100 6650 5275
 Wire Bus Line
-	4075 3100 4075 5275
+	9025 7575 9025 9750
+Wire Bus Line
+	6625 7575 6625 9750
+Wire Bus Line
+	4050 7575 4050 9750
 $EndSCHEMATC
