@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:VGA-GraphicsAdapter-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -3191,10 +3191,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 5650 10350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR01
 U 1 1 5D6E5537
 P 3200 10350
-F 0 "#PWR?" H 3200 10200 50  0001 C CNN
+F 0 "#PWR01" H 3200 10200 50  0001 C CNN
 F 1 "+3.3V" H 3215 10523 50  0000 C CNN
 F 2 "" H 3200 10350 50  0001 C CNN
 F 3 "" H 3200 10350 50  0001 C CNN
@@ -3202,10 +3202,10 @@ F 3 "" H 3200 10350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR02
 U 1 1 5D6E5642
 P 4850 10350
-F 0 "#PWR?" H 4850 10200 50  0001 C CNN
+F 0 "#PWR02" H 4850 10200 50  0001 C CNN
 F 1 "+3.3V" H 4865 10523 50  0000 C CNN
 F 2 "" H 4850 10350 50  0001 C CNN
 F 3 "" H 4850 10350 50  0001 C CNN
@@ -3213,10 +3213,10 @@ F 3 "" H 4850 10350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR09
 U 1 1 5D6E59C8
 P 8200 8450
-F 0 "#PWR?" H 8200 8300 50  0001 C CNN
+F 0 "#PWR09" H 8200 8300 50  0001 C CNN
 F 1 "+3.3V" H 8215 8623 50  0000 C CNN
 F 2 "" H 8200 8450 50  0001 C CNN
 F 3 "" H 8200 8450 50  0001 C CNN
@@ -3224,36 +3224,89 @@ F 3 "" H 8200 8450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR017
 U 1 1 5D6E5D98
 P 9550 8000
-F 0 "#PWR?" H 9550 7850 50  0001 C CNN
+F 0 "#PWR017" H 9550 7850 50  0001 C CNN
 F 1 "+3.3V" H 9565 8173 50  0000 C CNN
 F 2 "" H 9550 8000 50  0001 C CNN
 F 3 "" H 9550 8000 50  0001 C CNN
 	1    9550 8000
 	-1   0    0    1   
 $EndComp
+$Comp
+L dk_PMIC-Voltage-Regulators-Linear:LM317T U1
+U 1 1 5D3EE293
+P 9570 4860
+F 0 "U1" H 9570 5147 60  0000 C CNN
+F 1 "LM317T" H 9570 5041 60  0000 C CNN
+F 2 "digikey-footprints:TO-220-3" H 9770 5060 60  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf" H 9770 5160 60  0001 L CNN
+F 4 "497-1575-5-ND" H 9770 5260 60  0001 L CNN "Digi-Key_PN"
+F 5 "LM317T" H 9770 5360 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 9770 5460 60  0001 L CNN "Category"
+F 7 "PMIC - Voltage Regulators - Linear" H 9770 5560 60  0001 L CNN "Family"
+F 8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf" H 9770 5660 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/stmicroelectronics/LM317T/497-1575-5-ND/591677" H 9770 5760 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC REG LIN POS ADJ 1.5A TO220AB" H 9770 5860 60  0001 L CNN "Description"
+F 11 "STMicroelectronics" H 9770 5960 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9770 6060 60  0001 L CNN "Status"
+	1    9570 4860
+	1    0    0    -1  
+$EndComp
+Text GLabel 9270 4860 0    50   BiDi ~ 0
++FEMV
+$Comp
+L Device:R R1
+U 1 1 5D3F0E64
+P 9980 5010
+F 0 "R1" H 10050 5056 50  0000 L CNN
+F 1 "220R" H 10050 4965 50  0000 L CNN
+F 2 "" V 9910 5010 50  0001 C CNN
+F 3 "~" H 9980 5010 50  0001 C CNN
+	1    9980 5010
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3150 5650 3700 5650
+	9570 5160 9980 5160
+Wire Wire Line
+	9870 4860 9980 4860
+Wire Wire Line
+	9980 4860 10120 4860
+Connection ~ 9980 4860
+$Comp
+L power:GND #PWR024
+U 1 1 5D4B9584
+P 9980 5460
+F 0 "#PWR024" H 9980 5210 50  0001 C CNN
+F 1 "GND" H 9985 5287 50  0000 C CNN
+F 2 "" H 9980 5460 50  0001 C CNN
+F 3 "" H 9980 5460 50  0001 C CNN
+	1    9980 5460
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 5550 3900 5550
 Wire Bus Line
 	1650 8000 2150 8000
 Wire Wire Line
-	2200 6350 3700 6350
+	3100 6050 3700 6050
 Wire Wire Line
 	3000 5850 3700 5850
 Wire Wire Line
-	3100 6050 3700 6050
+	3150 5650 3700 5650
+Wire Wire Line
+	3250 5450 3850 5450
+Wire Wire Line
+	3300 5350 3800 5350
+Wire Wire Line
+	2200 6350 3700 6350
 Wire Bus Line
 	10350 9800 10350 11000
 Wire Wire Line
 	3350 5250 3750 5250
-Wire Wire Line
-	3300 5350 3800 5350
-Wire Wire Line
-	3250 5450 3850 5450
-Wire Wire Line
-	3200 5550 3900 5550
+Wire Bus Line
+	3700 4850 3700 5650
 Wire Bus Line
 	4050 3350 4050 4800
 Wire Bus Line
@@ -3261,19 +3314,17 @@ Wire Bus Line
 Wire Bus Line
 	9850 8950 9850 9800
 Wire Bus Line
-	3700 4850 3700 5650
-Wire Bus Line
 	3700 5650 3700 6700
 Wire Bus Line
 	5950 2850 5950 5650
 Wire Bus Line
-	6300 2800 6300 4800
+	8050 8850 8050 9800
 Wire Bus Line
 	3700 6700 4700 6700
 Wire Bus Line
 	1850 6700 3700 6700
 Wire Bus Line
-	8050 8850 8050 9800
+	6300 2800 6300 4800
 Wire Bus Line
 	10350 8500 10350 9800
 Wire Bus Line
@@ -3282,4 +3333,29 @@ Wire Bus Line
 	3400 11000 10350 11000
 Wire Bus Line
 	2150 8000 5950 8000
+$Comp
+L Device:R R2
+U 1 1 5D54EE12
+P 9980 5310
+F 0 "R2" H 10050 5356 50  0000 L CNN
+F 1 "370R" H 10050 5265 50  0000 L CNN
+F 2 "" V 9910 5310 50  0001 C CNN
+F 3 "~" H 9980 5310 50  0001 C CNN
+	1    9980 5310
+	1    0    0    -1  
+$EndComp
+Connection ~ 9980 5160
+Text Notes 9870 4810 0    50   ~ 0
+~~3.35V
+$Comp
+L power:+3V3 #PWR025
+U 1 1 5D550B4C
+P 10120 4860
+F 0 "#PWR025" H 10120 4710 50  0001 C CNN
+F 1 "+3V3" V 10135 4988 50  0000 L CNN
+F 2 "" H 10120 4860 50  0001 C CNN
+F 3 "" H 10120 4860 50  0001 C CNN
+	1    10120 4860
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
