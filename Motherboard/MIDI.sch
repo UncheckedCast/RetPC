@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Motherboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega328-PU U13
+L Motherboard-rescue:ATmega328-PU-MCU_Microchip_ATmega U13
 U 1 1 5C7F04CC
 P 2950 4770
 F 0 "U13" H 2309 4816 50  0000 R CNN

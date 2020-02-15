@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Motherboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -657,26 +656,6 @@ Text Label 2625 4475 0    50   ~ 0
 XD6
 Text Label 2625 4575 0    50   ~ 0
 XD7
-Wire Bus Line
-	7750 2125 7750 2450
-Wire Bus Line
-	2500 1625 2500 2175
-Wire Bus Line
-	4225 1650 4225 2375
-Wire Bus Line
-	8050 1675 8050 2150
-Wire Bus Line
-	9375 2050 9375 2625
-Wire Bus Line
-	5200 4650 6425 4650
-Wire Bus Line
-	2525 3750 2525 4475
-Wire Bus Line
-	5400 5950 6650 5950
-Wire Bus Line
-	8225 4650 9450 4650
-Wire Bus Line
-	8425 5950 9675 5950
 $Comp
 L power:GND #PWR?
 U 1 1 5D4B52C2
@@ -699,4 +678,24 @@ F 3 "" H 8700 1650 50  0001 C CNN
 	1    8700 1650
 	0    1    1    0   
 $EndComp
+Wire Bus Line
+	7750 2125 7750 2450
+Wire Bus Line
+	2500 1625 2500 2175
+Wire Bus Line
+	4225 1650 4225 2375
+Wire Bus Line
+	8050 1675 8050 2150
+Wire Bus Line
+	9375 2050 9375 2625
+Wire Bus Line
+	5200 4650 6425 4650
+Wire Bus Line
+	2525 3750 2525 4475
+Wire Bus Line
+	5400 5950 6650 5950
+Wire Bus Line
+	8225 4650 9450 4650
+Wire Bus Line
+	8425 5950 9675 5950
 $EndSCHEMATC

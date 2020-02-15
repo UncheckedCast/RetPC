@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Motherboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -2193,6 +2192,8 @@ Text Label 6425 7740 2    50   ~ 0
 IRQ10
 Wire Wire Line
 	6175 7375 6425 7375
+Text Label 6425 7375 2    50   ~ 0
+RESET
 Wire Bus Line
 	2005 9450 2005 9650
 Wire Bus Line
@@ -2213,6 +2214,4 @@ Wire Bus Line
 	6950 3675 6950 5100
 Wire Bus Line
 	7400 1350 7400 3675
-Text Label 6425 7375 2    50   ~ 0
-RESET
 $EndSCHEMATC

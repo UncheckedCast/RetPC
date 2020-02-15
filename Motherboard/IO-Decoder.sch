@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Motherboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -1645,7 +1644,7 @@ F 3 "" H 10350 2800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Motherboard-rescue:AS6C8008-RAM U42
+L RAM:AS6C8008 U42
 U 1 1 5CA57105
 P 5155 9710
 AR Path="/5CA57105" Ref="U42"  Part="1" 
