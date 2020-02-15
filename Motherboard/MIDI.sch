@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:Motherboard-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 10
+Sheet 9 10
 Title ""
 Date ""
 Rev ""
@@ -985,12 +985,6 @@ Wire Wire Line
 	3550 4770 3900 4770
 Wire Wire Line
 	3550 4670 3900 4670
-Wire Bus Line
-	4975 5370 4975 6170
-Wire Bus Line
-	2000 1425 2000 2550
-Wire Bus Line
-	4125 1200 4125 2000
 $Comp
 L Motherboard-rescue:ATF750LVC-fdc U12
 U 1 1 5C7F0536
@@ -1002,4 +996,10 @@ F 3 "" H 2750 1825 50  0001 L CNN
 	1    2750 1825
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	4975 5370 4975 6170
+Wire Bus Line
+	2000 1425 2000 2550
+Wire Bus Line
+	4125 1200 4125 2000
 $EndSCHEMATC

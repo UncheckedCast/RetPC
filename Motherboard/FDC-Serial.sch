@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:Motherboard-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 9 10
+Sheet 10 10
 Title ""
 Date ""
 Rev ""
@@ -1289,8 +1289,6 @@ Text HLabel 6025 9525 0    50   Output ~ 0
 DRQ3
 Text HLabel 6025 9725 0    50   Input ~ 0
 TC
-NoConn ~ 6125 7325
-NoConn ~ 6125 7425
 Wire Wire Line
 	6025 8825 6125 8825
 Wire Wire Line
@@ -1339,10 +1337,26 @@ Wire Wire Line
 	9025 7625 8925 7625
 Text HLabel 6125 8725 0    50   Input ~ 0
 RESET_DRV
-NoConn ~ 8925 7525
-NoConn ~ 8925 7425
-NoConn ~ 8925 7325
-NoConn ~ 8925 7225
+Text HLabel 6125 7325 0    50   Output ~ 0
+IRQ14
+Text HLabel 6125 7425 0    50   Output ~ 0
+IRQ15
+Text HLabel 9025 7525 2    50   Output ~ 0
+IRQ8
+Text HLabel 9025 7425 2    50   Output ~ 0
+IRQ10
+Text HLabel 9025 7325 2    50   Output ~ 0
+IRQ11
+Text HLabel 9025 7225 2    50   Output ~ 0
+IRQ12
+Wire Wire Line
+	8925 7525 9025 7525
+Wire Wire Line
+	9025 7425 8925 7425
+Wire Wire Line
+	8925 7325 9025 7325
+Wire Wire Line
+	9025 7225 8925 7225
 Wire Bus Line
 	5750 7650 5750 8525
 Wire Bus Line

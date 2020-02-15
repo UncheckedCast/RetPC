@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Motherboard-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -170,21 +170,17 @@ $EndComp
 NoConn ~ 7300 7075
 Text HLabel 11555 1335 0    50   Input ~ 0
 OSC
-Text HLabel 11555 1410 0    50   Input ~ 0
-DRQ[0...3]
-Text HLabel 11555 1485 0    50   Input ~ 0
-~DACK~[0...3]
 Text HLabel 11555 1560 0    50   Input ~ 0
 CLK
 Text HLabel 11555 1635 0    50   Input ~ 0
 ~IOW
-Text HLabel 11555 1710 0    50   Input ~ 0
+Text HLabel 10080 2170 0    50   Input ~ 0
 IRQ[2...7]
 Text HLabel 11555 1785 0    50   Input ~ 0
 TC
 Text HLabel 11555 1860 0    50   Input ~ 0
 ALE
-Text HLabel 11555 1935 0    50   Input ~ 0
+Text HLabel 10120 1090 0    50   Input ~ 0
 IOCHCK
 Text HLabel 11555 2010 0    50   Input ~ 0
 D[0...7]
@@ -194,9 +190,9 @@ Text HLabel 11555 2160 0    50   Input ~ 0
 IO_READY
 Text HLabel 11555 2235 0    50   Input ~ 0
 AEN
-Text HLabel 11555 2310 0    50   Input ~ 0
+Text HLabel 11550 2320 0    50   Input ~ 0
 ~MEMW
-Text HLabel 11555 2385 0    50   Input ~ 0
+Text HLabel 11550 2410 0    50   Input ~ 0
 ~MEMR
 $Comp
 L Device:CP C5
@@ -2155,6 +2151,122 @@ Wire Wire Line
 	2325 6875 2075 6875
 NoConn ~ 2325 7075
 NoConn ~ 4900 7075
+Text HLabel 10100 1250 0    50   Output ~ 0
+DRQ0
+Text HLabel 10100 1330 0    50   Output ~ 0
+DRQ1
+Text HLabel 10100 1410 0    50   Output ~ 0
+DRQ2
+Text HLabel 10100 1490 0    50   Output ~ 0
+DRQ3
+Text HLabel 10100 1610 0    50   Input ~ 0
+~DACK0
+Text HLabel 10100 1700 0    50   Input ~ 0
+~DACK1
+Text HLabel 10100 1790 0    50   Input ~ 0
+~DACK2
+Text HLabel 10100 1880 0    50   Input ~ 0
+~DACK3
+Wire Wire Line
+	10100 1250 10300 1250
+Wire Wire Line
+	10100 1330 10300 1330
+Wire Wire Line
+	10100 1410 10300 1410
+Wire Wire Line
+	10100 1490 10300 1490
+Text Label 10300 1250 2    50   ~ 0
+DRQ0
+Text Label 10300 1330 2    50   ~ 0
+DRQ1
+Text Label 10300 1410 2    50   ~ 0
+DRQ2
+Text Label 10300 1490 2    50   ~ 0
+DRQ3
+Text Label 10350 1610 2    50   ~ 0
+~DACK0
+Wire Wire Line
+	10100 1610 10350 1610
+Wire Wire Line
+	10100 1700 10350 1700
+Wire Wire Line
+	10100 1790 10350 1790
+Wire Wire Line
+	10100 1880 10350 1880
+Text Label 10350 1700 2    50   ~ 0
+~DACK1
+Text Label 10350 1790 2    50   ~ 0
+~DACK2
+Text Label 10350 1880 2    50   ~ 0
+~DACK3
+Wire Wire Line
+	11550 2320 11800 2320
+Wire Wire Line
+	11550 2410 11800 2410
+Text Label 11800 2320 2    50   ~ 0
+~MEMW
+Text Label 11800 2410 2    50   ~ 0
+~MEMR
+Wire Wire Line
+	10120 1090 10430 1090
+Text Label 10430 1090 2    50   ~ 0
+IOCHCK
+Wire Bus Line
+	10080 2170 10200 2170
+Entry Wire Line
+	10200 2170 10300 2270
+Entry Wire Line
+	10200 2240 10300 2340
+Text Label 10470 2270 2    50   ~ 0
+IRQ2
+Wire Wire Line
+	10300 2270 10470 2270
+Wire Wire Line
+	10300 2340 10470 2340
+Text Label 10470 2340 2    50   ~ 0
+IRQ3
+Entry Wire Line
+	10200 2310 10300 2410
+Entry Wire Line
+	10200 2380 10300 2480
+Text Label 10470 2480 2    50   ~ 0
+IRQ5
+Wire Wire Line
+	10300 2480 10470 2480
+Wire Wire Line
+	10300 2410 10470 2410
+Text Label 10470 2410 2    50   ~ 0
+IRQ4
+Entry Wire Line
+	10200 2450 10300 2550
+Entry Wire Line
+	10200 2520 10300 2620
+Text Label 10470 2620 2    50   ~ 0
+IRQ7
+Wire Wire Line
+	10300 2620 10470 2620
+Wire Wire Line
+	10300 2550 10470 2550
+Text Label 10470 2550 2    50   ~ 0
+IRQ6
+Text Label 6600 1900 2    50   ~ 0
+IOCHCK
+Wire Wire Line
+	6325 1900 6600 1900
+Text Label 4000 6375 2    50   ~ 0
+IOCHCK
+Wire Wire Line
+	3725 6375 4000 6375
+Text Label 6575 6375 2    50   ~ 0
+IOCHCK
+Wire Wire Line
+	6300 6375 6575 6375
+Text Label 8975 6375 2    50   ~ 0
+IOCHCK
+Wire Wire Line
+	8700 6375 8975 6375
+Wire Bus Line
+	10200 2170 10200 2520
 Wire Bus Line
 	4050 6375 4050 7275
 Wire Bus Line

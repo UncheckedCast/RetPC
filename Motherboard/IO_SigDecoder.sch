@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Motherboard-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -72,7 +72,7 @@ Wire Wire Line
 Text HLabel 2850 1875 0    50   Input ~ 0
 ~ENABLEIOCK'
 Text HLabel 2275 1975 0    50   Input ~ 0
-IOCHCK
+IOCHCK_I
 $Comp
 L 74xx:74LS00 U36
 U 2 1 5C3CF7E9
@@ -85,7 +85,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 3825 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 3850 1675 2    50   Output ~ 0
-IOCHCK
+IOCHCK_O
 Text HLabel 2850 2075 0    50   Input ~ 0
 ~PCK
 Text HLabel 2850 1675 0    50   Input ~ 0
@@ -255,4 +255,26 @@ Wire Wire Line
 	1500 1225 1700 1225
 Wire Bus Line
 	1400 675  1400 1225
+$Comp
+L power:GND #PWR?
+U 1 1 5EB4770B
+P 2850 2675
+F 0 "#PWR?" H 2850 2425 50  0001 C CNN
+F 1 "GND" H 2855 2502 50  0000 C CNN
+F 2 "" H 2850 2675 50  0001 C CNN
+F 3 "" H 2850 2675 50  0001 C CNN
+	1    2850 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EB47B98
+P 3850 1575
+F 0 "#PWR?" H 3850 1425 50  0001 C CNN
+F 1 "+5V" H 3865 1748 50  0000 C CNN
+F 2 "" H 3850 1575 50  0001 C CNN
+F 3 "" H 3850 1575 50  0001 C CNN
+	1    3850 1575
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

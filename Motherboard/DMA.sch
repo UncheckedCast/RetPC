@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Motherboard-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -677,4 +677,26 @@ Wire Bus Line
 	8225 4650 9450 4650
 Wire Bus Line
 	8425 5950 9675 5950
+$Comp
+L power:GND #PWR?
+U 1 1 5D4B52C2
+P 8700 3350
+F 0 "#PWR?" H 8700 3100 50  0001 C CNN
+F 1 "GND" H 8705 3177 50  0000 C CNN
+F 2 "" H 8700 3350 50  0001 C CNN
+F 3 "" H 8700 3350 50  0001 C CNN
+	1    8700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D4B569A
+P 8700 1650
+F 0 "#PWR?" H 8700 1500 50  0001 C CNN
+F 1 "+5V" V 8715 1778 50  0000 L CNN
+F 2 "" H 8700 1650 50  0001 C CNN
+F 3 "" H 8700 1650 50  0001 C CNN
+	1    8700 1650
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

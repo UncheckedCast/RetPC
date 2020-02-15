@@ -70,7 +70,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFFFFF)
+    (visible_elements 7FFFF7FF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -10550,7 +10550,6 @@
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
 
-  (via (at 52.324 31.496) (size 0.8) (drill 0.4) (layers F.Signal B.Signal) (net 8))
   (via (at 51.308 30.48) (size 0.8) (drill 0.4) (layers F.Signal B.Signal) (net 2))
   (segment (start 51.43 30.358) (end 51.43 28.63) (width 0.25) (layer F.Signal) (net 2))
   (segment (start 51.308 30.48) (end 51.43 30.358) (width 0.25) (layer F.Signal) (net 2))
@@ -10566,6 +10565,7 @@
   (via (at 30.48 30.988) (size 0.8) (drill 0.4) (layers F.Signal B.Signal) (net 2))
   (segment (start 31.98 31.08) (end 30.572 31.08) (width 0.25) (layer F.Signal) (net 2))
   (segment (start 30.572 31.08) (end 30.48 30.988) (width 0.25) (layer F.Signal) (net 2))
+  (via (at 52.324 31.496) (size 0.8) (drill 0.4) (layers F.Signal B.Signal) (net 8))
   (via (at 39.624 30.988) (size 0.8) (drill 0.4) (layers F.Signal B.Signal) (net 8))
   (segment (start 31.98 39.58) (end 30.016 39.58) (width 0.25) (layer F.Signal) (net 8))
   (segment (start 30.016 39.58) (end 29.972 39.624) (width 0.25) (layer F.Signal) (net 8))

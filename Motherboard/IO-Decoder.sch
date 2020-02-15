@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Motherboard-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -138,9 +138,9 @@ Wire Wire Line
 Wire Wire Line
 	2625 1600 3000 1600
 Text HLabel 3675 1700 2    50   Output ~ 0
-~MRDC
+~MEMR
 Text HLabel 3675 1800 2    50   Output ~ 0
-~IORC
+~IOR
 Text HLabel 3675 1900 2    50   Input ~ 0
 ~INTA
 Wire Wire Line
