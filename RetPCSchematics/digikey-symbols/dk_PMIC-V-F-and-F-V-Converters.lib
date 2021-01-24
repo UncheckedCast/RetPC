@@ -1,13 +1,9 @@
-EESchema-LIBRARY Version 2.3
-#encoding utf-8
-#
-# LM2907N-8_NOPB
-#
-DEF LM2907N-8_NOPB U 0 40 Y Y 1 F N
-F0 "U" -405 40 60 H V L C N N
-F1 "LM2907N-8_NOPB" 0 -641 60 H V L C N N
-F2 "digikey-footprints:DIP-8_W7.62mm" 200 200 60 H I L C N N
-F3 "http://www.ti.com/lit/ds/symlink/lm2907-n.pdf" 200 300 60 H I L C N N
+Internal Server Error
+
+The server encountered an internal error and was unable to complete your request.
+Please contact the server administrator if this error reappears multiple times, please include the technical details below in your report.
+More details can be found in the server log.
+ 300 60 H I L C N N
 F4 "LM2907N-8/NOPB-ND" 200 400 60 H I L CNN "Digi-Key_PN"
 F5 "LM2907N-8/NOPB" 200 500 60 H I L CNN "MPN"
 F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"

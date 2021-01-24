@@ -49,7 +49,7 @@ SCLK
 Text Label 6250 4200 0    50   ~ 0
 DACCS
 $Comp
-L power:+5V #PWR048
+L Motherboard-rescue:+5V-power #PWR048
 U 1 1 5C7F0AAC
 P 7650 3775
 F 0 "#PWR048" H 7650 3625 50  0001 C CNN
@@ -60,7 +60,7 @@ F 3 "" H 7650 3775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR049
+L Motherboard-rescue:+3V3-power #PWR049
 U 1 1 5C7F0B44
 P 7650 4200
 F 0 "#PWR049" H 7650 4050 50  0001 C CNN
@@ -93,7 +93,7 @@ Wire Wire Line
 	9350 2200 9575 2200
 Connection ~ 9350 2300
 $Comp
-L power:GND #PWR066
+L Motherboard-rescue:GND-power #PWR066
 U 1 1 5C7F186E
 P 9575 2500
 F 0 "#PWR066" H 9575 2250 50  0001 C CNN
@@ -104,7 +104,7 @@ F 3 "" H 9575 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Speaker LS1
+L Motherboard-rescue:Speaker-Device LS1
 U 1 1 5C7F19D3
 P 9350 1475
 F 0 "LS1" V 9361 1195 50  0000 R CNN
@@ -124,7 +124,7 @@ Wire Wire Line
 	9450 2300 9575 2300
 Connection ~ 9450 2100
 $Comp
-L power:GND #PWR055
+L Motherboard-rescue:GND-power #PWR055
 U 1 1 5C7F1FEF
 P 9350 1675
 F 0 "#PWR055" H 9350 1425 50  0001 C CNN
@@ -141,7 +141,7 @@ PC_SPEAKER
 Wire Wire Line
 	8275 4100 8275 4125
 $Comp
-L power:GND #PWR050
+L Motherboard-rescue:GND-power #PWR050
 U 1 1 5C7F4DE2
 P 7650 4300
 F 0 "#PWR050" H 7650 4050 50  0001 C CNN
@@ -152,7 +152,7 @@ F 3 "" H 7650 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C16
+L Motherboard-rescue:C-Device C16
 U 1 1 5C7F507D
 P 7925 3875
 F 0 "C16" V 7673 3875 50  0000 C CNN
@@ -170,7 +170,7 @@ Connection ~ 7650 3875
 Wire Wire Line
 	7650 3875 7650 4000
 $Comp
-L power:GND #PWR051
+L Motherboard-rescue:GND-power #PWR051
 U 1 1 5C7F56DD
 P 8075 3875
 F 0 "#PWR051" H 8075 3625 50  0001 C CNN
@@ -181,7 +181,7 @@ F 3 "" H 8075 3875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR029
+L Motherboard-rescue:+5V-power #PWR029
 U 1 1 5C7F5A92
 P 2950 3220
 F 0 "#PWR029" H 2950 3070 50  0001 C CNN
@@ -203,7 +203,7 @@ Connection ~ 2950 3220
 Wire Wire Line
 	2950 3220 3050 3220
 $Comp
-L power:GND #PWR030
+L Motherboard-rescue:GND-power #PWR030
 U 1 1 5C7F6872
 P 2950 6270
 F 0 "#PWR030" H 2950 6020 50  0001 C CNN
@@ -214,7 +214,7 @@ F 3 "" H 2950 6270 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR028
+L Motherboard-rescue:GND-power #PWR028
 U 1 1 5C7F69D9
 P 2250 2325
 F 0 "#PWR028" H 2250 2075 50  0001 C CNN
@@ -225,7 +225,7 @@ F 3 "" H 2250 2325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR040
+L Motherboard-rescue:+5V-power #PWR040
 U 1 1 5C7F6A91
 P 3250 1225
 F 0 "#PWR040" H 3250 1075 50  0001 C CNN
@@ -250,7 +250,7 @@ Wire Wire Line
 Text Label 5675 1100 2    50   ~ 0
 ~~4MHZ
 $Comp
-L power:GND #PWR042
+L Motherboard-rescue:GND-power #PWR042
 U 1 1 5C81991F
 P 4925 2100
 F 0 "#PWR042" H 4925 1850 50  0001 C CNN
@@ -261,7 +261,7 @@ F 3 "" H 4925 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR041
+L Motherboard-rescue:+5V-power #PWR041
 U 1 1 5C819972
 P 4925 800
 F 0 "#PWR041" H 4925 650 50  0001 C CNN
@@ -272,7 +272,7 @@ F 3 "" H 4925 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TI_Sound:SN76489A-ALT U14
+L Motherboard-rescue:SN76489A-ALT-TI_Sound U14
 U 1 1 5C81A05B
 P 4925 1450
 F 0 "U14" H 4625 1950 50  0000 C CNN
@@ -401,7 +401,7 @@ Wire Wire Line
 Text Label 7550 1925 2    50   ~ 0
 TANDY
 $Comp
-L Amplifier_Audio:LM386 U16
+L Motherboard-rescue:LM386-Amplifier_Audio U16
 U 1 1 5C826135
 P 6375 1925
 F 0 "U16" H 6500 1850 50  0000 L CNN
@@ -416,7 +416,7 @@ Wire Wire Line
 Wire Wire Line
 	6075 2225 6075 2025
 $Comp
-L power:+5V #PWR045
+L Motherboard-rescue:+5V-power #PWR045
 U 1 1 5C82613D
 P 6275 1625
 F 0 "#PWR045" H 6275 1475 50  0001 C CNN
@@ -430,7 +430,7 @@ NoConn ~ 6375 1625
 NoConn ~ 6375 2225
 NoConn ~ 6475 2225
 $Comp
-L Device:CP C15
+L Motherboard-rescue:CP-Device C15
 U 1 1 5C826146
 P 7175 1925
 F 0 "C15" V 7430 1925 50  0000 C CNN
@@ -443,7 +443,7 @@ $EndComp
 Wire Wire Line
 	6675 1925 6850 1925
 $Comp
-L Device:C C14
+L Motherboard-rescue:C-Device C14
 U 1 1 5C82614D
 P 6850 2125
 F 0 "C14" H 6965 2171 50  0000 L CNN
@@ -459,7 +459,7 @@ Connection ~ 6850 1925
 Wire Wire Line
 	6850 1925 7025 1925
 $Comp
-L power:GND #PWR046
+L Motherboard-rescue:GND-power #PWR046
 U 1 1 5C826156
 P 6850 2575
 F 0 "#PWR046" H 6850 2325 50  0001 C CNN
@@ -470,7 +470,7 @@ F 3 "" H 6850 2575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R14
+L Motherboard-rescue:R-Device R14
 U 1 1 5C82615C
 P 6850 2425
 F 0 "R14" H 6920 2471 50  0000 L CNN
@@ -481,7 +481,7 @@ F 3 "~" H 6850 2425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR044
+L Motherboard-rescue:GND-power #PWR044
 U 1 1 5C826164
 P 6075 2225
 F 0 "#PWR044" H 6075 1975 50  0001 C CNN
@@ -493,7 +493,7 @@ F 3 "" H 6075 2225 50  0001 C CNN
 $EndComp
 Connection ~ 6075 2225
 $Comp
-L Device:R_POT RV1
+L Motherboard-rescue:R_POT-Device RV1
 U 1 1 5C82616B
 P 5725 1825
 F 0 "RV1" H 5655 1871 50  0000 R CNN
@@ -508,7 +508,7 @@ Wire Wire Line
 Wire Wire Line
 	5725 1650 5725 1675
 $Comp
-L power:GND #PWR043
+L Motherboard-rescue:GND-power #PWR043
 U 1 1 5C826174
 P 5725 1975
 F 0 "#PWR043" H 5725 1725 50  0001 C CNN
@@ -527,7 +527,7 @@ Wire Wire Line
 Text Label 3625 1425 2    50   ~ 0
 SPEAKER
 $Comp
-L Device:R_Network03 RN3
+L Motherboard-rescue:R_Network03-Device RN3
 U 1 1 5CDDDDDA
 P 8925 2400
 F 0 "RN3" V 8608 2400 50  0000 C CNN
@@ -566,7 +566,7 @@ A9
 Text Label 6150 2850 2    50   ~ 0
 SPKR
 $Comp
-L Amplifier_Audio:LM386 U20
+L Motherboard-rescue:LM386-Amplifier_Audio U20
 U 1 1 5CDF7EAD
 P 4975 2850
 F 0 "U20" H 5100 2775 50  0000 L CNN
@@ -581,7 +581,7 @@ Wire Wire Line
 Wire Wire Line
 	4675 3150 4675 2950
 $Comp
-L power:+5V #PWR054
+L Motherboard-rescue:+5V-power #PWR054
 U 1 1 5CDF7EB5
 P 4875 2550
 F 0 "#PWR054" H 4875 2400 50  0001 C CNN
@@ -595,7 +595,7 @@ NoConn ~ 4975 2550
 NoConn ~ 4975 3150
 NoConn ~ 5075 3150
 $Comp
-L Device:CP C18
+L Motherboard-rescue:CP-Device C18
 U 1 1 5CDF7EBE
 P 5775 2850
 F 0 "C18" V 6030 2850 50  0000 C CNN
@@ -608,7 +608,7 @@ $EndComp
 Wire Wire Line
 	5275 2850 5450 2850
 $Comp
-L Device:C C17
+L Motherboard-rescue:C-Device C17
 U 1 1 5CDF7EC5
 P 5450 3050
 F 0 "C17" H 5565 3096 50  0000 L CNN
@@ -624,7 +624,7 @@ Connection ~ 5450 2850
 Wire Wire Line
 	5450 2850 5625 2850
 $Comp
-L power:GND #PWR064
+L Motherboard-rescue:GND-power #PWR064
 U 1 1 5CDF7ECE
 P 5450 3500
 F 0 "#PWR064" H 5450 3250 50  0001 C CNN
@@ -635,7 +635,7 @@ F 3 "" H 5450 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R15
+L Motherboard-rescue:R-Device R15
 U 1 1 5CDF7ED4
 P 5450 3350
 F 0 "R15" H 5520 3396 50  0000 L CNN
@@ -646,7 +646,7 @@ F 3 "~" H 5450 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR053
+L Motherboard-rescue:GND-power #PWR053
 U 1 1 5CDF7EDA
 P 4675 3150
 F 0 "#PWR053" H 4675 2900 50  0001 C CNN
@@ -658,7 +658,7 @@ F 3 "" H 4675 3150 50  0001 C CNN
 $EndComp
 Connection ~ 4675 3150
 $Comp
-L Device:R_POT RV2
+L Motherboard-rescue:R_POT-Device RV2
 U 1 1 5CDF7EE1
 P 4325 2750
 F 0 "RV2" H 4255 2796 50  0000 R CNN
@@ -673,7 +673,7 @@ Wire Wire Line
 Wire Wire Line
 	4325 2575 4325 2600
 $Comp
-L power:GND #PWR052
+L Motherboard-rescue:GND-power #PWR052
 U 1 1 5CDF7EE9
 P 4325 2900
 F 0 "#PWR052" H 4325 2650 50  0001 C CNN
@@ -690,7 +690,7 @@ SPEAKER
 Wire Wire Line
 	4000 2575 4325 2575
 $Comp
-L Amplifier_Audio:LM386 U21
+L Motherboard-rescue:LM386-Amplifier_Audio U21
 U 1 1 5CE00BE1
 P 8925 4375
 F 0 "U21" H 9050 4300 50  0000 L CNN
@@ -705,7 +705,7 @@ Wire Wire Line
 Wire Wire Line
 	8625 4675 8625 4475
 $Comp
-L power:+5V #PWR069
+L Motherboard-rescue:+5V-power #PWR069
 U 1 1 5CE00BE9
 P 8825 4075
 F 0 "#PWR069" H 8825 3925 50  0001 C CNN
@@ -719,7 +719,7 @@ NoConn ~ 8925 4075
 NoConn ~ 8925 4675
 NoConn ~ 9025 4675
 $Comp
-L Device:CP C20
+L Motherboard-rescue:CP-Device C20
 U 1 1 5CE00BF2
 P 9725 4375
 F 0 "C20" V 9980 4375 50  0000 C CNN
@@ -732,7 +732,7 @@ $EndComp
 Wire Wire Line
 	9225 4375 9400 4375
 $Comp
-L Device:C C19
+L Motherboard-rescue:C-Device C19
 U 1 1 5CE00BF9
 P 9400 4575
 F 0 "C19" H 9515 4621 50  0000 L CNN
@@ -748,7 +748,7 @@ Connection ~ 9400 4375
 Wire Wire Line
 	9400 4375 9575 4375
 $Comp
-L power:GND #PWR070
+L Motherboard-rescue:GND-power #PWR070
 U 1 1 5CE00C02
 P 9400 5025
 F 0 "#PWR070" H 9400 4775 50  0001 C CNN
@@ -759,7 +759,7 @@ F 3 "" H 9400 5025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R16
+L Motherboard-rescue:R-Device R16
 U 1 1 5CE00C08
 P 9400 4875
 F 0 "R16" H 9470 4921 50  0000 L CNN
@@ -770,7 +770,7 @@ F 3 "~" H 9400 4875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR068
+L Motherboard-rescue:GND-power #PWR068
 U 1 1 5CE00C0E
 P 8625 4675
 F 0 "#PWR068" H 8625 4425 50  0001 C CNN
@@ -782,7 +782,7 @@ F 3 "" H 8625 4675 50  0001 C CNN
 $EndComp
 Connection ~ 8625 4675
 $Comp
-L Device:R_POT RV3
+L Motherboard-rescue:R_POT-Device RV3
 U 1 1 5CE00C15
 P 8275 4275
 F 0 "RV3" H 8205 4321 50  0000 R CNN
@@ -795,7 +795,7 @@ $EndComp
 Wire Wire Line
 	8425 4275 8625 4275
 $Comp
-L power:GND #PWR067
+L Motherboard-rescue:GND-power #PWR067
 U 1 1 5CE00C1D
 P 8275 4425
 F 0 "#PWR067" H 8275 4175 50  0001 C CNN
@@ -900,7 +900,7 @@ Text Label 3900 4670 2    50   ~ 0
 Text Label 3900 4770 2    50   ~ 0
 ~IOR
 $Comp
-L 74xx:74LS245 U35
+L Motherboard-rescue:74LS245-74xx U35
 U 1 1 5CE4E451
 P 4225 5770
 F 0 "U35" H 4225 6748 50  0000 C CNN
@@ -937,7 +937,7 @@ Wire Wire Line
 Text Label 3600 6695 1    50   ~ 0
 ~IOW
 $Comp
-L power:GND #PWR0164
+L Motherboard-rescue:GND-power #PWR0164
 U 1 1 5CE7F569
 P 4225 6570
 F 0 "#PWR0164" H 4225 6320 50  0001 C CNN
@@ -948,7 +948,7 @@ F 3 "" H 4225 6570 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0208
+L Motherboard-rescue:+5V-power #PWR0208
 U 1 1 5CE7F5DA
 P 4225 4970
 F 0 "#PWR0208" H 4225 4820 50  0001 C CNN

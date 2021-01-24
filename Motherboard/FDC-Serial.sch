@@ -36,7 +36,7 @@ F 3 "" H 7525 6725 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:DB25_Female J15
+L Motherboard-rescue:DB25_Female-Connector J15
 U 1 1 5C671BA1
 P 11400 6325
 F 0 "J15" H 11579 6371 50  0000 L CNN
@@ -47,7 +47,7 @@ F 3 " ~" H 11400 6325 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector:Mini-DIN-6 J13
+L Motherboard-rescue:Mini-DIN-6-Connector J13
 U 1 1 5C672258
 P 10725 8650
 F 0 "J13" V 10679 8880 50  0000 L CNN
@@ -58,7 +58,7 @@ F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 10725 865
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Battery_Cell BT1
+L Motherboard-rescue:Battery_Cell-Device BT1
 U 1 1 5C67246D
 P 9000 10100
 F 0 "BT1" H 9118 10196 50  0000 L CNN
@@ -73,7 +73,7 @@ Wire Wire Line
 Wire Wire Line
 	9000 9825 9000 9900
 $Comp
-L power:GND #PWR0172
+L Motherboard-rescue:GND-power #PWR0172
 U 1 1 5C672545
 P 9000 10200
 F 0 "#PWR0172" H 9000 9950 50  0001 C CNN
@@ -84,7 +84,7 @@ F 3 "" H 9000 10200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x17_Odd_Even J10
+L Motherboard-rescue:Conn_02x17_Odd_Even-Connector_Generic J10
 U 1 1 5C672A5F
 P 4875 4325
 F 0 "J10" H 4925 5342 50  0000 C CNN
@@ -95,7 +95,7 @@ F 3 "~" H 4875 4325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0173
+L Motherboard-rescue:GND-power #PWR0173
 U 1 1 5C672BF5
 P 4675 5225
 F 0 "#PWR0173" H 4675 4975 50  0001 C CNN
@@ -106,7 +106,7 @@ F 3 "" H 4675 5225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Mini-DIN-6 J14
+L Motherboard-rescue:Mini-DIN-6-Connector J14
 U 1 1 5C67380E
 P 10725 9725
 F 0 "J14" V 10771 9495 50  0000 R CNN
@@ -135,7 +135,7 @@ Wire Wire Line
 Wire Wire Line
 	10725 9425 10725 9175
 $Comp
-L power:GND #PWR0174
+L Motherboard-rescue:GND-power #PWR0174
 U 1 1 5C6755BC
 P 10725 9175
 F 0 "#PWR0174" H 10725 8925 50  0001 C CNN
@@ -149,7 +149,7 @@ Connection ~ 10725 9175
 Wire Wire Line
 	10725 9175 10725 8950
 $Comp
-L power:+5V #PWR0175
+L Motherboard-rescue:+5V-power #PWR0175
 U 1 1 5C6757CF
 P 10725 10025
 F 0 "#PWR0175" H 10725 9875 50  0001 C CNN
@@ -160,7 +160,7 @@ F 3 "" H 10725 10025 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR0176
+L Motherboard-rescue:+5V-power #PWR0176
 U 1 1 5C67592C
 P 10725 8350
 F 0 "#PWR0176" H 10725 8200 50  0001 C CNN
@@ -175,7 +175,7 @@ NoConn ~ 10825 8350
 NoConn ~ 10625 10025
 NoConn ~ 10825 10025
 $Comp
-L power:GND #PWR0177
+L Motherboard-rescue:GND-power #PWR0177
 U 1 1 5C6769C1
 P 8925 8925
 F 0 "#PWR0177" H 8925 8675 50  0001 C CNN
@@ -186,7 +186,7 @@ F 3 "" H 8925 8925 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Crystal Y3
+L Motherboard-rescue:Crystal-Device Y3
 U 1 1 5C676BCD
 P 9275 9625
 F 0 "Y3" V 9229 9756 50  0000 L CNN
@@ -209,7 +209,7 @@ Wire Wire Line
 Wire Wire Line
 	8925 9725 9100 9725
 $Comp
-L power:+5V #PWR0178
+L Motherboard-rescue:+5V-power #PWR0178
 U 1 1 5C677D3D
 P 8925 7125
 F 0 "#PWR0178" H 8925 6975 50  0001 C CNN
@@ -220,7 +220,7 @@ F 3 "" H 8925 7125 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0179
+L Motherboard-rescue:GND-power #PWR0179
 U 1 1 5C677E2E
 P 8925 6025
 F 0 "#PWR0179" H 8925 5775 50  0001 C CNN
@@ -231,7 +231,7 @@ F 3 "" H 8925 6025 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR0180
+L Motherboard-rescue:+5V-power #PWR0180
 U 1 1 5C677EE3
 P 8925 4325
 F 0 "#PWR0180" H 8925 4175 50  0001 C CNN
@@ -242,7 +242,7 @@ F 3 "" H 8925 4325 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR0181
+L Motherboard-rescue:+5V-power #PWR0181
 U 1 1 5C678289
 P 6125 9625
 F 0 "#PWR0181" H 6125 9475 50  0001 C CNN
@@ -253,7 +253,7 @@ F 3 "" H 6125 9625 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0182
+L Motherboard-rescue:GND-power #PWR0182
 U 1 1 5C678370
 P 6125 4125
 F 0 "#PWR0182" H 6125 3875 50  0001 C CNN
@@ -264,7 +264,7 @@ F 3 "" H 6125 4125 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0183
+L Motherboard-rescue:GND-power #PWR0183
 U 1 1 5C6784A0
 P 6125 8225
 F 0 "#PWR0183" H 6125 7975 50  0001 C CNN
@@ -279,7 +279,7 @@ Text HLabel 9325 9425 2    50   Input ~ 0
 Wire Wire Line
 	8925 9425 9325 9425
 $Comp
-L power:GND #PWR0184
+L Motherboard-rescue:GND-power #PWR0184
 U 1 1 5C678D5B
 P 8925 9625
 F 0 "#PWR0184" H 8925 9375 50  0001 C CNN
@@ -358,7 +358,7 @@ ISA-BUS
 Text Notes 6800 9150 1    50   ~ 0
 ISA-BUS
 $Comp
-L Device:C_Small C10
+L Motherboard-rescue:C_Small-Device C10
 U 1 1 5C67F9D8
 P 9725 9475
 F 0 "C10" V 9825 9475 50  0000 C CNN
@@ -369,7 +369,7 @@ F 3 "~" H 9725 9475 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C11
+L Motherboard-rescue:C_Small-Device C11
 U 1 1 5C67FA1C
 P 9725 9775
 F 0 "C11" V 9900 9775 50  0000 C CNN
@@ -386,7 +386,7 @@ Wire Wire Line
 	9275 9775 9625 9775
 Connection ~ 9275 9775
 $Comp
-L power:GND #PWR0185
+L Motherboard-rescue:GND-power #PWR0185
 U 1 1 5C6814B2
 P 9825 9475
 F 0 "#PWR0185" H 9825 9225 50  0001 C CNN
@@ -397,7 +397,7 @@ F 3 "" H 9825 9475 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0186
+L Motherboard-rescue:GND-power #PWR0186
 U 1 1 5C68151C
 P 9825 9775
 F 0 "#PWR0186" H 9825 9525 50  0001 C CNN
@@ -409,7 +409,7 @@ F 3 "" H 9825 9775 50  0001 C CNN
 $EndComp
 NoConn ~ 8925 8725
 $Comp
-L Connector:USB_B J11
+L Motherboard-rescue:USB_B-Connector J11
 U 1 1 5C69AAEA
 P 11175 1125
 F 0 "J11" H 10946 1023 50  0000 R CNN
@@ -424,7 +424,7 @@ Wire Wire Line
 Wire Wire Line
 	9225 2325 9225 2425
 $Comp
-L power:GND #PWR0187
+L Motherboard-rescue:GND-power #PWR0187
 U 1 1 5C6A0705
 P 9225 2425
 F 0 "#PWR0187" H 9225 2175 50  0001 C CNN
@@ -440,7 +440,7 @@ Wire Wire Line
 Wire Wire Line
 	11275 725  11225 725 
 $Comp
-L power:GND #PWR0188
+L Motherboard-rescue:GND-power #PWR0188
 U 1 1 5C6A19BA
 P 11225 725
 F 0 "#PWR0188" H 11225 475 50  0001 C CNN
@@ -486,7 +486,7 @@ Wire Wire Line
 Wire Wire Line
 	10325 3625 10325 3125
 $Comp
-L power:GND #PWR0189
+L Motherboard-rescue:GND-power #PWR0189
 U 1 1 5C6C208B
 P 13725 3950
 F 0 "#PWR0189" H 13725 3700 50  0001 C CNN
@@ -497,7 +497,7 @@ F 3 "" H 13725 3950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:DB9_Male J12
+L Motherboard-rescue:DB9_Male-Connector J12
 U 1 1 5C67181B
 P 14025 4350
 F 0 "J12" H 14205 4396 50  0000 L CNN
@@ -598,7 +598,7 @@ Wire Wire Line
 Wire Wire Line
 	9800 7525 11100 7525
 $Comp
-L power:GND #PWR0190
+L Motherboard-rescue:GND-power #PWR0190
 U 1 1 5C7227A0
 P 11100 5225
 F 0 "#PWR0190" H 11100 4975 50  0001 C CNN
@@ -609,7 +609,7 @@ F 3 "" H 11100 5225 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0191
+L Motherboard-rescue:GND-power #PWR0191
 U 1 1 5C7227F6
 P 11100 5425
 F 0 "#PWR0191" H 11100 5175 50  0001 C CNN
@@ -620,7 +620,7 @@ F 3 "" H 11100 5425 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0192
+L Motherboard-rescue:GND-power #PWR0192
 U 1 1 5C722868
 P 11100 5625
 F 0 "#PWR0192" H 11100 5375 50  0001 C CNN
@@ -631,7 +631,7 @@ F 3 "" H 11100 5625 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0193
+L Motherboard-rescue:GND-power #PWR0193
 U 1 1 5C7229A8
 P 11100 5825
 F 0 "#PWR0193" H 11100 5575 50  0001 C CNN
@@ -642,7 +642,7 @@ F 3 "" H 11100 5825 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0194
+L Motherboard-rescue:GND-power #PWR0194
 U 1 1 5C7229FE
 P 11100 6025
 F 0 "#PWR0194" H 11100 5775 50  0001 C CNN
@@ -653,7 +653,7 @@ F 3 "" H 11100 6025 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0195
+L Motherboard-rescue:GND-power #PWR0195
 U 1 1 5C722A85
 P 11100 6225
 F 0 "#PWR0195" H 11100 5975 50  0001 C CNN
@@ -664,7 +664,7 @@ F 3 "" H 11100 6225 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0196
+L Motherboard-rescue:GND-power #PWR0196
 U 1 1 5C722ADB
 P 11100 6425
 F 0 "#PWR0196" H 11100 6175 50  0001 C CNN
@@ -675,7 +675,7 @@ F 3 "" H 11100 6425 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0197
+L Motherboard-rescue:GND-power #PWR0197
 U 1 1 5C722B31
 P 11100 6625
 F 0 "#PWR0197" H 11100 6375 50  0001 C CNN
@@ -833,7 +833,7 @@ Wire Wire Line
 Wire Wire Line
 	5175 3525 6125 3525
 $Comp
-L power:+5V #PWR0198
+L Motherboard-rescue:+5V-power #PWR0198
 U 1 1 5C847208
 P 11050 2300
 F 0 "#PWR0198" H 11050 2150 50  0001 C CNN
@@ -848,7 +848,7 @@ Wire Wire Line
 Wire Wire Line
 	11050 2325 11050 2300
 $Comp
-L Device:C_Small C12
+L Motherboard-rescue:C_Small-Device C12
 U 1 1 5C85E897
 P 10125 1275
 F 0 "C12" V 9896 1275 50  0000 C CNN
@@ -867,7 +867,7 @@ Wire Wire Line
 Wire Wire Line
 	10325 1125 10875 1125
 $Comp
-L Device:C_Small C13
+L Motherboard-rescue:C_Small-Device C13
 U 1 1 5C8CB776
 P 10125 1425
 F 0 "C13" V 10225 1425 50  0000 C CNN
@@ -890,7 +890,7 @@ Wire Wire Line
 Wire Wire Line
 	10025 1275 10025 1350
 $Comp
-L power:GND #PWR0199
+L Motherboard-rescue:GND-power #PWR0199
 U 1 1 5C902BB9
 P 10025 1350
 F 0 "#PWR0199" H 10025 1100 50  0001 C CNN
@@ -921,7 +921,7 @@ Wire Wire Line
 Wire Wire Line
 	8925 1575 8925 3250
 $Comp
-L Device:R_Small R12
+L Motherboard-rescue:R_Small-Device R12
 U 1 1 5C9265E7
 P 9200 3250
 F 0 "R12" V 9004 3250 50  0000 C CNN
@@ -932,7 +932,7 @@ F 3 "~" H 9200 3250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R13
+L Motherboard-rescue:R_Small-Device R13
 U 1 1 5C9268FC
 P 9525 3400
 F 0 "R13" H 9584 3446 50  0000 L CNN
@@ -943,7 +943,7 @@ F 3 "~" H 9525 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0200
+L Motherboard-rescue:GND-power #PWR0200
 U 1 1 5C92695D
 P 9525 3500
 F 0 "#PWR0200" H 9525 3250 50  0001 C CNN
@@ -963,7 +963,7 @@ Wire Wire Line
 	9525 3250 9525 3300
 Connection ~ 9525 3250
 $Comp
-L Interface_UART:GD75232N U10
+L Motherboard-rescue:GD75232N-Interface_UART U10
 U 1 1 5C97A1F6
 P 12650 4450
 F 0 "U10" H 12650 5328 50  0000 C CNN
@@ -974,7 +974,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/gd75232.pdf" H 12150 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0201
+L Motherboard-rescue:GND-power #PWR0201
 U 1 1 5C9977B4
 P 12550 5150
 F 0 "#PWR0201" H 12550 4900 50  0001 C CNN
@@ -985,7 +985,7 @@ F 3 "" H 12550 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0202
+L Motherboard-rescue:+5V-power #PWR0202
 U 1 1 5C9978EB
 P 12550 3750
 F 0 "#PWR0202" H 12550 3600 50  0001 C CNN
@@ -996,7 +996,7 @@ F 3 "" H 12550 3750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+12V #PWR0203
+L Motherboard-rescue:+12V-power #PWR0203
 U 1 1 5C9979D4
 P 12750 3750
 F 0 "#PWR0203" H 12750 3600 50  0001 C CNN
@@ -1007,7 +1007,7 @@ F 3 "" H 12750 3750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:-12V #PWR0204
+L Motherboard-rescue:-12V-power #PWR0204
 U 1 1 5C997A7D
 P 12750 5150
 F 0 "#PWR0204" H 12750 5250 50  0001 C CNN
@@ -1336,26 +1336,21 @@ Wire Wire Line
 	9025 7625 8925 7625
 Text HLabel 6125 8725 0    50   Input ~ 0
 RESET_DRV
-Text HLabel 6125 7325 0    50   Output ~ 0
-IRQ14
-Text HLabel 6125 7425 0    50   Output ~ 0
-IRQ15
-Text HLabel 9025 7525 2    50   Output ~ 0
-IRQ8
-Text HLabel 9025 7425 2    50   Output ~ 0
-IRQ10
-Text HLabel 9025 7325 2    50   Output ~ 0
-IRQ11
-Text HLabel 9025 7225 2    50   Output ~ 0
-IRQ12
-Wire Wire Line
-	8925 7525 9025 7525
-Wire Wire Line
-	9025 7425 8925 7425
-Wire Wire Line
-	8925 7325 9025 7325
-Wire Wire Line
-	9025 7225 8925 7225
+NoConn ~ 8925 7225
+NoConn ~ 8925 7325
+NoConn ~ 8925 7425
+NoConn ~ 8925 7525
+NoConn ~ 8925 8225
+NoConn ~ 8925 8325
+NoConn ~ 8925 8425
+NoConn ~ 8925 8525
+NoConn ~ 8925 8625
+NoConn ~ 6125 5225
+NoConn ~ 6125 5325
+NoConn ~ 6125 5425
+NoConn ~ 6125 5525
+NoConn ~ 6125 7325
+NoConn ~ 6125 7425
 Wire Bus Line
 	5750 7650 5750 8525
 Wire Bus Line

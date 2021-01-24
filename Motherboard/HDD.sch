@@ -55,7 +55,7 @@ Wire Wire Line
 Wire Wire Line
 	8550 3575 9100 3575
 $Comp
-L power:GND #PWR07
+L Motherboard-rescue:GND-power #PWR07
 U 1 1 5C0B5FAE
 P 7050 5425
 F 0 "#PWR07" H 7050 5175 50  0001 C CNN
@@ -66,7 +66,7 @@ F 3 "" H 7050 5425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR08
+L Motherboard-rescue:+5V-power #PWR08
 U 1 1 5C0B60D5
 P 7050 4925
 F 0 "#PWR08" H 7050 4775 50  0001 C CNN
@@ -77,7 +77,7 @@ F 3 "" H 7050 4925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR013
+L Motherboard-rescue:+5V-power #PWR013
 U 1 1 5C0BB8CB
 P 10300 4075
 F 0 "#PWR013" H 10300 3925 50  0001 C CNN
@@ -88,7 +88,7 @@ F 3 "" H 10300 4075 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR011
+L Motherboard-rescue:+5V-power #PWR011
 U 1 1 5C0BB915
 P 9650 4425
 F 0 "#PWR011" H 9650 4275 50  0001 C CNN
@@ -106,7 +106,7 @@ Connection ~ 9650 4375
 Wire Wire Line
 	9650 4375 9700 4375
 $Comp
-L power:GND #PWR012
+L Motherboard-rescue:GND-power #PWR012
 U 1 1 5C0BD791
 P 9700 1375
 F 0 "#PWR012" H 9700 1125 50  0001 C CNN
@@ -187,7 +187,7 @@ D0
 Text HLabel 4625 2675 0    50   BiDi ~ 0
 A[0...19]
 $Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J1
+L Motherboard-rescue:Conn_02x03_Counter_Clockwise-Connector_Generic J1
 U 1 1 5C17F343
 P 7150 5125
 F 0 "J1" V 7154 5305 50  0000 L CNN
@@ -309,7 +309,7 @@ A6
 Text Label 6625 3950 2    50   ~ 0
 A5
 $Comp
-L power:GND #PWR09
+L Motherboard-rescue:GND-power #PWR09
 U 1 1 5C46903C
 P 5175 3950
 F 0 "#PWR09" H 5175 3700 50  0001 C CNN
@@ -320,7 +320,7 @@ F 3 "" H 5175 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR010
+L Motherboard-rescue:+5V-power #PWR010
 U 1 1 5C469186
 P 6625 2850
 F 0 "#PWR010" H 6625 2700 50  0001 C CNN

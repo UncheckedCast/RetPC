@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Crystal Y1
+L Motherboard-rescue:Crystal-Device Y1
 U 1 1 5BFC00B2
 P 2375 2225
 F 0 "Y1" H 2375 2375 50  0000 C CNN
@@ -25,9 +25,11 @@ F 3 "" H 2375 2225 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xxx_IEEE:40106 U9
+L Motherboard-rescue:40106-4xxx_IEEE U9
 U 1 1 5BFC0147
 P 2400 1450
+AR Path="/5BFC0147" Ref="U9"  Part="1" 
+AR Path="/5C104845/5BFC0147" Ref="U9"  Part="1" 
 F 0 "U9" H 2575 1575 50  0000 L CNN
 F 1 "40106" H 2575 1325 50  0000 L CNN
 F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 2400 1450 60  0001 C CNN
@@ -36,7 +38,7 @@ F 3 "" H 2400 1450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L Motherboard-rescue:R-Device R1
 U 1 1 5BFC026F
 P 2400 975
 F 0 "R1" V 2480 975 50  0000 C CNN
@@ -47,7 +49,7 @@ F 3 "" H 2400 975 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C3
+L Motherboard-rescue:C-Device C3
 U 1 1 5BFC036F
 P 2900 2400
 F 0 "C3" H 2925 2500 50  0000 L CNN
@@ -58,7 +60,7 @@ F 3 "" H 2900 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L Motherboard-rescue:GND-power #PWR016
 U 1 1 5BFC03E5
 P 2900 2550
 F 0 "#PWR016" H 2900 2300 50  0001 C CNN
@@ -69,7 +71,7 @@ F 3 "" H 2900 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal Y2
+L Motherboard-rescue:Crystal-Device Y2
 U 1 1 5BFC2C74
 P 2375 4475
 F 0 "Y2" H 2375 4625 50  0000 C CNN
@@ -80,9 +82,11 @@ F 3 "" H 2375 4475 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xxx_IEEE:40106 U9
+L Motherboard-rescue:40106-4xxx_IEEE U9
 U 3 1 5BFC2C7A
 P 2400 3700
+AR Path="/5BFC2C7A" Ref="U9"  Part="3" 
+AR Path="/5C104845/5BFC2C7A" Ref="U9"  Part="3" 
 F 0 "U9" H 2500 3850 50  0000 L CNN
 F 1 "40106" H 2450 3550 50  0000 L CNN
 F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 2400 3700 60  0001 C CNN
@@ -91,7 +95,7 @@ F 3 "" H 2400 3700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L Motherboard-rescue:R-Device R2
 U 1 1 5BFC2C80
 P 2400 3225
 F 0 "R2" V 2480 3225 50  0000 C CNN
@@ -102,9 +106,11 @@ F 3 "" H 2400 3225 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xxx_IEEE:40106 U9
+L Motherboard-rescue:40106-4xxx_IEEE U9
 U 4 1 5BFC2C9E
 P 3475 3700
+AR Path="/5BFC2C9E" Ref="U9"  Part="4" 
+AR Path="/5C104845/5BFC2C9E" Ref="U9"  Part="4" 
 F 0 "U9" H 3575 3850 50  0000 L CNN
 F 1 "40106" H 3525 3550 50  0000 L CNN
 F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 3475 3700 60  0001 C CNN
@@ -113,7 +119,7 @@ F 3 "" H 3475 3700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS257 U15
+L Motherboard-rescue:74LS257-74xx U15
 U 1 1 5BFC38B1
 P 6125 3025
 F 0 "U15" H 6175 3175 50  0000 C CNN
@@ -181,9 +187,6 @@ Wire Wire Line
 	4900 3550 4900 3625
 Connection ~ 4900 3625
 Wire Wire Line
-	5225 3550 5225 3725
-Connection ~ 5225 3725
-Wire Wire Line
 	3975 3700 3975 2575
 Wire Wire Line
 	3975 2575 5375 2575
@@ -212,7 +215,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 1450 2900 1450
 $Comp
-L Device:C C1
+L Motherboard-rescue:C-Device C1
 U 1 1 5C115714
 P 1900 2400
 F 0 "C1" H 1925 2500 50  0000 L CNN
@@ -223,7 +226,7 @@ F 3 "" H 1900 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR014
+L Motherboard-rescue:GND-power #PWR014
 U 1 1 5C11571A
 P 1900 2550
 F 0 "#PWR014" H 1900 2300 50  0001 C CNN
@@ -234,9 +237,11 @@ F 3 "" H 1900 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx_IEEE:40106 U9
+L Motherboard-rescue:40106-4xxx_IEEE U9
 U 2 1 5C118563
 P 3475 1450
+AR Path="/5C118563" Ref="U9"  Part="2" 
+AR Path="/5C104845/5C118563" Ref="U9"  Part="2" 
 F 0 "U9" H 3650 1575 50  0000 L CNN
 F 1 "40106" H 3650 1325 50  0000 L CNN
 F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 3475 1450 60  0001 C CNN
@@ -260,7 +265,7 @@ Wire Wire Line
 Wire Wire Line
 	3925 3700 3975 3700
 $Comp
-L Device:C C2
+L Motherboard-rescue:C-Device C2
 U 1 1 5C12ACF7
 P 1900 4650
 F 0 "C2" H 1925 4750 50  0000 L CNN
@@ -271,7 +276,7 @@ F 3 "" H 1900 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR015
+L Motherboard-rescue:GND-power #PWR015
 U 1 1 5C12ACFD
 P 1900 4800
 F 0 "#PWR015" H 1900 4550 50  0001 C CNN
@@ -282,7 +287,7 @@ F 3 "" H 1900 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C4
+L Motherboard-rescue:C-Device C4
 U 1 1 5C12D628
 P 2900 4650
 F 0 "C4" H 2925 4750 50  0000 L CNN
@@ -293,7 +298,7 @@ F 3 "" H 2900 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR017
+L Motherboard-rescue:GND-power #PWR017
 U 1 1 5C12D62E
 P 2900 4800
 F 0 "#PWR017" H 2900 4550 50  0001 C CNN
@@ -304,7 +309,7 @@ F 3 "" H 2900 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR018
+L Motherboard-rescue:+5V-power #PWR018
 U 1 1 5C1308AD
 P 4900 3250
 F 0 "#PWR018" H 4900 3100 50  0001 C CNN
@@ -315,18 +320,18 @@ F 3 "" H 4900 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR022
+L Motherboard-rescue:+5V-power #PWR022
 U 1 1 5C130932
-P 5225 3250
-F 0 "#PWR022" H 5225 3100 50  0001 C CNN
-F 1 "+5V" H 5240 3423 50  0000 C CNN
-F 2 "" H 5225 3250 50  0001 C CNN
-F 3 "" H 5225 3250 50  0001 C CNN
-	1    5225 3250
-	1    0    0    -1  
+P 5225 4600
+F 0 "#PWR022" H 5225 4450 50  0001 C CNN
+F 1 "+5V" H 5240 4773 50  0000 C CNN
+F 2 "" H 5225 4600 50  0001 C CNN
+F 3 "" H 5225 4600 50  0001 C CNN
+	1    5225 4600
+	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R3
+L Motherboard-rescue:R-Device R3
 U 1 1 5C130A0B
 P 4900 3400
 F 0 "R3" H 4970 3446 50  0000 L CNN
@@ -337,18 +342,7 @@ F 3 "~" H 4900 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
-U 1 1 5C130A93
-P 5225 3400
-F 0 "R4" H 5295 3446 50  0000 L CNN
-F 1 "10k" H 5295 3355 50  0000 L CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5155 3400 50  0001 C CNN
-F 3 "~" H 5225 3400 50  0001 C CNN
-	1    5225 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPST SW1
+L Motherboard-rescue:SW_SPST-Switch SW1
 U 1 1 5C131152
 P 4900 4400
 F 0 "SW1" V 4950 4650 50  0000 R CNN
@@ -359,7 +353,7 @@ F 3 "" H 4900 4400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Switch:SW_SPST SW2
+L Motherboard-rescue:SW_SPST-Switch SW2
 U 1 1 5C131309
 P 5225 4400
 F 0 "SW2" V 5179 4498 50  0000 L CNN
@@ -370,7 +364,7 @@ F 3 "" H 5225 4400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR019
+L Motherboard-rescue:GND-power #PWR019
 U 1 1 5C131628
 P 4900 4600
 F 0 "#PWR019" H 4900 4350 50  0001 C CNN
@@ -381,15 +375,15 @@ F 3 "" H 4900 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR023
+L Motherboard-rescue:GND-power #PWR023
 U 1 1 5C1316AD
-P 5225 4600
-F 0 "#PWR023" H 5225 4350 50  0001 C CNN
-F 1 "GND" H 5230 4427 50  0000 C CNN
-F 2 "" H 5225 4600 50  0001 C CNN
-F 3 "" H 5225 4600 50  0001 C CNN
-	1    5225 4600
-	1    0    0    -1  
+P 5225 3250
+F 0 "#PWR023" H 5225 3000 50  0001 C CNN
+F 1 "GND" H 5230 3077 50  0000 C CNN
+F 2 "" H 5225 3250 50  0001 C CNN
+F 3 "" H 5225 3250 50  0001 C CNN
+	1    5225 3250
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5375 2475 5375 2425
@@ -400,7 +394,7 @@ Wire Wire Line
 Wire Wire Line
 	5375 2525 5625 2525
 $Comp
-L power:+5V #PWR024
+L Motherboard-rescue:+5V-power #PWR024
 U 1 1 5C14A009
 P 6125 2125
 F 0 "#PWR024" H 6125 1975 50  0001 C CNN
@@ -411,7 +405,7 @@ F 3 "" H 6125 2125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR025
+L Motherboard-rescue:GND-power #PWR025
 U 1 1 5C14A19D
 P 6125 4025
 F 0 "#PWR025" H 6125 3775 50  0001 C CNN
@@ -446,8 +440,6 @@ RESET
 Text HLabel 9200 3325 2    50   Output ~ 0
 READY
 Wire Wire Line
-	5225 3725 5225 4200
-Wire Wire Line
 	4900 3625 4900 4200
 $Comp
 L Motherboard-rescue:ATF750LVC-fdc U5
@@ -467,7 +459,7 @@ Wire Wire Line
 Wire Wire Line
 	7825 3325 8200 3325
 $Comp
-L power:+5V #PWR0138
+L Motherboard-rescue:+5V-power #PWR0138
 U 1 1 5C56888A
 P 2400 3550
 F 0 "#PWR0138" H 2400 3400 50  0001 C CNN
@@ -478,7 +470,7 @@ F 3 "" H 2400 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0139
+L Motherboard-rescue:GND-power #PWR0139
 U 1 1 5C56893F
 P 2400 3850
 F 0 "#PWR0139" H 2400 3600 50  0001 C CNN
@@ -489,7 +481,7 @@ F 3 "" H 2400 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0140
+L Motherboard-rescue:GND-power #PWR0140
 U 1 1 5C5689CA
 P 3475 3850
 F 0 "#PWR0140" H 3475 3600 50  0001 C CNN
@@ -500,7 +492,7 @@ F 3 "" H 3475 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0141
+L Motherboard-rescue:+5V-power #PWR0141
 U 1 1 5C568BBA
 P 3475 3550
 F 0 "#PWR0141" H 3475 3400 50  0001 C CNN
@@ -511,7 +503,7 @@ F 3 "" H 3475 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0142
+L Motherboard-rescue:+5V-power #PWR0142
 U 1 1 5C56974B
 P 2400 1300
 F 0 "#PWR0142" H 2400 1150 50  0001 C CNN
@@ -522,7 +514,7 @@ F 3 "" H 2400 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0143
+L Motherboard-rescue:+5V-power #PWR0143
 U 1 1 5C5697D6
 P 3475 1300
 F 0 "#PWR0143" H 3475 1150 50  0001 C CNN
@@ -533,7 +525,7 @@ F 3 "" H 3475 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0144
+L Motherboard-rescue:GND-power #PWR0144
 U 1 1 5C569868
 P 2400 1600
 F 0 "#PWR0144" H 2400 1350 50  0001 C CNN
@@ -544,7 +536,7 @@ F 3 "" H 2400 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0145
+L Motherboard-rescue:GND-power #PWR0145
 U 1 1 5C5698F3
 P 3475 1600
 F 0 "#PWR0145" H 3475 1350 50  0001 C CNN
@@ -555,7 +547,7 @@ F 3 "" H 3475 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0146
+L Motherboard-rescue:GND-power #PWR0146
 U 1 1 5C582F09
 P 8200 3525
 F 0 "#PWR0146" H 8200 3275 50  0001 C CNN
@@ -566,7 +558,7 @@ F 3 "" H 8200 3525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0147
+L Motherboard-rescue:+5V-power #PWR0147
 U 1 1 5C583152
 P 9200 2425
 F 0 "#PWR0147" H 9200 2275 50  0001 C CNN
@@ -589,4 +581,27 @@ Text HLabel 9200 3125 2    50   Output ~ 0
 PCLK
 Text HLabel 9200 3025 2    50   Output ~ 0
 ~RESET
+NoConn ~ 9200 2525
+NoConn ~ 9200 2625
+NoConn ~ 9200 2725
+NoConn ~ 9200 2825
+NoConn ~ 9200 2925
+NoConn ~ 9200 3525
+NoConn ~ 8200 3425
+Wire Wire Line
+	5225 3550 5225 3725
+Connection ~ 5225 3725
+Wire Wire Line
+	5225 3725 5225 4200
+$Comp
+L Motherboard-rescue:R-Device R4
+U 1 1 5C130A93
+P 5225 3400
+F 0 "R4" H 5295 3446 50  0000 L CNN
+F 1 "10k" H 5295 3355 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5155 3400 50  0001 C CNN
+F 3 "~" H 5225 3400 50  0001 C CNN
+	1    5225 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

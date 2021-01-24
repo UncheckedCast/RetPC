@@ -1,16 +1,9 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP TL431AQDBZR_215
-D IC VREF SHUNT ADJ SOT23-3
-K 1727-4259-1-ND 
-F https://assets.nexperia.com/documents/data-sheet/TL431_FAM.pdf
-$ENDCMP
-#
-$CMP TL431AIDBZR
-D IC VREF SHUNT ADJ SOT23-3
-K 296-17329-1-ND 
-F http://www.ti.com/lit/ds/symlink/tl431a.pdf
-$ENDCMP
+Internal Server Error
+
+The server encountered an internal error and was unable to complete your request.
+Please contact the server administrator if this error reappears multiple times, please include the technical details below in your report.
+More details can be found in the server log.
+
 #
 $CMP REF3025AIDBZR
 D IC VREF SERIES 2.5V SOT23-3

@@ -27,7 +27,7 @@ F 3 "" H 2275 2225 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_SPST_LED SW3
+L Motherboard-rescue:SW_SPST_LED-Switch SW3
 U 1 1 5C30AF4E
 P 3675 2250
 F 0 "SW3" V 3721 2148 50  0000 R CNN
@@ -42,7 +42,7 @@ Wire Wire Line
 Wire Wire Line
 	3575 2450 3625 2450
 $Comp
-L power:GND #PWR0101
+L Motherboard-rescue:GND-power #PWR0101
 U 1 1 5C30B19D
 P 3625 2450
 F 0 "#PWR0101" H 3625 2200 50  0001 C CNN
@@ -56,7 +56,7 @@ Connection ~ 3625 2450
 Wire Wire Line
 	3625 2450 3675 2450
 $Comp
-L power:+3V3 #PWR0102
+L Motherboard-rescue:+3V3-power #PWR0102
 U 1 1 5C30B28F
 P 2275 1200
 F 0 "#PWR0102" H 2275 1050 50  0001 C CNN
@@ -87,7 +87,7 @@ Wire Wire Line
 Text Label 3675 1575 1    50   ~ 0
 POK
 $Comp
-L power:+3V3 #PWR0103
+L Motherboard-rescue:+3V3-power #PWR0103
 U 1 1 5C30B891
 P 1625 2775
 F 0 "#PWR0103" H 1625 2625 50  0001 C CNN
@@ -146,7 +146,7 @@ Text HLabel 1625 2475 0    50   Output ~ 0
 Wire Wire Line
 	1625 2475 1925 2475
 $Comp
-L power:GND #PWR0104
+L Motherboard-rescue:GND-power #PWR0104
 U 1 1 5C30D498
 P 2750 2175
 F 0 "#PWR0104" H 2750 1925 50  0001 C CNN
@@ -157,7 +157,7 @@ F 3 "" H 2750 2175 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR0105
+L Motherboard-rescue:+5V-power #PWR0105
 U 1 1 5C30D4D2
 P 2750 2575
 F 0 "#PWR0105" H 2750 2425 50  0001 C CNN
@@ -168,7 +168,7 @@ F 3 "" H 2750 2575 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR0106
+L Motherboard-rescue:+5V-power #PWR0106
 U 1 1 5C30D539
 P 1600 2075
 F 0 "#PWR0106" H 1600 1925 50  0001 C CNN
@@ -194,7 +194,7 @@ Wire Wire Line
 Text Label 2750 2775 0    50   ~ 0
 GND
 $Comp
-L power:-12V #PWR0107
+L Motherboard-rescue:-12V-power #PWR0107
 U 1 1 5C30E6AA
 P 2850 1650
 F 0 "#PWR0107" H 2850 1750 50  0001 C CNN
@@ -211,7 +211,7 @@ Wire Wire Line
 Text Label 2650 3250 1    50   ~ 0
 GND
 $Comp
-L power:GND #PWR0108
+L Motherboard-rescue:GND-power #PWR0108
 U 1 1 5C30ED86
 P 2650 3350
 F 0 "#PWR0108" H 2650 3100 50  0001 C CNN
@@ -224,7 +224,7 @@ $EndComp
 Wire Wire Line
 	2650 3250 2650 3350
 $Comp
-L Device:R R6
+L Motherboard-rescue:R-Device R6
 U 1 1 5C30F4E0
 P 3425 1975
 F 0 "R6" V 3218 1975 50  0000 C CNN
@@ -237,7 +237,7 @@ $EndComp
 Wire Wire Line
 	2625 1975 3275 1975
 $Comp
-L Switch:SW_Push SW4
+L Motherboard-rescue:SW_Push-Switch SW4
 U 1 1 5C317854
 P 5100 1950
 F 0 "SW4" V 5146 1902 50  0000 R CNN
@@ -257,7 +257,7 @@ Wire Wire Line
 	5100 1675 5100 1750
 Connection ~ 5100 1750
 $Comp
-L Device:R R8
+L Motherboard-rescue:R-Device R8
 U 1 1 5C322C7C
 P 5100 2300
 F 0 "R8" H 5170 2346 50  0000 L CNN
@@ -268,7 +268,7 @@ F 3 "~" H 5100 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
+L Motherboard-rescue:R-Device R7
 U 1 1 5C322F17
 P 3675 1825
 F 0 "R7" H 3745 1871 50  0000 L CNN
@@ -281,7 +281,7 @@ $EndComp
 Wire Wire Line
 	3675 1575 3675 1675
 $Comp
-L power:GND #PWR0109
+L Motherboard-rescue:GND-power #PWR0109
 U 1 1 5C3237F3
 P 5100 2450
 F 0 "#PWR0109" H 5100 2200 50  0001 C CNN
@@ -294,7 +294,7 @@ $EndComp
 Wire Wire Line
 	2625 2375 2750 2375
 $Comp
-L power:-5V #PWR0126
+L Motherboard-rescue:-5V-power #PWR0126
 U 1 1 5C3282DF
 P 2750 2375
 F 0 "#PWR0126" H 2750 2475 50  0001 C CNN
@@ -307,7 +307,7 @@ $EndComp
 Text Notes 2875 2550 0    50   ~ 0
 If present on\nATX supply
 $Comp
-L power:+12V #PWR0127
+L Motherboard-rescue:+12V-power #PWR0127
 U 1 1 5C329C6E
 P 1850 2625
 F 0 "#PWR0127" H 1850 2475 50  0001 C CNN
@@ -321,7 +321,7 @@ Connection ~ 1850 2625
 Wire Wire Line
 	1850 2625 1850 2675
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J8
+L Motherboard-rescue:Conn_02x03_Odd_Even-Connector_Generic J8
 U 1 1 5C5AECD2
 P 1350 1050
 F 0 "J8" H 1400 1367 50  0000 C CNN
@@ -348,7 +348,7 @@ Connection ~ 1150 1050
 Wire Wire Line
 	1150 1050 1150 1150
 $Comp
-L power:GND #PWR05
+L Motherboard-rescue:GND-power #PWR05
 U 1 1 5C5B02E8
 P 1150 1150
 F 0 "#PWR05" H 1150 900 50  0001 C CNN
@@ -360,7 +360,7 @@ F 3 "" H 1150 1150 50  0001 C CNN
 $EndComp
 Connection ~ 1150 1150
 $Comp
-L Regulator_Linear:L79L05_TO92 U38
+L Motherboard-rescue:L79L05_TO92-Regulator_Linear U38
 U 1 1 5C9522CD
 P 3680 3490
 F 0 "U38" H 3680 3360 50  0000 C CNN
@@ -371,7 +371,7 @@ F 3 "http://www.farnell.com/datasheets/1827870.pdf" H 3680 3490 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C21
+L Motherboard-rescue:CP-Device C21
 U 1 1 5C95256B
 P 3150 3300
 F 0 "C21" H 3268 3346 50  0000 L CNN
@@ -382,7 +382,7 @@ F 3 "~" H 3150 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C22
+L Motherboard-rescue:CP-Device C22
 U 1 1 5C9526F7
 P 4290 3300
 F 0 "C22" H 4408 3346 50  0000 L CNN
@@ -393,7 +393,7 @@ F 3 "~" H 4290 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D1
+L Motherboard-rescue:1N4001-Diode D1
 U 1 1 5C9527BC
 P 3680 3840
 F 0 "D1" H 3680 3670 50  0000 C CNN
@@ -429,7 +429,7 @@ Connection ~ 3680 3150
 Wire Wire Line
 	3680 3150 4290 3150
 $Comp
-L power:GND #PWR083
+L Motherboard-rescue:GND-power #PWR083
 U 1 1 5C95F2A2
 P 3680 3150
 F 0 "#PWR083" H 3680 2900 50  0001 C CNN
@@ -445,7 +445,7 @@ Wire Wire Line
 	2890 3490 2890 3290
 Connection ~ 3150 3490
 $Comp
-L power:-12V #PWR082
+L Motherboard-rescue:-12V-power #PWR082
 U 1 1 5C960419
 P 2890 3290
 F 0 "#PWR082" H 2890 3390 50  0001 C CNN
@@ -458,7 +458,7 @@ $EndComp
 Wire Wire Line
 	4640 3490 4640 3290
 $Comp
-L power:-5V #PWR084
+L Motherboard-rescue:-5V-power #PWR084
 U 1 1 5C961532
 P 4640 3290
 F 0 "#PWR084" H 4640 3390 50  0001 C CNN

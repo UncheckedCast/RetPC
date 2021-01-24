@@ -18,7 +18,7 @@ CLK
 Text HLabel 2175 4150 0    50   Input ~ 0
 CLK33
 $Comp
-L 74xx:74LS04 U34
+L Motherboard-rescue:74LS04-74xx U34
 U 1 1 5C3CEA6F
 P 2675 4150
 F 0 "U34" H 2675 4300 50  0000 C CNN
@@ -31,7 +31,7 @@ $EndComp
 Wire Wire Line
 	2175 4150 2375 4150
 $Comp
-L 74xx:74LS04 U30
+L Motherboard-rescue:74LS04-74xx U30
 U 2 1 5C3CEB4A
 P 2675 3750
 F 0 "U30" H 2675 4067 50  0000 C CNN
@@ -44,7 +44,7 @@ $EndComp
 Wire Wire Line
 	2175 3750 2375 3750
 $Comp
-L Device:R R10
+L Motherboard-rescue:R-Device R10
 U 1 1 5C3CEC19
 P 3175 3750
 F 0 "R10" V 2968 3750 50  0000 C CNN
@@ -73,7 +73,7 @@ Text HLabel 2850 1875 0    50   Input ~ 0
 Text HLabel 2275 1975 0    50   Input ~ 0
 IOCHCK_I
 $Comp
-L 74xx:74LS00 U36
+L Motherboard-rescue:74LS00-74xx U36
 U 2 1 5C3CF7E9
 P 3825 3950
 F 0 "U36" H 3825 4275 50  0000 C CNN
@@ -141,7 +141,7 @@ XA16
 Text Label 1700 825  2    50   ~ 0
 XA15
 $Comp
-L Device:R R11
+L Motherboard-rescue:R-Device R11
 U 1 1 5C9B19FC
 P 2675 2725
 F 0 "R11" H 2475 2775 50  0000 L CNN
@@ -155,7 +155,7 @@ Connection ~ 2675 2575
 Wire Wire Line
 	2675 2575 2575 2575
 $Comp
-L Switch:SW_DIP_x01 SW5
+L Motherboard-rescue:SW_DIP_x01-Switch SW5
 U 1 1 5C9B21CC
 P 2275 2575
 F 0 "SW5" H 2275 2842 50  0000 C CNN
@@ -166,7 +166,7 @@ F 3 "" H 2275 2575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR063
+L Motherboard-rescue:GND-power #PWR063
 U 1 1 5C9B2325
 P 1975 2575
 F 0 "#PWR063" H 1975 2325 50  0001 C CNN
@@ -177,7 +177,7 @@ F 3 "" H 1975 2575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR065
+L Motherboard-rescue:+5V-power #PWR065
 U 1 1 5C9B2372
 P 2675 2875
 F 0 "#PWR065" H 2675 2725 50  0001 C CNN
@@ -194,7 +194,7 @@ Text HLabel 3850 1875 2    50   Output ~ 0
 Text HLabel 3850 1975 2    50   Output ~ 0
 ~CS7
 $Comp
-L power:+5V #PWR0137
+L Motherboard-rescue:+5V-power #PWR0137
 U 1 1 5CFED197
 P 2350 2175
 F 0 "#PWR0137" H 2350 2025 50  0001 C CNN
@@ -205,7 +205,7 @@ F 3 "" H 2350 2175 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R9
+L Motherboard-rescue:R_Small-Device R9
 U 1 1 5CFED308
 P 2350 2075
 F 0 "R9" H 2409 2121 50  0000 L CNN
@@ -252,13 +252,11 @@ Wire Wire Line
 	1500 1125 1700 1125
 Wire Wire Line
 	1500 1225 1700 1225
-Wire Bus Line
-	1400 675  1400 1225
 $Comp
-L power:GND #PWR?
+L Motherboard-rescue:GND-power #PWR099
 U 1 1 5EB4770B
 P 2850 2675
-F 0 "#PWR?" H 2850 2425 50  0001 C CNN
+F 0 "#PWR099" H 2850 2425 50  0001 C CNN
 F 1 "GND" H 2855 2502 50  0000 C CNN
 F 2 "" H 2850 2675 50  0001 C CNN
 F 3 "" H 2850 2675 50  0001 C CNN
@@ -266,14 +264,16 @@ F 3 "" H 2850 2675 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L Motherboard-rescue:+5V-power #PWR0100
 U 1 1 5EB47B98
 P 3850 1575
-F 0 "#PWR?" H 3850 1425 50  0001 C CNN
+F 0 "#PWR0100" H 3850 1425 50  0001 C CNN
 F 1 "+5V" H 3865 1748 50  0000 C CNN
 F 2 "" H 3850 1575 50  0001 C CNN
 F 3 "" H 3850 1575 50  0001 C CNN
 	1    3850 1575
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	1400 675  1400 1225
 $EndSCHEMATC

@@ -36,7 +36,7 @@ F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 5625 3400 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0110
+L Motherboard-rescue:GND-power #PWR0110
 U 1 1 5C3285DE
 P 2275 1800
 F 0 "#PWR0110" H 2275 1550 50  0001 C CNN
@@ -51,7 +51,7 @@ Wire Wire Line
 Wire Wire Line
 	2275 1900 2350 1900
 $Comp
-L power:+5V #PWR0111
+L Motherboard-rescue:+5V-power #PWR0111
 U 1 1 5C3286C5
 P 2050 1800
 F 0 "#PWR0111" H 2050 1650 50  0001 C CNN
@@ -66,7 +66,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 2100 2350 2100
 $Comp
-L power:-5V #PWR0112
+L Motherboard-rescue:-5V-power #PWR0112
 U 1 1 5C3287A9
 P 2050 2300
 F 0 "#PWR0112" H 2050 2400 50  0001 C CNN
@@ -85,7 +85,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 2800 2050 2800
 $Comp
-L power:-12V #PWR0113
+L Motherboard-rescue:-12V-power #PWR0113
 U 1 1 5C328963
 P 2050 2500
 F 0 "#PWR0113" H 2050 2600 50  0001 C CNN
@@ -96,7 +96,7 @@ F 3 "" H 2050 2500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+12V #PWR0114
+L Motherboard-rescue:+12V-power #PWR0114
 U 1 1 5C3289C0
 P 2050 2700
 F 0 "#PWR0114" H 2050 2550 50  0001 C CNN
@@ -107,7 +107,7 @@ F 3 "" H 2050 2700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0115
+L Motherboard-rescue:GND-power #PWR0115
 U 1 1 5C328A08
 P 2050 2800
 F 0 "#PWR0115" H 2050 2550 50  0001 C CNN
@@ -120,7 +120,7 @@ $EndComp
 Wire Wire Line
 	2350 4700 2100 4700
 $Comp
-L power:+5V #PWR0116
+L Motherboard-rescue:+5V-power #PWR0116
 U 1 1 5C328B26
 P 2100 4700
 F 0 "#PWR0116" H 2100 4550 50  0001 C CNN
@@ -133,7 +133,7 @@ $EndComp
 Wire Wire Line
 	2350 4900 2100 4900
 $Comp
-L power:GND #PWR0117
+L Motherboard-rescue:GND-power #PWR0117
 U 1 1 5C328BFE
 P 2100 4900
 F 0 "#PWR0117" H 2100 4650 50  0001 C CNN
@@ -156,7 +156,7 @@ Wire Wire Line
 Text Label 2100 2000 0    50   ~ 0
 RESET
 $Comp
-L Connector:Bus_ISA_8bit J7
+L Motherboard-rescue:Bus_ISA_8bit-Connector J7
 U 1 1 5C82E422
 P 8000 7875
 F 0 "J7" H 8000 9642 50  0000 C CNN
@@ -194,7 +194,7 @@ Text HLabel 11550 2320 0    50   Input ~ 0
 Text HLabel 11550 2410 0    50   Input ~ 0
 ~MEMR
 $Comp
-L Device:CP C5
+L Motherboard-rescue:CP-Device C5
 U 1 1 5C5B5BAC
 P 14350 1275
 F 0 "C5" H 14468 1321 50  0000 L CNN
@@ -205,7 +205,7 @@ F 3 "~" H 14350 1275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C7
+L Motherboard-rescue:CP-Device C7
 U 1 1 5C5B5E16
 P 14750 1275
 F 0 "C7" H 14868 1321 50  0000 L CNN
@@ -216,7 +216,7 @@ F 3 "~" H 14750 1275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C9
+L Motherboard-rescue:CP-Device C9
 U 1 1 5C5B5E53
 P 15150 1275
 F 0 "C9" H 15268 1321 50  0000 L CNN
@@ -227,7 +227,7 @@ F 3 "~" H 15150 1275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C8
+L Motherboard-rescue:CP-Device C8
 U 1 1 5C5B74CB
 P 14750 1575
 F 0 "C8" H 14632 1529 50  0000 R CNN
@@ -238,7 +238,7 @@ F 3 "~" H 14750 1575 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:CP C6
+L Motherboard-rescue:CP-Device C6
 U 1 1 5C5B74D1
 P 14350 1575
 F 0 "C6" H 14232 1529 50  0000 R CNN
@@ -255,7 +255,7 @@ Connection ~ 14750 1425
 Wire Wire Line
 	14750 1425 15150 1425
 $Comp
-L power:GND #PWR021
+L Motherboard-rescue:GND-power #PWR021
 U 1 1 5C5C0092
 P 15150 1425
 F 0 "#PWR021" H 15150 1175 50  0001 C CNN
@@ -274,7 +274,7 @@ Wire Wire Line
 Wire Wire Line
 	14750 1725 14350 1725
 $Comp
-L power:+5V #PWR020
+L Motherboard-rescue:+5V-power #PWR020
 U 1 1 5C5C3C88
 P 14750 1725
 F 0 "#PWR020" H 14750 1575 50  0001 C CNN
@@ -286,7 +286,7 @@ F 3 "" H 14750 1725 50  0001 C CNN
 $EndComp
 Connection ~ 14750 1725
 $Comp
-L power:+5V #PWR06
+L Motherboard-rescue:+5V-power #PWR06
 U 1 1 5C5C3D68
 P 14750 1125
 F 0 "#PWR06" H 14750 975 50  0001 C CNN
@@ -529,7 +529,7 @@ A18
 Text Label 3750 3000 0    50   ~ 0
 A19
 $Comp
-L power:GND #PWR0118
+L Motherboard-rescue:GND-power #PWR0118
 U 1 1 5C647249
 P 4850 1800
 F 0 "#PWR0118" H 4850 1550 50  0001 C CNN
@@ -544,7 +544,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 1900 4925 1900
 $Comp
-L power:+5V #PWR0119
+L Motherboard-rescue:+5V-power #PWR0119
 U 1 1 5C647251
 P 4625 1800
 F 0 "#PWR0119" H 4625 1650 50  0001 C CNN
@@ -559,7 +559,7 @@ Wire Wire Line
 Wire Wire Line
 	4625 2100 4925 2100
 $Comp
-L power:-5V #PWR0120
+L Motherboard-rescue:-5V-power #PWR0120
 U 1 1 5C647259
 P 4625 2300
 F 0 "#PWR0120" H 4625 2400 50  0001 C CNN
@@ -578,7 +578,7 @@ Wire Wire Line
 Wire Wire Line
 	4925 2800 4625 2800
 $Comp
-L power:-12V #PWR0121
+L Motherboard-rescue:-12V-power #PWR0121
 U 1 1 5C647263
 P 4625 2500
 F 0 "#PWR0121" H 4625 2600 50  0001 C CNN
@@ -589,7 +589,7 @@ F 3 "" H 4625 2500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+12V #PWR0122
+L Motherboard-rescue:+12V-power #PWR0122
 U 1 1 5C647269
 P 4625 2700
 F 0 "#PWR0122" H 4625 2550 50  0001 C CNN
@@ -600,7 +600,7 @@ F 3 "" H 4625 2700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0123
+L Motherboard-rescue:GND-power #PWR0123
 U 1 1 5C64726F
 P 4625 2800
 F 0 "#PWR0123" H 4625 2550 50  0001 C CNN
@@ -613,7 +613,7 @@ $EndComp
 Wire Wire Line
 	4925 4700 4675 4700
 $Comp
-L power:+5V #PWR0124
+L Motherboard-rescue:+5V-power #PWR0124
 U 1 1 5C647276
 P 4675 4700
 F 0 "#PWR0124" H 4675 4550 50  0001 C CNN
@@ -626,7 +626,7 @@ $EndComp
 Wire Wire Line
 	4925 4900 4675 4900
 $Comp
-L power:GND #PWR0125
+L Motherboard-rescue:GND-power #PWR0125
 U 1 1 5C64727D
 P 4675 4900
 F 0 "#PWR0125" H 4675 4650 50  0001 C CNN
@@ -1384,7 +1384,7 @@ F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 5600 7875 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR047
+L Motherboard-rescue:GND-power #PWR047
 U 1 1 5C4AF478
 P 2250 6275
 F 0 "#PWR047" H 2250 6025 50  0001 C CNN
@@ -1399,7 +1399,7 @@ Wire Wire Line
 Wire Wire Line
 	7225 6375 7300 6375
 $Comp
-L power:+5V #PWR0149
+L Motherboard-rescue:+5V-power #PWR0149
 U 1 1 5C6DDBB1
 P 7000 6275
 F 0 "#PWR0149" H 7000 6125 50  0001 C CNN
@@ -1414,7 +1414,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 6575 7300 6575
 $Comp
-L power:-5V #PWR0150
+L Motherboard-rescue:-5V-power #PWR0150
 U 1 1 5C6DDBB9
 P 7000 6775
 F 0 "#PWR0150" H 7000 6875 50  0001 C CNN
@@ -1433,7 +1433,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 7275 7000 7275
 $Comp
-L power:-12V #PWR0151
+L Motherboard-rescue:-12V-power #PWR0151
 U 1 1 5C6DDBC3
 P 7000 6975
 F 0 "#PWR0151" H 7000 7075 50  0001 C CNN
@@ -1444,7 +1444,7 @@ F 3 "" H 7000 6975 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+12V #PWR0152
+L Motherboard-rescue:+12V-power #PWR0152
 U 1 1 5C6DDBC9
 P 7000 7175
 F 0 "#PWR0152" H 7000 7025 50  0001 C CNN
@@ -1455,7 +1455,7 @@ F 3 "" H 7000 7175 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0153
+L Motherboard-rescue:GND-power #PWR0153
 U 1 1 5C6DDBCF
 P 7000 7275
 F 0 "#PWR0153" H 7000 7025 50  0001 C CNN
@@ -1468,7 +1468,7 @@ $EndComp
 Wire Wire Line
 	7300 9175 7050 9175
 $Comp
-L power:+5V #PWR0154
+L Motherboard-rescue:+5V-power #PWR0154
 U 1 1 5C6DDBD6
 P 7050 9175
 F 0 "#PWR0154" H 7050 9025 50  0001 C CNN
@@ -1481,7 +1481,7 @@ $EndComp
 Wire Wire Line
 	7300 9375 7050 9375
 $Comp
-L power:GND #PWR0155
+L Motherboard-rescue:GND-power #PWR0155
 U 1 1 5C6DDBDD
 P 7050 9375
 F 0 "#PWR0155" H 7050 9125 50  0001 C CNN
@@ -1508,7 +1508,7 @@ ALE
 Text Label 7075 8975 0    50   ~ 0
 TC
 $Comp
-L power:GND #PWR0156
+L Motherboard-rescue:GND-power #PWR0156
 U 1 1 5C71388F
 P 4825 6275
 F 0 "#PWR0156" H 4825 6025 50  0001 C CNN
@@ -1523,7 +1523,7 @@ Wire Wire Line
 Wire Wire Line
 	4825 6375 4900 6375
 $Comp
-L power:+5V #PWR0157
+L Motherboard-rescue:+5V-power #PWR0157
 U 1 1 5C713897
 P 4600 6275
 F 0 "#PWR0157" H 4600 6125 50  0001 C CNN
@@ -1538,7 +1538,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 6575 4900 6575
 $Comp
-L power:-5V #PWR0158
+L Motherboard-rescue:-5V-power #PWR0158
 U 1 1 5C71389F
 P 4600 6775
 F 0 "#PWR0158" H 4600 6875 50  0001 C CNN
@@ -1557,7 +1557,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 7275 4600 7275
 $Comp
-L power:-12V #PWR0159
+L Motherboard-rescue:-12V-power #PWR0159
 U 1 1 5C7138A9
 P 4600 6975
 F 0 "#PWR0159" H 4600 7075 50  0001 C CNN
@@ -1568,7 +1568,7 @@ F 3 "" H 4600 6975 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+12V #PWR0160
+L Motherboard-rescue:+12V-power #PWR0160
 U 1 1 5C7138AF
 P 4600 7175
 F 0 "#PWR0160" H 4600 7025 50  0001 C CNN
@@ -1579,7 +1579,7 @@ F 3 "" H 4600 7175 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0161
+L Motherboard-rescue:GND-power #PWR0161
 U 1 1 5C7138B5
 P 4600 7275
 F 0 "#PWR0161" H 4600 7025 50  0001 C CNN
@@ -1592,7 +1592,7 @@ $EndComp
 Wire Wire Line
 	4900 9175 4650 9175
 $Comp
-L power:+5V #PWR0162
+L Motherboard-rescue:+5V-power #PWR0162
 U 1 1 5C7138BC
 P 4650 9175
 F 0 "#PWR0162" H 4650 9025 50  0001 C CNN
@@ -1605,7 +1605,7 @@ $EndComp
 Wire Wire Line
 	4900 9375 4650 9375
 $Comp
-L power:GND #PWR0163
+L Motherboard-rescue:GND-power #PWR0163
 U 1 1 5C7138C3
 P 4650 9375
 F 0 "#PWR0163" H 4650 9125 50  0001 C CNN
@@ -1632,7 +1632,7 @@ ALE
 Text Label 4675 8975 0    50   ~ 0
 TC
 $Comp
-L power:GND #PWR0148
+L Motherboard-rescue:GND-power #PWR0148
 U 1 1 5C5AC83D
 P 7225 6275
 F 0 "#PWR0148" H 7225 6025 50  0001 C CNN
@@ -1647,7 +1647,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 6375 2325 6375
 $Comp
-L power:+5V #PWR0165
+L Motherboard-rescue:+5V-power #PWR0165
 U 1 1 5C74D516
 P 2025 6275
 F 0 "#PWR0165" H 2025 6125 50  0001 C CNN
@@ -1662,7 +1662,7 @@ Wire Wire Line
 Wire Wire Line
 	2025 6575 2325 6575
 $Comp
-L power:-5V #PWR0166
+L Motherboard-rescue:-5V-power #PWR0166
 U 1 1 5C74D51E
 P 2025 6775
 F 0 "#PWR0166" H 2025 6875 50  0001 C CNN
@@ -1681,7 +1681,7 @@ Wire Wire Line
 Wire Wire Line
 	2325 7275 2025 7275
 $Comp
-L power:-12V #PWR0167
+L Motherboard-rescue:-12V-power #PWR0167
 U 1 1 5C74D528
 P 2025 6975
 F 0 "#PWR0167" H 2025 7075 50  0001 C CNN
@@ -1692,7 +1692,7 @@ F 3 "" H 2025 6975 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+12V #PWR0168
+L Motherboard-rescue:+12V-power #PWR0168
 U 1 1 5C74D52E
 P 2025 7175
 F 0 "#PWR0168" H 2025 7025 50  0001 C CNN
@@ -1703,7 +1703,7 @@ F 3 "" H 2025 7175 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0169
+L Motherboard-rescue:GND-power #PWR0169
 U 1 1 5C74D534
 P 2025 7275
 F 0 "#PWR0169" H 2025 7025 50  0001 C CNN
@@ -1716,7 +1716,7 @@ $EndComp
 Wire Wire Line
 	2325 9175 2075 9175
 $Comp
-L power:+5V #PWR0170
+L Motherboard-rescue:+5V-power #PWR0170
 U 1 1 5C74D53B
 P 2075 9175
 F 0 "#PWR0170" H 2075 9025 50  0001 C CNN
@@ -1729,7 +1729,7 @@ $EndComp
 Wire Wire Line
 	2325 9375 2075 9375
 $Comp
-L power:GND #PWR0171
+L Motherboard-rescue:GND-power #PWR0171
 U 1 1 5C74D542
 P 2075 9375
 F 0 "#PWR0171" H 2075 9125 50  0001 C CNN
@@ -1756,7 +1756,7 @@ ALE
 Text Label 2100 8975 0    50   ~ 0
 TC
 $Comp
-L Connector:Bus_ISA_8bit J5
+L Motherboard-rescue:Bus_ISA_8bit-Connector J5
 U 1 1 5C4AF46C
 P 3025 7875
 F 0 "J5" H 3025 9642 50  0000 C CNN
@@ -1769,7 +1769,7 @@ $EndComp
 Wire Wire Line
 	11555 2160 12205 2160
 $Comp
-L Device:R_Small R20
+L Motherboard-rescue:R_Small-Device R20
 U 1 1 5D15F27E
 P 12205 2060
 F 0 "R20" H 12264 2106 50  0000 L CNN
@@ -1780,7 +1780,7 @@ F 3 "~" H 12205 2060 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0215
+L Motherboard-rescue:+5V-power #PWR0215
 U 1 1 5D15FC4A
 P 12205 1960
 F 0 "#PWR0215" H 12205 1810 50  0001 C CNN
@@ -2264,8 +2264,213 @@ Text Label 8975 6375 2    50   ~ 0
 IOCHCK
 Wire Wire Line
 	8700 6375 8975 6375
+$Comp
+L 74xx:74LS244 U54
+U 1 1 5EA1FFAE
+P 12800 5075
+F 0 "U54" H 12800 6056 50  0000 C CNN
+F 1 "74LS244" H 12800 5965 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 12800 5075 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 12800 5075 50  0001 C CNN
+	1    12800 5075
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS175 U53
+U 1 1 5EA20DBB
+P 10850 4975
+F 0 "U53" H 10850 5856 50  0000 C CNN
+F 1 "74LS175" H 10850 5765 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 10850 4975 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS175" H 10850 4975 50  0001 C CNN
+	1    10850 4975
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	13525 4575 13625 4675
+Entry Wire Line
+	13525 4675 13625 4775
+Entry Wire Line
+	13525 4775 13625 4875
+Entry Wire Line
+	13525 4875 13625 4975
+Entry Wire Line
+	13525 4975 13625 5075
+Entry Wire Line
+	13525 5075 13625 5175
+Entry Wire Line
+	13525 5175 13625 5275
+Entry Wire Line
+	13525 5275 13625 5375
+Wire Wire Line
+	13300 4575 13525 4575
+Wire Wire Line
+	13525 4675 13300 4675
+Wire Wire Line
+	13300 4775 13525 4775
+Wire Wire Line
+	13525 4875 13300 4875
+Wire Wire Line
+	13300 4975 13525 4975
+Wire Wire Line
+	13525 5075 13300 5075
+Wire Wire Line
+	13300 5175 13525 5175
+Wire Wire Line
+	13525 5275 13300 5275
+Text Label 13300 4575 0    50   ~ 0
+D7
+Text Label 13300 4675 0    50   ~ 0
+D6
+Text Label 13300 4775 0    50   ~ 0
+D5
+Text Label 13300 4875 0    50   ~ 0
+D4
+Text Label 13300 4975 0    50   ~ 0
+D3
+Text Label 13300 5075 0    50   ~ 0
+D2
+Text Label 13300 5175 0    50   ~ 0
+D1
+Text Label 13300 5275 0    50   ~ 0
+D0
+Wire Bus Line
+	13625 4475 13875 4475
+Text Label 13875 4475 2    50   ~ 0
+D[0...7]
+Entry Wire Line
+	10125 4575 10025 4675
+Entry Wire Line
+	10125 4775 10025 4875
+Entry Wire Line
+	10125 4975 10025 5075
+Entry Wire Line
+	10125 5175 10025 5275
+Wire Wire Line
+	10350 4575 10125 4575
+Wire Wire Line
+	10350 4775 10125 4775
+Wire Wire Line
+	10350 4975 10125 4975
+Wire Wire Line
+	10350 5175 10125 5175
+Text Label 10350 4775 2    50   ~ 0
+D1
+Wire Bus Line
+	10025 4475 9775 4475
+Text Label 9775 4475 0    50   ~ 0
+D[0...7]
+Text HLabel 11555 1060 0    50   Input ~ 0
+~RESET
+Text Label 11805 1060 2    50   ~ 0
+~RESET
+Wire Wire Line
+	11555 1060 11805 1060
+Wire Wire Line
+	10350 5475 10200 5475
+Wire Wire Line
+	10200 5475 10200 5825
+Text Label 10350 5175 2    50   ~ 0
+D3
+Text Label 10350 4575 2    50   ~ 0
+D0
+Text Label 10350 4975 2    50   ~ 0
+D2
+Text Label 10200 5825 1    50   ~ 0
+~RESET
+Text Label 11800 5275 2    50   ~ 0
+ENA_IOCHCK
+Wire Wire Line
+	11350 5275 11800 5275
+Wire Wire Line
+	11350 5175 11775 5175
+Wire Wire Line
+	11775 5175 11775 4975
+Wire Wire Line
+	11775 4975 12300 4975
+Text Label 11775 4575 2    50   ~ 0
+TIM2GATE
+Text Label 11775 4775 2    50   ~ 0
+SPKR_DATA
+Wire Wire Line
+	12300 5475 12300 5575
+Connection ~ 12300 5575
+Text Label 11900 5575 0    50   ~ 0
+PORTB_RD
+Wire Wire Line
+	11900 5575 12300 5575
+NoConn ~ 11350 4675
+NoConn ~ 11350 4875
+NoConn ~ 11350 5075
+Wire Wire Line
+	11350 4975 11450 4975
+Wire Wire Line
+	11450 4975 11450 5075
+Wire Wire Line
+	11450 5075 12300 5075
+Wire Wire Line
+	11975 4775 11975 5175
+Wire Wire Line
+	11350 4775 11975 4775
+Wire Wire Line
+	11875 4575 11875 5275
+Wire Wire Line
+	11350 4575 11875 4575
+Wire Wire Line
+	11875 5275 12300 5275
+Wire Wire Line
+	11975 5175 12300 5175
+Wire Wire Line
+	12300 4675 12200 4675
+$Comp
+L 74xx:74LS74 U?
+U 1 1 5F1CACB0
+P 11725 3375
+F 0 "U?" H 11725 3856 50  0000 C CNN
+F 1 "74LS74" H 11725 3765 50  0000 C CNN
+F 2 "" H 11725 3375 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 11725 3375 50  0001 C CNN
+	1    11725 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11725 3675 11725 3850
+Wire Wire Line
+	11725 3850 11250 3850
+Text Label 11250 3850 0    50   ~ 0
+ENA_IOCHCK
+Wire Wire Line
+	11725 3075 11000 3075
+Text Label 11000 3075 0    50   ~ 0
+IOCHCK
+Wire Wire Line
+	11425 3275 11425 3375
+Wire Wire Line
+	11425 3375 11250 3375
+Connection ~ 11425 3375
+$Comp
+L power:+5V #PWR?
+U 1 1 5F3AE915
+P 11250 3375
+F 0 "#PWR?" H 11250 3225 50  0001 C CNN
+F 1 "+5V" V 11265 3503 50  0000 L CNN
+F 2 "" H 11250 3375 50  0001 C CNN
+F 3 "" H 11250 3375 50  0001 C CNN
+	1    11250 3375
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12025 3275 12200 3275
+Wire Wire Line
+	12200 3275 12200 4675
+Wire Wire Line
+	12025 3475 12625 3475
+Text Notes 12475 3450 0    50   ~ 0
+Mot NMI\n
 Wire Bus Line
 	10200 2170 10200 2520
+Wire Bus Line
+	10025 4475 10025 5375
 Wire Bus Line
 	4050 6375 4050 7275
 Wire Bus Line
@@ -2276,6 +2481,8 @@ Wire Bus Line
 	6650 1900 6650 2800
 Wire Bus Line
 	4075 1900 4075 2800
+Wire Bus Line
+	13625 4475 13625 5375
 Wire Bus Line
 	4050 7575 4050 9750
 Wire Bus Line

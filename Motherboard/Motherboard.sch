@@ -48,7 +48,7 @@ F13 "PCLK" O R 4625 2940 50
 F14 "~RESET" O L 3475 2465 50 
 $EndSheet
 $Comp
-L MCU_Intel:8088_Max_Mode U2
+L Motherboard-rescue:8088_Max_Mode-MCU_Intel U2
 U 1 1 5C0BB17D
 P 5750 4000
 F 0 "U2" H 5750 5200 50  0000 C CNN
@@ -133,7 +133,7 @@ Entry Wire Line
 Entry Wire Line
 	6850 4900 6950 5000
 $Comp
-L power:GND #PWR01
+L Motherboard-rescue:GND-power #PWR01
 U 1 1 5C0BD738
 P 5050 5500
 F 0 "#PWR01" H 5050 5250 50  0001 C CNN
@@ -144,7 +144,7 @@ F 3 "" H 5050 5500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR02
+L Motherboard-rescue:GND-power #PWR02
 U 1 1 5C0BD75E
 P 5650 5800
 F 0 "#PWR02" H 5650 5550 50  0001 C CNN
@@ -155,7 +155,7 @@ F 3 "" H 5650 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
+L Motherboard-rescue:GND-power #PWR04
 U 1 1 5C0BD783
 P 5850 5800
 F 0 "#PWR04" H 5850 5550 50  0001 C CNN
@@ -166,7 +166,7 @@ F 3 "" H 5850 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR03
+L Motherboard-rescue:+5V-power #PWR03
 U 1 1 5C0BD8FF
 P 5750 2200
 F 0 "#PWR03" H 5750 2050 50  0001 C CNN
@@ -196,17 +196,6 @@ Wire Wire Line
 	6450 2900 6850 2900
 Wire Wire Line
 	6450 3000 6850 3000
-$Comp
-L Motherboard-rescue:8259-Interface U3
-U 1 1 5C0C4B18
-P 8920 8855
-F 0 "U3" H 8920 10133 50  0000 C CNN
-F 1 "8259" H 8920 10042 50  0000 C CNN
-F 2 "Housings_DIP:DIP-28_W7.62mm_Socket" H 8920 8855 50  0001 C CIN
-F 3 "http://pdos.csail.mit.edu/6.828/2005/readings/hardware/8259A.pdf" H 8920 8855 50  0001 C CNN
-	1    8920 8855
-	1    0    0    -1  
-$EndComp
 Entry Wire Line
 	7920 7955 8020 8055
 Wire Wire Line
@@ -240,7 +229,7 @@ Wire Wire Line
 Wire Wire Line
 	8020 8755 8320 8755
 $Comp
-L Timer:82C54_PLCC U1
+L Motherboard-rescue:82C54_PLCC-Timer U1
 U 1 1 5C0CA7CD
 P 13575 2550
 F 0 "U1" H 13575 3728 50  0000 C CNN
@@ -689,7 +678,7 @@ IRQ6
 Text Label 9770 8055 2    50   ~ 0
 IRQ7
 $Comp
-L MCU_Intel:8087 U11
+L Motherboard-rescue:8087-MCU_Intel U11
 U 1 1 5CE9F424
 P 8375 2750
 F 0 "U11" H 8375 4728 50  0000 C CNN
@@ -811,7 +800,7 @@ Wire Wire Line
 Text Label 6725 5900 0    50   ~ 0
 ~DACK0BRD
 $Comp
-L power:GND #PWR0205
+L Motherboard-rescue:GND-power #PWR0205
 U 1 1 5CF7876A
 P 8275 4550
 F 0 "#PWR0205" H 8275 4300 50  0001 C CNN
@@ -822,7 +811,7 @@ F 3 "" H 8275 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0206
+L Motherboard-rescue:GND-power #PWR0206
 U 1 1 5CF78798
 P 8475 4550
 F 0 "#PWR0206" H 8475 4300 50  0001 C CNN
@@ -911,7 +900,7 @@ AD18
 Text Label 7500 3550 0    50   ~ 0
 AD19
 $Comp
-L power:+5V #PWR0207
+L Motherboard-rescue:+5V-power #PWR0207
 U 1 1 5CFE8A1C
 P 8375 950
 F 0 "#PWR0207" H 8375 800 50  0001 C CNN
@@ -995,7 +984,7 @@ $EndComp
 Text Label 12850 5100 0    50   ~ 0
 XD7
 $Comp
-L power:+5V #PWR027
+L Motherboard-rescue:+5V-power #PWR027
 U 1 1 5C967C8A
 P 14075 4100
 F 0 "#PWR027" H 14075 3950 50  0001 C CNN
@@ -1006,7 +995,7 @@ F 3 "" H 14075 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR026
+L Motherboard-rescue:GND-power #PWR026
 U 1 1 5C967CCB
 P 13075 5200
 F 0 "#PWR026" H 13075 4950 50  0001 C CNN
@@ -1211,7 +1200,7 @@ XA0
 Text Label 12745 3050 0    50   ~ 0
 XA1
 $Comp
-L power:GND #PWR074
+L Motherboard-rescue:GND-power #PWR074
 U 1 1 5CA410C1
 P 13575 3550
 F 0 "#PWR074" H 13575 3300 50  0001 C CNN
@@ -1222,7 +1211,7 @@ F 3 "" H 13575 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR073
+L Motherboard-rescue:+5V-power #PWR073
 U 1 1 5CA412AD
 P 13575 1550
 F 0 "#PWR073" H 13575 1400 50  0001 C CNN
@@ -1233,7 +1222,7 @@ F 3 "" H 13575 1550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR077
+L Motherboard-rescue:+5V-power #PWR077
 U 1 1 5CA41475
 P 14395 2050
 F 0 "#PWR077" H 14395 1900 50  0001 C CNN
@@ -1246,7 +1235,7 @@ $EndComp
 Wire Wire Line
 	14175 2050 14395 2050
 $Comp
-L power:+5V #PWR078
+L Motherboard-rescue:+5V-power #PWR078
 U 1 1 5CA77269
 P 14395 2550
 F 0 "#PWR078" H 14395 2400 50  0001 C CNN
@@ -1259,7 +1248,7 @@ $EndComp
 Wire Wire Line
 	14175 2550 14395 2550
 $Comp
-L 74xx:74LS74 U37
+L Motherboard-rescue:74LS74-74xx U37
 U 1 1 5CA899E5
 P 15170 2450
 F 0 "U37" H 15170 2928 50  0000 C CNN
@@ -1325,7 +1314,7 @@ PCLK
 Wire Wire Line
 	15360 1360 15540 1360
 $Comp
-L power:+5V #PWR081
+L Motherboard-rescue:+5V-power #PWR081
 U 1 1 5CBF6DDE
 P 15060 1660
 F 0 "#PWR081" H 15060 1510 50  0001 C CNN
@@ -1336,7 +1325,7 @@ F 3 "" H 15060 1660 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 74xx:74LS74 U37
+L Motherboard-rescue:74LS74-74xx U37
 U 3 1 5CBF6E81
 P 14080 990
 F 0 "U37" H 14310 1036 50  0000 L CNN
@@ -1347,7 +1336,7 @@ F 3 "74xx/74hc_hct74.pdf" H 14080 990 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR075
+L Motherboard-rescue:+5V-power #PWR075
 U 1 1 5CBF7014
 P 14080 590
 F 0 "#PWR075" H 14080 440 50  0001 C CNN
@@ -1358,7 +1347,7 @@ F 3 "" H 14080 590 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR076
+L Motherboard-rescue:GND-power #PWR076
 U 1 1 5CBF721B
 P 14080 1390
 F 0 "#PWR076" H 14080 1140 50  0001 C CNN
@@ -1369,7 +1358,7 @@ F 3 "" H 14080 1390 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR079
+L Motherboard-rescue:+5V-power #PWR079
 U 1 1 5C9643B5
 P 14870 2150
 F 0 "#PWR079" H 14870 2000 50  0001 C CNN
@@ -1385,7 +1374,7 @@ Wire Wire Line
 Text Label 10525 5700 2    50   ~ 0
 IRQ5
 $Comp
-L power:GND #PWR072
+L Motherboard-rescue:GND-power #PWR072
 U 1 1 5CA23827
 P 8920 9955
 F 0 "#PWR072" H 8920 9705 50  0001 C CNN
@@ -1396,7 +1385,7 @@ F 3 "" H 8920 9955 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR071
+L Motherboard-rescue:+5V-power #PWR071
 U 1 1 5CA23AD1
 P 8920 7755
 F 0 "#PWR071" H 8920 7605 50  0001 C CNN
@@ -1407,7 +1396,7 @@ F 3 "" H 8920 7755 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0209
+L Motherboard-rescue:GND-power #PWR0209
 U 1 1 5D063840
 P 3435 2870
 F 0 "#PWR0209" H 3435 2620 50  0001 C CNN
@@ -1427,7 +1416,7 @@ Wire Wire Line
 	3435 2925 3475 2925
 Connection ~ 3435 2870
 $Comp
-L power:+5V #PWR0210
+L Motherboard-rescue:+5V-power #PWR0210
 U 1 1 5D08D44E
 P 3475 3025
 F 0 "#PWR0210" H 3475 2875 50  0001 C CNN
@@ -1458,7 +1447,7 @@ Wire Wire Line
 Text Label 4850 3400 0    50   ~ 0
 INTR
 $Comp
-L Device:R_Small R17
+L Motherboard-rescue:R_Small-Device R17
 U 1 1 5CC12759
 P 4450 4200
 F 0 "R17" V 4370 4200 50  0000 C CNN
@@ -1469,7 +1458,7 @@ F 3 "~" H 4450 4200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR0211
+L Motherboard-rescue:+5V-power #PWR0211
 U 1 1 5CC13A9A
 P 4350 4200
 F 0 "#PWR0211" H 4350 4050 50  0001 C CNN
@@ -1480,7 +1469,7 @@ F 3 "" H 4350 4200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R19
+L Motherboard-rescue:R_Small-Device R19
 U 1 1 5CC3F7A3
 P 9075 2475
 F 0 "R19" V 8995 2475 50  0000 C CNN
@@ -1491,7 +1480,7 @@ F 3 "~" H 9075 2475 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0212
+L Motherboard-rescue:+5V-power #PWR0212
 U 1 1 5CC3F7AD
 P 9075 2375
 F 0 "#PWR0212" H 9075 2225 50  0001 C CNN
@@ -1520,10 +1509,8 @@ Text Label 8085 8955 0    50   ~ 0
 XA0
 Wire Wire Line
 	9520 8555 9770 8555
-Text Label 9770 8555 2    50   ~ 0
-SIRQ
 $Comp
-L power:+5V #PWR0213
+L Motherboard-rescue:+5V-power #PWR0213
 U 1 1 5CDF4BA8
 P 7675 1250
 F 0 "#PWR0213" H 7675 1100 50  0001 C CNN
@@ -1552,7 +1539,7 @@ Wire Wire Line
 Text Label 4850 3700 0    50   ~ 0
 BSY
 $Comp
-L Device:R_Small R18
+L Motherboard-rescue:R_Small-Device R18
 U 1 1 5CEB593D
 P 4595 3700
 F 0 "R18" V 4515 3700 50  0000 C CNN
@@ -1563,7 +1550,7 @@ F 3 "~" H 4595 3700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR0214
+L Motherboard-rescue:+5V-power #PWR0214
 U 1 1 5CEB5947
 P 4495 3700
 F 0 "#PWR0214" H 4495 3550 50  0001 C CNN
@@ -1588,7 +1575,7 @@ Wire Wire Line
 Text Label 8095 9155 0    50   ~ 0
 ~INTRCS
 $Comp
-L 74xx:74LS74 U37
+L Motherboard-rescue:74LS74-74xx U37
 U 2 1 5CBA5D03
 P 15060 1360
 F 0 "U37" H 15060 882 50  0000 C CNN
@@ -1642,143 +1629,6 @@ Text Label 3515 5200 0    50   ~ 0
 ALE
 Text Label 3515 5575 0    50   ~ 0
 AEN
-$Comp
-L Motherboard-rescue:8259-Interface U22
-U 1 1 5CFEBC4A
-P 11360 8855
-F 0 "U22" H 11360 10133 50  0000 C CNN
-F 1 "8259" H 11360 10042 50  0000 C CNN
-F 2 "Housings_DIP:DIP-28_W7.62mm_Socket" H 11360 8855 50  0001 C CIN
-F 3 "http://pdos.csail.mit.edu/6.828/2005/readings/hardware/8259A.pdf" H 11360 8855 50  0001 C CNN
-	1    11360 8855
-	-1   0    0    -1  
-$EndComp
-Entry Wire Line
-	12360 7955 12260 8055
-Wire Wire Line
-	12260 8055 11960 8055
-Entry Wire Line
-	12360 8055 12260 8155
-Entry Wire Line
-	12360 8155 12260 8255
-Entry Wire Line
-	12360 8255 12260 8355
-Entry Wire Line
-	12360 8355 12260 8455
-Entry Wire Line
-	12360 8455 12260 8555
-Entry Wire Line
-	12360 8555 12260 8655
-Entry Wire Line
-	12360 8655 12260 8755
-Wire Wire Line
-	12260 8155 11960 8155
-Wire Wire Line
-	12260 8255 11960 8255
-Wire Wire Line
-	12260 8355 11960 8355
-Wire Wire Line
-	12260 8455 11960 8455
-Wire Wire Line
-	12260 8555 11960 8555
-Wire Wire Line
-	12260 8655 11960 8655
-Wire Wire Line
-	12260 8755 11960 8755
-Text Label 12260 8055 2    50   ~ 0
-XD0
-Text Label 12260 8155 2    50   ~ 0
-XD1
-Text Label 12260 8255 2    50   ~ 0
-XD2
-Text Label 12260 8355 2    50   ~ 0
-XD3
-Text Label 12260 8455 2    50   ~ 0
-XD4
-Text Label 12260 8555 2    50   ~ 0
-XD5
-Text Label 12260 8655 2    50   ~ 0
-XD6
-Text Label 12260 8755 2    50   ~ 0
-XD7
-Text Label 12360 9155 1    50   ~ 0
-XD[0...7]
-Wire Wire Line
-	9520 8955 10760 8955
-Wire Wire Line
-	9520 9055 10760 9055
-Wire Wire Line
-	9520 9155 10760 9155
-Wire Wire Line
-	11960 9555 12175 9555
-Text Label 12175 9555 2    50   ~ 0
-SIRQ
-Wire Wire Line
-	10760 9355 10760 9955
-Wire Wire Line
-	10760 9955 11360 9955
-Connection ~ 11360 9955
-Wire Wire Line
-	11360 9955 11365 9955
-$Comp
-L power:GND #PWR031
-U 1 1 5D17FB9F
-P 11360 9955
-F 0 "#PWR031" H 11360 9705 50  0001 C CNN
-F 1 "GND" H 11365 9782 50  0000 C CNN
-F 2 "" H 11360 9955 50  0001 C CNN
-F 3 "" H 11360 9955 50  0001 C CNN
-	1    11360 9955
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11960 9355 12185 9355
-Text Label 12185 9355 2    50   ~ 0
-~XIOW
-Wire Wire Line
-	11960 9255 12185 9255
-Text Label 12185 9255 2    50   ~ 0
-~XIOR
-Text Label 12220 9155 2    50   ~ 0
-~INTRCS2
-Wire Wire Line
-	11960 9655 12185 9655
-Text Label 12185 9655 2    50   ~ 0
-~INTA
-Wire Wire Line
-	11960 8955 12195 8955
-Text Label 12195 8955 2    50   ~ 0
-XA0
-Wire Wire Line
-	10510 8055 10760 8055
-Wire Wire Line
-	10510 8155 10760 8155
-Wire Wire Line
-	10510 8255 10760 8255
-Wire Wire Line
-	10510 8355 10760 8355
-Wire Wire Line
-	10510 8455 10760 8455
-Text Label 10510 8655 0    50   ~ 0
-IRQ9
-Text Label 10510 8455 0    50   ~ 0
-IRQ11
-Text Label 10510 8355 0    50   ~ 0
-IRQ12
-Text Label 10510 8255 0    50   ~ 0
-IRQ13
-Text Label 10510 8155 0    50   ~ 0
-IRQ14
-Text Label 10510 8055 0    50   ~ 0
-IRQ15
-Wire Wire Line
-	10760 8755 10510 8755
-Text Label 10510 8755 0    50   ~ 0
-IRQ8
-Wire Wire Line
-	10760 8555 10510 8555
-Text Label 10510 8555 0    50   ~ 0
-IRQ10
 Wire Wire Line
 	7150 6800 6720 6800
 Text Label 6720 6800 0    50   ~ 0
@@ -1801,17 +1651,6 @@ Text Label 3355 4475 2    50   ~ 0
 TC
 Text Notes 9885 7865 0    50   ~ 0
 IRQ2 = IRQ9
-$Comp
-L 74xx:74LS137 U4
-U 1 1 5D1B843F
-P 2830 9850
-F 0 "U4" H 2830 10631 50  0000 C CNN
-F 1 "74LS137" H 2830 10540 50  0000 C CNN
-F 2 "" H 2830 9850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS137" H 2830 9850 50  0001 C CNN
-	1    2830 9850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2330 9750 2105 9750
 Wire Wire Line
@@ -1822,13 +1661,13 @@ Entry Wire Line
 	2005 9550 2105 9650
 Text Label 2105 9650 0    50   ~ 0
 XA6
-Text Label 2105 9750 0    50   ~ 0
+Text Label 2105 9550 0    50   ~ 0
 XA5
 Entry Wire Line
 	2005 9450 2105 9550
 Wire Wire Line
 	2330 9550 2105 9550
-Text Label 2105 9550 0    50   ~ 0
+Text Label 2110 9750 0    50   ~ 0
 XA7
 Text Label 1630 9450 0    50   ~ 0
 XA[0...19]
@@ -1836,10 +1675,6 @@ Wire Bus Line
 	1630 9450 2005 9450
 Wire Wire Line
 	2330 10250 2130 10250
-Wire Wire Line
-	2330 10150 2130 10150
-Wire Wire Line
-	2330 10050 2130 10050
 Text Label 2130 10250 0    50   ~ 0
 ~AEN
 Text Label 2130 10150 0    50   ~ 0
@@ -1865,7 +1700,7 @@ Text Label 3530 10050 2    50   ~ 0
 Text Label 3530 9950 2    50   ~ 0
 ~PPICS
 $Comp
-L 74xx:74LS32 U19
+L Motherboard-rescue:74LS32-74xx U19
 U 1 1 5D40D4C3
 P 4110 9255
 F 0 "U19" H 4110 9580 50  0000 C CNN
@@ -1876,7 +1711,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4110 9255 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS32 U19
+L Motherboard-rescue:74LS32-74xx U19
 U 2 1 5D41237C
 P 4110 9575
 F 0 "U19" H 4095 9315 50  0000 C CNN
@@ -1924,32 +1759,10 @@ Wire Wire Line
 Text Label 2410 5950 0    50   ~ 0
 ~WRTDMAPGREG
 $Comp
-L 74xx:74LS32 U19
-U 5 1 5D58124C
-P 4470 10125
-F 0 "U19" V 4103 10125 50  0000 C CNN
-F 1 "74LS32" V 4194 10125 50  0000 C CNN
-F 2 "" H 4470 10125 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4470 10125 50  0001 C CNN
-	5    4470 10125
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D585159
-P 3970 10125
-F 0 "#PWR?" H 3970 9875 50  0001 C CNN
-F 1 "GND" H 3975 9952 50  0000 C CNN
-F 2 "" H 3970 10125 50  0001 C CNN
-F 3 "" H 3970 10125 50  0001 C CNN
-	1    3970 10125
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
+L Motherboard-rescue:GND-power #PWR080
 U 1 1 5D585ACC
 P 2830 10550
-F 0 "#PWR?" H 2830 10300 50  0001 C CNN
+F 0 "#PWR080" H 2830 10300 50  0001 C CNN
 F 1 "GND" H 2835 10377 50  0000 C CNN
 F 2 "" H 2830 10550 50  0001 C CNN
 F 3 "" H 2830 10550 50  0001 C CNN
@@ -1957,95 +1770,64 @@ F 3 "" H 2830 10550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 5D586273
-P 4970 10125
-F 0 "#PWR?" H 4970 9975 50  0001 C CNN
-F 1 "+5V" H 4985 10298 50  0000 C CNN
-F 2 "" H 4970 10125 50  0001 C CNN
-F 3 "" H 4970 10125 50  0001 C CNN
-	1    4970 10125
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
+L Motherboard-rescue:+5V-power #PWR032
 U 1 1 5D586EDF
 P 2830 9250
-F 0 "#PWR?" H 2830 9100 50  0001 C CNN
+F 0 "#PWR032" H 2830 9100 50  0001 C CNN
 F 1 "+5V" V 2845 9378 50  0000 L CNN
 F 2 "" H 2830 9250 50  0001 C CNN
 F 3 "" H 2830 9250 50  0001 C CNN
 	1    2830 9250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3580 9355 3250 9355
-Connection ~ 3580 9355
-Text Label 3250 9355 0    50   ~ 0
-~INTR2CS
-Wire Wire Line
-	11960 9155 12220 9155
 Text Notes 3470 8860 0    50   ~ 0
 Lista ut NMI Addr...\nAT använder PROM för avkodning
-$Comp
-L power:+5V #PWR?
-U 1 1 5D455F97
-P 11360 7755
-F 0 "#PWR?" H 11360 7605 50  0001 C CNN
-F 1 "+5V" V 11375 7883 50  0000 L CNN
-F 2 "" H 11360 7755 50  0001 C CNN
-F 3 "" H 11360 7755 50  0001 C CNN
-	1    11360 7755
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	12975 3250 12750 3250
 Text Label 12750 3250 0    50   ~ 0
 ~TCCS
-Wire Wire Line
-	10220 8655 10760 8655
-Text Label 10220 8655 0    50   ~ 0
+Text Label 9770 8555 2    50   ~ 0
 IRQ2
 Wire Wire Line
-	10475 10085 10225 10085
+	10840 8210 10590 8210
 Wire Wire Line
-	10475 10185 10225 10185
+	10840 8310 10590 8310
 Wire Wire Line
-	10475 10285 10225 10285
+	10840 8410 10590 8410
 Wire Wire Line
-	10475 10385 10225 10385
+	10840 8510 10590 8510
 Wire Wire Line
-	10475 10485 10225 10485
-Text Label 10475 10485 2    50   ~ 0
+	10840 8610 10590 8610
+Text Label 10840 8610 2    50   ~ 0
 IRQ3
-Text Label 10475 10385 2    50   ~ 0
+Text Label 10840 8510 2    50   ~ 0
 IRQ4
-Text Label 10475 10285 2    50   ~ 0
+Text Label 10840 8410 2    50   ~ 0
 IRQ5
-Text Label 10475 10185 2    50   ~ 0
+Text Label 10840 8310 2    50   ~ 0
 IRQ6
-Text Label 10475 10085 2    50   ~ 0
+Text Label 10840 8210 2    50   ~ 0
 IRQ7
 Wire Wire Line
-	10225 10585 10475 10585
-Text Label 10475 10585 2    50   ~ 0
+	10590 8710 10840 8710
+Text Label 10840 8710 2    50   ~ 0
 IRQ2
 Entry Wire Line
-	10125 9985 10225 10085
+	10490 8110 10590 8210
 Entry Wire Line
-	10125 10085 10225 10185
+	10490 8210 10590 8310
 Entry Wire Line
-	10125 10185 10225 10285
+	10490 8310 10590 8410
 Entry Wire Line
-	10125 10285 10225 10385
+	10490 8410 10590 8510
 Entry Wire Line
-	10125 10385 10225 10485
+	10490 8510 10590 8610
 Entry Wire Line
-	10125 10485 10225 10585
-Text Label 9790 9925 0    50   ~ 0
+	10490 8610 10590 8710
+Text Label 10155 8050 0    50   ~ 0
 IRQ[2...7]
 Wire Bus Line
-	9790 9925 10125 9925
+	10155 8050 10490 8050
 Text Label 3395 5050 0    50   ~ 0
 IRQ[2...7]
 Wire Wire Line
@@ -2194,18 +1976,49 @@ Wire Wire Line
 	6175 7375 6425 7375
 Text Label 6425 7375 2    50   ~ 0
 RESET
-Wire Bus Line
-	2005 9450 2005 9650
+NoConn ~ 9520 8955
+NoConn ~ 9520 9055
+$Comp
+L Motherboard-rescue:8259-Interface U3
+U 1 1 5C0C4B18
+P 8920 8855
+F 0 "U3" H 8920 10133 50  0000 C CNN
+F 1 "8259" H 8920 10042 50  0000 C CNN
+F 2 "Housings_DIP:DIP-28_W7.62mm_Socket" H 8920 8855 50  0001 C CIN
+F 3 "http://pdos.csail.mit.edu/6.828/2005/readings/hardware/8259A.pdf" H 8920 8855 50  0001 C CNN
+	1    8920 8855
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9520 9155
+Entry Wire Line
+	2005 9950 2105 10050
+Entry Wire Line
+	2005 10050 2105 10150
+Wire Wire Line
+	2105 10150 2330 10150
+Wire Wire Line
+	2105 10050 2330 10050
+$Comp
+L Motherboard-rescue:74LS137-74xx U4
+U 1 1 5D1B843F
+P 2830 9850
+F 0 "U4" H 2830 10631 50  0000 C CNN
+F 1 "74LS137" H 2830 10540 50  0000 C CNN
+F 2 "" H 2830 9850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS137" H 2830 9850 50  0001 C CNN
+	1    2830 9850
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	12645 2795 12645 2950
+Wire Bus Line
+	2005 9450 2005 10050
 Wire Bus Line
 	12750 4300 12750 5000
 Wire Bus Line
 	12650 1750 12650 2450
 Wire Bus Line
-	10125 9925 10125 10485
-Wire Bus Line
-	12360 7955 12360 9155
+	10490 8050 10490 8610
 Wire Bus Line
 	7920 7955 7920 9155
 Wire Bus Line

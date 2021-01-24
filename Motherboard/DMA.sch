@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Interface:8237 U23
+L Motherboard-rescue:8237-Interface U23
 U 1 1 5C10FC71
 P 3375 3275
 F 0 "U23" H 3375 2175 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "https://pdos.csail.mit.edu/6.828/2012/readings/hardware/8237A.pdf" H 3375 3
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS244 U25
+L Motherboard-rescue:74LS244-74xx U25
 U 1 1 5C11001A
 P 5500 5300
 F 0 "U25" V 5454 6141 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "74xx/74hc573.pdf" H 5500 5300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR033
+L Motherboard-rescue:GND-power #PWR033
 U 1 1 5C1104E2
 P 3375 4875
 F 0 "#PWR033" H 3375 4625 50  0001 C CNN
@@ -47,7 +47,7 @@ F 3 "" H 3375 4875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR035
+L Motherboard-rescue:GND-power #PWR035
 U 1 1 5C110528
 P 4700 5300
 F 0 "#PWR035" H 4700 5050 50  0001 C CNN
@@ -58,7 +58,7 @@ F 3 "" H 4700 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR037
+L Motherboard-rescue:+5V-power #PWR037
 U 1 1 5C11055D
 P 6300 5300
 F 0 "#PWR037" H 6300 5150 50  0001 C CNN
@@ -69,7 +69,7 @@ F 3 "" H 6300 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR034
+L Motherboard-rescue:+5V-power #PWR034
 U 1 1 5C1105CA
 P 3425 1675
 F 0 "#PWR034" H 3425 1525 50  0001 C CNN
@@ -263,7 +263,7 @@ Wire Wire Line
 	3425 1675 3475 1675
 Connection ~ 3425 1675
 $Comp
-L Device:R R5
+L Motherboard-rescue:R-Device R5
 U 1 1 5C121A87
 P 5350 3200
 F 0 "R5" H 5420 3246 50  0000 L CNN
@@ -278,7 +278,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 3375 5350 3350
 $Comp
-L power:+5V #PWR036
+L Motherboard-rescue:+5V-power #PWR036
 U 1 1 5C122765
 P 5350 3050
 F 0 "#PWR036" H 5350 2900 50  0001 C CNN
@@ -289,7 +289,7 @@ F 3 "" H 5350 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS04 U24
+L Motherboard-rescue:74LS04-74xx U24
 U 2 1 5C122876
 P 5800 3375
 F 0 "U24" H 5800 3692 50  0000 C CNN
@@ -305,7 +305,7 @@ Connection ~ 5350 3375
 Text HLabel 6100 3375 2    50   Output ~ 0
 TC
 $Comp
-L 74xx:74LS373 U26
+L Motherboard-rescue:74LS373-74xx U26
 U 1 1 5C123B44
 P 8525 5300
 F 0 "U26" V 8479 6141 50  0000 L CNN
@@ -316,7 +316,7 @@ F 3 "74xx/74hc573.pdf" H 8525 5300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR038
+L Motherboard-rescue:GND-power #PWR038
 U 1 1 5C123B4A
 P 7725 5300
 F 0 "#PWR038" H 7725 5050 50  0001 C CNN
@@ -327,7 +327,7 @@ F 3 "" H 7725 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR039
+L Motherboard-rescue:+5V-power #PWR039
 U 1 1 5C123B50
 P 9325 5300
 F 0 "#PWR039" H 9325 5150 50  0001 C CNN
@@ -412,7 +412,7 @@ Wire Wire Line
 Wire Wire Line
 	8025 4400 8025 4800
 $Comp
-L 74xx:74LS670 U27
+L Motherboard-rescue:74LS670-74xx U27
 U 1 1 5C12C9DA
 P 8700 2450
 F 0 "U27" H 8700 3428 50  0000 C CNN
@@ -657,10 +657,10 @@ XD6
 Text Label 2625 4575 0    50   ~ 0
 XD7
 $Comp
-L power:GND #PWR?
+L Motherboard-rescue:GND-power #PWR098
 U 1 1 5D4B52C2
 P 8700 3350
-F 0 "#PWR?" H 8700 3100 50  0001 C CNN
+F 0 "#PWR098" H 8700 3100 50  0001 C CNN
 F 1 "GND" H 8705 3177 50  0000 C CNN
 F 2 "" H 8700 3350 50  0001 C CNN
 F 3 "" H 8700 3350 50  0001 C CNN
@@ -668,10 +668,10 @@ F 3 "" H 8700 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L Motherboard-rescue:+5V-power #PWR097
 U 1 1 5D4B569A
 P 8700 1650
-F 0 "#PWR?" H 8700 1500 50  0001 C CNN
+F 0 "#PWR097" H 8700 1500 50  0001 C CNN
 F 1 "+5V" V 8715 1778 50  0000 L CNN
 F 2 "" H 8700 1650 50  0001 C CNN
 F 3 "" H 8700 1650 50  0001 C CNN

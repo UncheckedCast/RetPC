@@ -1,16 +1,9 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP LM2907N-8_NOPB
-D IC CONVERTER FREQ TO VOLT 8-DIP
-K LM2907N-8/NOPB-ND 
-F http://www.ti.com/lit/ds/symlink/lm2907-n.pdf
-$ENDCMP
-#
-$CMP LM2917N_NOPB
-D IC CONVERTER FREQ TO VOLT 14-DIP
-K LM2917N/NOPB-ND 
-F http://www.ti.com/lit/ds/symlink/lm2907-n.pdf
-$ENDCMP
+Internal Server Error
+
+The server encountered an internal error and was unable to complete your request.
+Please contact the server administrator if this error reappears multiple times, please include the technical details below in your report.
+More details can be found in the server log.
+MP
 #
 $CMP LM331N_NOPB
 D IC CONV PREC VOLT TO FREQ 8-DIP

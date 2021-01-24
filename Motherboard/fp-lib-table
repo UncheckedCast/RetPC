@@ -1,5 +1,6 @@
 (fp_lib_table
-  (lib (name RetPC)(type KiCad)(uri /home/rickard/Documents/RetPC)(options "")(descr ""))
-  (lib (name Motherboard)(type KiCad)(uri /home/rickard/Documents/RetPC/Motherboard)(options "")(descr ""))
-  (lib (name IDC)(type KiCad)(uri /home/rickard/Documents/RetPC/FDC/IDC.pretty)(options "")(descr ""))
+  (lib (name RetPC)(type KiCad)(uri ${KIPRJMOD}/../)(options "")(descr ""))
+  (lib (name Motherboard)(type KiCad)(uri ${KIPRJMOD})(options "")(descr ""))
+  (lib (name IDC)(type KiCad)(uri ${KIPRJMOD}/../FDC/IDC.pretty)(options "")(descr ""))
+  (lib (name UC)(type KiCad)(uri /home/rickard/Nextcloud/Projects/RetPC/Motherboard/RetPC.pretty)(options "")(descr ""))
 )
